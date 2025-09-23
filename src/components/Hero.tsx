@@ -10,7 +10,7 @@ const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const desktopPhrases = ['Convert','Boost Sales','Win Hearts and Clicks'];
-  const mobilePhrases = ['Convert','Boost Sales'];
+  const mobilePhrases = ['Convert','Get Noticed', 'Boost Sales'];
   const phrases = isMobile ? mobilePhrases : desktopPhrases;
 
   const router = useRouter();
@@ -98,7 +98,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up animation-delay-400">
             <button
               onClick={scrollToContact}
-              className="group bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center font-semibold text-lg relative overflow-hidden"
+              className="group bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center font-semibold text-lg relative overflow-hidden cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               Get a Free Quote
@@ -106,7 +106,7 @@ const Hero = () => {
             </button>
             <button
               onClick={scrollToWebsiteProcess}
-              className="group text-gray-700 px-8 py-4 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300 font-semibold text-lg flex items-center backdrop-blur-sm"
+              className="group text-gray-700 px-8 py-4 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300 font-semibold text-lg flex items-center backdrop-blur-sm cursor-pointer"
             >
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-200" />
               See How We Work
@@ -129,7 +129,7 @@ const Hero = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Mobile-First</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Optimized for all devices to maximize reach and user experience.</p>
             </div>
-            <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 border border-blue-100/50 shadow-lg hover:shadow-xl">
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 border border-blue-100/50 shadow-lg hover:shadow-x">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Zap className="h-7 w-7 text-white" />
               </div>

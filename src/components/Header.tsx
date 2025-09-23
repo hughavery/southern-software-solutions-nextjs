@@ -39,7 +39,7 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 cursor-pointer">
             <Globe className="h-8 w-8 text-blue-600" />
             <span className="text-xl font-bold text-gray-900">Southern Software Solutions</span>
           </Link>
@@ -55,14 +55,14 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item.id)}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium cursor-pointer"
               >
                 {item.label}
               </button>
             ))}
             <button
               onClick={() => handleNavigation('contact')}
-              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 font-medium"
+              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 font-medium cursor-pointer"
             >
               Get Quote
             </button>
@@ -71,7 +71,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 cursor-pointer"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -91,14 +91,14 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item.id)}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left py-2"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left py-2 cursor-pointer"
               >
                 {item.label}
               </button>
             ))}
             <button
               onClick={() => handleNavigation('contact')}
-              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-200 font-medium text-center mt-4"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-200 font-medium text-center mt-4 cursor-pointer"
             >
               Get Quote
             </button>

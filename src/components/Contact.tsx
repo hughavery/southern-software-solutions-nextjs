@@ -84,7 +84,7 @@ const Contact = () => {
               <p className="text-gray-600 mb-6">
                 Schedule a 30-minute discovery call to discuss your project requirements and goals.
               </p>
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold cursor-pointer">
                 Schedule Call
               </button>
             </div>
@@ -143,7 +143,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition-all duration-300 transform hover:scale-[1.02] font-semibold flex items-center justify-center"
+                className="w-full bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition-all duration-300 transform hover:scale-[1.02] font-semibold flex items-center justify-center cursor-pointer"
               >
                 Send Message
                 <Send className="ml-2 h-5 w-5" />

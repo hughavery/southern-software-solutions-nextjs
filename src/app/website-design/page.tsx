@@ -39,7 +39,7 @@ const WebsiteDesign = () => {
         'Unlimited pages',
         'Business tool integrations',
         'Payment systems integration',
-        'Social media integration',
+        'AI chatbot integration',
         'Calendar booking systems',
         'Blog functionality',
         'E-commerce capabilities',

@@ -21,12 +21,12 @@ const Footer = () => {
               delivered straight to your inbox.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50"
-              />
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors font-semibold">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-4 py-3 rounded-xl bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50"
+                />
+              <button className="bg-white text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors font-semibold cursor-pointer">
                 Subscribe
               </button>
             </div>
@@ -49,16 +49,16 @@ const Footer = () => {
                 New Zealand and Australia.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
                   <Facebook className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
                   <Twitter className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
                   <Instagram className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
                   <Linkedin className="h-6 w-6" />
                 </a>
               </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                   <li key={item.id}>
                     <button
                       onClick={() => scrollToSection(item.id)}
-                      className="text-gray-300 hover:text-blue-400 transition-colors"
+                      className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer"
                     >
                       {item.label}
                     </button>
@@ -89,11 +89,11 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-bold mb-6">Services</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Website Design</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Web Applications</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Branding</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">SEO Services</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Maintenance</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Website Design</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Web Applications</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Branding</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">SEO Services</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Maintenance</a></li>
               </ul>
             </div>
 
@@ -107,7 +107,7 @@ const Footer = () => {
               </div>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+                className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors cursor-pointer"
               >
                 Get Quote
               </button>
@@ -124,9 +124,9 @@ const Footer = () => {
               © 2024 Southern Software Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Cookie Policy</a>
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors cursor-pointer">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors cursor-pointer">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors cursor-pointer">Cookie Policy</a>
             </div>
           </div>
         </div>

@@ -78,7 +78,7 @@ const Services = () => {
 
               <Link
                 href={service.link}
-                className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${service.gradient} text-white text-sm font-medium rounded-lg hover:opacity-90 transition-opacity duration-200`}
+                className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${service.gradient} text-white text-sm font-medium rounded-lg hover:opacity-90 transition-opacity duration-200 cursor-pointer`}
               >
                 Learn More
               </Link>
