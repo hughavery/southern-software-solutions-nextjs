@@ -1,0 +1,138 @@
+import React from 'react';
+import { Globe, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+
+const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <footer className="bg-gray-900 text-white">
+      {/* Newsletter Section */}
+      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 py-12">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-4">Stay Updated</h3>
+            <p className="text-blue-100 mb-6 max-w-xl mx-auto">
+              Get the latest web design tips, industry insights, and exclusive offers 
+              delivered straight to your inbox.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 px-4 py-3 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50"
+              />
+              <button className="bg-white text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors font-semibold">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Footer */}
+      <div className="py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Company Info */}
+            <div>
+              <div className="flex items-center space-x-2 mb-6">
+                <Globe className="h-8 w-8 text-blue-400" />
+                <span className="text-xl font-bold">Southern Software Solutions</span>
+              </div>
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Creating exceptional digital experiences for businesses across 
+                New Zealand and Australia.
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Facebook className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Twitter className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Instagram className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <Linkedin className="h-6 w-6" />
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="text-lg font-bold mb-6">Quick Links</h4>
+              <ul className="space-y-3">
+                {[
+                  { label: 'Home', id: 'home' },
+                  { label: 'Services', id: 'services' },
+                  { label: 'About', id: 'about' }
+                ].map((item) => (
+                  <li key={item.id}>
+                    <button
+                      onClick={() => scrollToSection(item.id)}
+                      className="text-gray-300 hover:text-blue-400 transition-colors"
+                    >
+                      {item.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h4 className="text-lg font-bold mb-6">Services</h4>
+              <ul className="space-y-3">
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Website Design</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Web Applications</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Branding</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">SEO Services</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Maintenance</a></li>
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="text-lg font-bold mb-6">Contact Info</h4>
+              <div className="space-y-3">
+                <p className="text-gray-300">Christchurch, New Zealand</p>
+                <p className="text-gray-300">hello@southernsoftware.co.nz</p>
+                <p className="text-gray-300">+64 3 XXX XXXX</p>
+              </div>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+              >
+                Get Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-800 py-8">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              © 2024 Southern Software Solutions. All rights reserved.
+            </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

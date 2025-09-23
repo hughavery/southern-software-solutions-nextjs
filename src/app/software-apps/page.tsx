@@ -1,0 +1,55 @@
+'use client';
+
+import React from 'react';
+import { Smartphone, Check } from 'lucide-react';
+import Link from 'next/link';
+import Header from '@/components/Header';
+import SoftwareProcess from '@/components/SoftwareProcess';
+
+const SoftwareApplications = () => {
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-purple-500 to-pink-500 w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+              <Smartphone className="h-10 w-10 text-white" />
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Software Apps
+            </h1>
+            <p className="text-xl text-gray-600 mb-8">
+              Build software that grows with your business. Our team of two full-stack developers and one backend engineer, all University of Canterbury graduates, craft custom applications from scratch, giving you full ownership and flexibility without the constraints of off-the-shelf solutions. We focus on creating scalable tools with intuitive interfaces, secure backends, and seamless integrations to automate processes and enhance productivity. From customer portals to inventory management systems and advanced AI analytics, our software empowers your business to operate smarter and scale faster.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <SoftwareProcess />
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Ready to Build Your Software App?
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Let's discuss your software application needs and turn your ideas into reality.
+          </p>
+          <Link
+            href="/#contact"
+            className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white py-4 px-8 rounded-lg font-medium hover:opacity-90 transition-opacity"
+          >
+            Start Your Project
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default SoftwareApplications;

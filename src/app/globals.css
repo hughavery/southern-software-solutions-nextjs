@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@keyframes bounce-color {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+    filter: hue-rotate(45deg);
+  }
+}
+
+@keyframes bounce-color-delayed {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.03);
+    filter: hue-rotate(60deg);
+  }
+}
+
+@keyframes bounce-color-slow {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) scale(1.08);
+    filter: hue-rotate(30deg);
+  }
+}
+
+.animate-bounce-color {
+  animation: bounce-color 3s ease-in-out infinite;
+}
+
+.animate-bounce-color-delayed {
+  animation: bounce-color-delayed 2.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.animate-bounce-color-slow {
+  animation: bounce-color-slow 4s ease-in-out infinite;
+  animation-delay: 1s;
+}
