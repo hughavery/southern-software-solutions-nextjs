@@ -14,24 +14,58 @@ const Maintenance = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-sky-50 to-teal-50">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-sky-400 to-teal-800 w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto shadow-lg">
-              <Wrench className="h-10 w-10 text-white" />
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="bg-gradient-to-r from-sky-400 to-teal-800 w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+                <Wrench className="h-10 w-10 text-white" />
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                Website Maintenance
+              </h1>
+              <p className="text-2xl text-gray-700 font-medium">
+                Keep your website secure, updated, and running smoothly
+              </p>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Website Maintenance
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Keep your website secure, updated, and running smoothly with our maintenance packages.
-              Focus on your business while we take care of your digital presence. Unlike agencies that
-              use third-party builders requiring expensive monthly subscriptions, our custom-coded websites
-              have minimal ongoing costs and maximum flexibility for updates. We provide proactive
-              maintenance that keeps your site fast, secure, and search-engine optimized. Our comprehensive
-              approach includes security monitoring, performance optimization, content updates, and
-              technical support, ensuring your website continues to deliver results while you focus on
-              what matters most - growing your business. With transparent pricing and no hidden fees,
-              you'll know exactly what you're getting.
-            </p>
+
+            {/* Key Benefits Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Built-In Support</h3>
+                <p className="text-gray-600">
+                  When we build your website, ongoing maintenance and support are included. Focus on your business while we handle the technical details.
+                </p>
+              </div>
+
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">No Monthly Subscriptions</h3>
+                <p className="text-gray-600">
+                  Unlike agencies using third-party builders, our custom-coded websites have minimal ongoing costs and maximum flexibility.
+                </p>
+              </div>
+
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Proactive Monitoring</h3>
+                <p className="text-gray-600">
+                  We keep your site fast, secure, and search-engine optimized with regular security monitoring and performance optimization.
+                </p>
+              </div>
+
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Transparent Pricing</h3>
+                <p className="text-gray-600">
+                  No hidden fees or surprise charges. You'll know exactly what's included and what you're getting.
+                </p>
+              </div>
+            </div>
+
+            {/* What's Included Callout */}
+            <div className="bg-gradient-to-r from-sky-400 to-teal-800 rounded-2xl p-8 text-white text-center">
+              <h3 className="text-2xl font-bold mb-3">Maintenance Included With Every Build</h3>
+              <p className="text-sky-50 text-lg">
+                When you choose us to build your website, comprehensive maintenance and support come standard.
+                We're invested in your long-term success.
+              </p>
+            </div>
           </div>
         </div>
       </section>
