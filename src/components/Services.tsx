@@ -1,5 +1,5 @@
 import React from 'react';
-import { Monitor, Smartphone, Palette, Search, Wrench, Zap } from 'lucide-react';
+import { Monitor, Smartphone, Wrench } from 'lucide-react';
 import Link from 'next/link';
 
 const Services = () => {

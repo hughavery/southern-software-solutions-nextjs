@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Globe, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {

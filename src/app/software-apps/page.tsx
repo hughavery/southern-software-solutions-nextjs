@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Smartphone, Check } from 'lucide-react';
+import { Smartphone } from 'lucide-react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import SoftwareProcess from '@/components/SoftwareProcess';

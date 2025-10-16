@@ -1,8 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Wrench, Check } from 'lucide-react';
-import Link from 'next/link';
+import { Wrench } from 'lucide-react';
 import Header from '@/components/Header';
 
 const Maintenance = () => {
