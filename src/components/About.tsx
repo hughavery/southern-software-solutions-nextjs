@@ -21,7 +21,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto mb-16 text-left">
           <div className="flex items-center mb-6">
@@ -34,22 +34,22 @@ const About = () => {
           </h2>
 
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Founded in the heart of Christchurch, New Zealand, Southern Software Solutions 
-            has been crafting exceptional digital experiences for businesses across New Zealand 
-            and Australia. Our passion lies in creating websites and software applications that not 
-            only look stunning but drive real business results.
+            I'm Hugh Avery, the founder and lead developer behind Southern Software Solutions. I started
+            this company in 2024 helping local businesses in Christchurch build their online presence. After
+            seeing the impact that great websites could have on small businesses, I made the shift to do
+            this full-time and am now serving clients across New Zealand and Australia.
           </p>
 
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            We are a small group of software engineers from the University of Canterbury who are really passionate about technology. 
-            What we love most is sitting down with each business, getting to know the ins and outs of what you do, 
-            and then crafting a solution that’s tailored to you. Nothing beats building together.
+            What we love most is sitting down with each business, getting to know the ins and outs of
+            what you do, and crafting a solution that's tailored specifically to you. We believe the best
+            digital experiences come from true collaboration and understanding your unique needs.
           </p>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            With a focus on modern design principles, cutting-edge technology, and user-centered 
-            approach, we help businesses establish a powerful online presence that converts 
-            visitors into customers and builds lasting relationships.
+            With a focus on modern design principles, cutting-edge technology, and user-centered development,
+            we help businesses across New Zealand and Australia establish a powerful online presence that
+            converts visitors into customers and builds lasting relationships.
           </p>
         </div>
 

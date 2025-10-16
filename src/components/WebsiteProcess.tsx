@@ -33,7 +33,7 @@ const WebsiteProcess = () => {
     {
       icon: MessageSquare,
       title: 'Discovery & Planning',
-      description: 'We analyze your business goals, target audience, and brand requirements to create a comprehensive website strategy.',
+      description: 'We analyse your business goals, target audience, and brand requirements to create a comprehensive website strategy.',
       color: 'from-blue-500 to-cyan-500'
     },
     {

@@ -22,9 +22,40 @@ const SoftwareApplications = () => {
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
               Software Apps
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Build software that grows with your business. Our team of two full-stack developers and one backend engineer, all University of Canterbury graduates, craft custom applications from scratch, giving you full ownership and flexibility without the constraints of off-the-shelf solutions. We focus on creating scalable tools with intuitive interfaces, secure backends, and seamless integrations to automate processes and enhance productivity. From customer portals to inventory management systems and advanced AI analytics, our software empowers your business to operate smarter and scale faster.
+            <p className="text-2xl text-gray-700 font-medium mb-8">
+              Custom software applications built to grow with your business
             </p>
+
+            {/* Key Benefits Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Built from Scratch</h3>
+                <p className="text-gray-600">
+                  We craft custom applications tailored to your exact needs, giving you full ownership without off-the-shelf constraints.
+                </p>
+              </div>
+
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Scalable & Secure</h3>
+                <p className="text-gray-600">
+                  Built with secure backends and modern frameworks that grow with your business demands.
+                </p>
+              </div>
+
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Seamless Integration</h3>
+                <p className="text-gray-600">
+                  Connect with your existing tools and workflows. We build integrations that automate processes and boost productivity.
+                </p>
+              </div>
+
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">AI-Powered Features</h3>
+                <p className="text-gray-600">
+                  From customer portals to inventory systems and advanced AI analytics, we build software that helps you operate smarter.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
