@@ -90,7 +90,7 @@ const Footer = () => {
               <h4 className="text-lg font-bold mb-6">Services</h4>
               <ul className="space-y-3">
                 <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Website Design</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Web Applications</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Software Applications</a></li>
                 <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Branding</a></li>
                 <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">SEO Services</a></li>
                 <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Maintenance</a></li>

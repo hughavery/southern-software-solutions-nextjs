@@ -91,7 +91,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
-            Transform your digital presence with stunning, high-converting websites and web applications. 
+            Transform your digital presence with stunning, high-converting websites and software applications. 
             We blend creativity with strategy to deliver exceptional results.
           </p>
 

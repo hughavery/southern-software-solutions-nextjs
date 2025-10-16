@@ -36,7 +36,7 @@ const About = () => {
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
             Founded in the heart of Christchurch, New Zealand, Southern Software Solutions 
             has been crafting exceptional digital experiences for businesses across New Zealand 
-            and Australia. Our passion lies in creating websites and web applications that not 
+            and Australia. Our passion lies in creating websites and software applications that not 
             only look stunning but drive real business results.
           </p>
 
