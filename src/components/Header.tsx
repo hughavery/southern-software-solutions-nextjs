@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
 
 const Header = () => {
@@ -39,8 +40,14 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2 cursor-pointer">
-            <Globe className="h-8 w-8 text-blue-600" />
+          <Link href="/" className="flex items-center space-x-3 cursor-pointer">
+            <Image
+              src="/logo.png"
+              alt="Southern Software Solutions Logo"
+              width={40}
+              height={40}
+              className="w-10 h-10"
+            />
             <span className="text-xl font-bold text-gray-900">Southern Software Solutions</span>
           </Link>
 

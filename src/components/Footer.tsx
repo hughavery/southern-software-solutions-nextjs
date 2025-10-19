@@ -1,5 +1,6 @@
 import React from 'react';
-import { Globe, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -40,8 +41,14 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div>
-              <div className="flex items-center space-x-2 mb-6">
-                <Globe className="h-8 w-8 text-blue-400" />
+              <div className="flex items-center space-x-3 mb-6">
+                <Image
+                  src="/logo.png"
+                  alt="Southern Software Solutions Logo"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8"
+                />
                 <span className="text-xl font-bold">Southern Software Solutions</span>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed">
