@@ -50,7 +50,7 @@ const Header = () => {
               { label: 'Home', id: 'home' },
               { label: 'Services', id: 'services' },
               { label: 'About', id: 'about' },
-              { label: 'Contact', id: 'contact' }
+              { label: 'Latest Work', id: 'projects' }
             ].map((item) => (
               <button
                 key={item.id}
@@ -86,7 +86,7 @@ const Header = () => {
               { label: 'Home', id: 'home' },
               { label: 'Services', id: 'services' },
               { label: 'About', id: 'about' },
-              { label: 'Contact', id: 'contact' }
+              { label: 'Latest Work', id: 'projects' }
             ].map((item) => (
               <button
                 key={item.id}
