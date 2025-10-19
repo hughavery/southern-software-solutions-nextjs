@@ -47,7 +47,7 @@ const About = () => {
           </p>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            With a focus on modern design principles, cutting-edge technology, and user-centered development,
+            With a focus on modern design principles, advanced technology, and user-centered development,
             we help businesses across New Zealand and Australia establish a powerful online presence that
             converts visitors into customers and builds lasting relationships.
           </p>

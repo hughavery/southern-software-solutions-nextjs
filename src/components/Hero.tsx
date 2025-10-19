@@ -9,7 +9,7 @@ const Hero = () => {
   const [fade, setFade] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
-  const desktopPhrases = ['Convert','Boost Sales','Win Hearts and Clicks'];
+  const desktopPhrases = ['Convert','Boost Sales','Rank Higher'];
   const mobilePhrases = ['Convert','Get Noticed', 'Boost Sales'];
   const phrases = isMobile ? mobilePhrases : desktopPhrases;
 
@@ -55,11 +55,13 @@ const Hero = () => {
     <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
-        {/* Floating geometric shapes */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-blue-200 to-indigo-200 rounded-full opacity-20 animate-bounce-color"></div>
-        <div className="absolute top-3/4 right-1/4 w-32 h-32 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full opacity-30 animate-bounce-color-delayed"></div>
-        <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-gradient-to-r from-indigo-200 to-blue-200 rounded-full opacity-10 animate-bounce-color-slow"></div>
-        
+        {/* Floating geometric shapes - hidden on mobile, shown on large screens */}
+        <div className="hidden lg:block absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-blue-200 to-indigo-200 rounded-full opacity-20 animate-bounce-color"></div>
+        <div className="hidden lg:block absolute top-3/4 right-1/4 w-32 h-32 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full opacity-30 animate-bounce-color-delayed"></div>
+        <div className="hidden lg:block absolute top-1/2 right-1/3 w-48 h-48 bg-gradient-to-r from-indigo-200 to-blue-200 rounded-full opacity-10 animate-bounce-color-slow"></div>
+        <div className="hidden lg:block absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-r from-cyan-200 to-blue-200 rounded-full opacity-15 animate-bounce-color"></div>
+        <div className="hidden lg:block absolute bottom-1/4 left-1/3 w-20 h-20 bg-gradient-to-r from-pink-200 to-purple-200 rounded-full opacity-25 animate-bounce-color-delayed"></div>
+
         {/* Animated grid pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="grid grid-cols-12 gap-4 h-full">
@@ -140,9 +142,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* todo make the mouse Mobile frendly  */}
-      {/* Scroll indicator */}  
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Scroll indicator - hidden on mobile */}
+      <div className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
         </div>

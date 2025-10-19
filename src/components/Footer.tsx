@@ -102,8 +102,15 @@ const Footer = () => {
               <h4 className="text-lg font-bold mb-6">Contact Info</h4>
               <div className="space-y-3">
                 <p className="text-gray-300">Christchurch, New Zealand</p>
-                <p className="text-gray-300">hello@southernsoftware.co.nz</p>
-                <p className="text-gray-300">+64 3 XXX XXXX</p>
+                <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-gray-300 hover:text-blue-400 transition-colors block">
+                  contact@southernsoftwaresolutions.tech
+                </a>
+                <a href="tel:+61430126624" className="text-gray-300 hover:text-blue-400 transition-colors block">
+                  AU: +61 430 126 624
+                </a>
+                <a href="tel:+64224993402" className="text-gray-300 hover:text-blue-400 transition-colors block">
+                  NZ: +64 22 499 3402
+                </a>
               </div>
               <button
                 onClick={() => scrollToSection('contact')}

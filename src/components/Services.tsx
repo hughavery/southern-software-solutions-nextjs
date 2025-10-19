@@ -15,7 +15,7 @@ const Services = () => {
     {
       icon: Smartphone,
       title: 'Software Apps',
-      description: 'Powerful software apps built with cutting-edge technology to streamline your business processes.',
+      description: 'Powerful software apps built with advanced technology to streamline your business processes.',
       features: ['Modern Frameworks', 'Database Integration', 'API Development', 'Cloud Deployment', 'AI integration'],
       gradient: 'from-purple-500 to-pink-500',
       link: '/software-apps'
