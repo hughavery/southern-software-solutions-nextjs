@@ -121,21 +121,21 @@ const Hero = () => {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Shield className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Stronger Brand</h3>
+              <h2 className="text-xl font-bold text-gray-900 mb-2">Stronger Brand</h2>
               <p className="text-gray-600 text-sm leading-relaxed">Designs that make your business memorable and build trust with customers.</p>
             </div>
             <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 border border-blue-100/50 shadow-lg hover:shadow-xl">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Smartphone className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Mobile-First</h3>
+              <h2 className="text-xl font-bold text-gray-900 mb-2">Mobile-First</h2>
               <p className="text-gray-600 text-sm leading-relaxed">Optimized for all devices to maximize reach and user experience.</p>
             </div>
             <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 border border-blue-100/50 shadow-lg hover:shadow-x">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Zap className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Built to Last</h3>
+              <h2 className="text-xl font-bold text-gray-900 mb-2">Built to Last</h2>
               <p className="text-gray-600 text-sm leading-relaxed">Websites that are fast, scalable, and easy to maintain long-term.</p>
             </div>
           </div>
