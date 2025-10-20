@@ -1,12 +1,25 @@
+'use client';
+
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
 
 const Footer = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleNavigation = (sectionId: string) => {
+    if (pathname === '/') {
+      // If on home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on other pages, navigate to home page with hash
+      router.push(`/#${sectionId}`);
     }
   };
 
@@ -78,17 +91,26 @@ const Footer = () => {
                 {[
                   { label: 'Home', id: 'home' },
                   { label: 'Services', id: 'services' },
-                  { label: 'About', id: 'about' }
+                  { label: 'About', id: 'about' },
+                  { label: 'Latest Work', id: 'projects' }
                 ].map((item) => (
                   <li key={item.id}>
                     <button
-                      onClick={() => scrollToSection(item.id)}
+                      onClick={() => handleNavigation(item.id)}
                       className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer"
                     >
                       {item.label}
                     </button>
                   </li>
                 ))}
+                <li>
+                  <Link
+                    href="/blog"
+                    className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer"
+                  >
+                    Blog
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -96,11 +118,29 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-bold mb-6">Services</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Website Design</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Software Applications</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Branding</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">SEO Services</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">Maintenance</a></li>
+                <li>
+                  <Link href="/website-design" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">
+                    Website Design
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/software-apps" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">
+                    Software Applications
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/maintenance" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">
+                    Maintenance & Support
+                  </Link>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavigation('services')}
+                    className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer"
+                  >
+                    All Services
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -120,7 +160,7 @@ const Footer = () => {
                 </a>
               </div>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => handleNavigation('contact')}
                 className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors cursor-pointer"
               >
                 Get Quote

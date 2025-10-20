@@ -67,6 +67,12 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
+            <Link
+              href="/blog"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium cursor-pointer"
+            >
+              Blog
+            </Link>
             <button
               onClick={() => handleNavigation('contact')}
               className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 font-medium cursor-pointer"
@@ -105,6 +111,13 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
+            <Link
+              href="/blog"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left py-2 cursor-pointer"
+            >
+              Blog
+            </Link>
             <button
               onClick={() => handleNavigation('contact')}
               className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-200 font-medium text-center mt-4 cursor-pointer"
