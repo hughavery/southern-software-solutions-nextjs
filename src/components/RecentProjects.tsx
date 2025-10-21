@@ -6,6 +6,15 @@ import Image from 'next/image';
 const RecentProjects = () => {
   const projects = [
     {
+      title: 'Jordan Stirling Personal Training',
+      company: 'Jordan Stirling',
+      description: 'We created a professional website for personal trainer Jordan Stirling to showcase his brand and attract new clients. The site features modern design with bold branding, clear call-to-actions, and engaging visuals that communicate Jordan\'s mission to help clients "level up" their fitness game. The platform enhances Jordan\'s professional presence, making it easier for potential clients to learn about his services and get in touch.',
+      image: '/jordantrains.png',
+      gradient: 'from-yellow-400 to-lime-500',
+      type: 'Website',
+      link: null
+    },
+    {
       title: 'Model Analyser',
       company: 'Powerco',
       description: 'We engineered a web-based visualization system for Powerco to compare and analyse electricity distribution models across their network. Built as a single-page React application, the platform integrates real-time network data and visualizes the hierarchy from Grid Exit Points to individual devices using color-coded indicators. This system enhances visibility across Powerco\'s infrastructure, helping engineers diagnose issues faster and plan maintenance more effectively.',
