@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { LinkedinIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
@@ -69,17 +69,14 @@ const Footer = () => {
                 New Zealand and Australia.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
-                  <Twitter className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
-                  <Instagram className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer">
-                  <Linkedin className="h-6 w-6" />
+                <a
+                  href="https://www.linkedin.com/company/southern-software-solutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedinIcon className="h-6 w-6" />
                 </a>
               </div>
             </div>
@@ -175,7 +172,7 @@ const Footer = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Southern Software Solutions. All rights reserved.
+              © 2025 Southern Software Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors cursor-pointer">Privacy Policy</a>

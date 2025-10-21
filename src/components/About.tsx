@@ -35,7 +35,7 @@ const About = () => {
 
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
             I'm Hugh Avery, the founder and lead developer behind Southern Software Solutions. I started
-            this company in 2024 helping local businesses in Christchurch build their online presence. After
+            this company in 2025 helping local businesses in Christchurch build their online presence. After
             seeing the impact that great websites could have on small businesses, I made the shift to do
             this full-time and am now serving clients across New Zealand and Australia.
           </p>
