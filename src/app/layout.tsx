@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   keywords: ["web design Christchurch", "software development New Zealand", "custom websites NZ", "web developer Christchurch", "website design New Zealand", "software solutions", "website maintenance NZ"],
   authors: [{ name: "Hugh Avery" }],
   creator: "Hugh Avery",
+  alternates: {
+    canonical: 'https://southernsoftwaresolutions.tech',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
