@@ -26,7 +26,7 @@ const RecentProjects = () => {
     {
       title: 'Nexus',
       company: 'Triage Plus',
-      description: 'We were contracted to help develop Nexus, the main app for Triage Plus, a SaaS platform for prehospital patient and incident management. Nexus enables emergency services to coordinate vehicles, crews, and first responders while sharing real-time patient information such as triage status and initial treatment. Our contribution focused on enhancing multi-platform functionality, including web dashboards and backend systems, allowing secure, simultaneous access across devices. The platform improves situational awareness, supports efficient resource allocation, and streamlines administration for billing, compliance, and clinical record management, ultimately contributing to faster response times and better patient outcomes.',
+      description: 'We contributed to the development of Nexus, a Triage Plus app used for managing patients and incidents before hospital arrival. Our work included building web dashboards and assisting with backend features to improve multi-device access and performance.',
       image: '/triageplus.png',
       gradient: 'from-blue-500 to-cyan-600',
       type: 'Software App',
