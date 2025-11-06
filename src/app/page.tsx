@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import About from '@/components/About';
+import ServiceAreas from '@/components/ServiceAreas';
 import RecentProjects from '@/components/RecentProjects';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
@@ -20,6 +21,7 @@ export default function Home() {
         <RecentProjects />
         <Services />
         <About />
+        <ServiceAreas />
         <Testimonials />
         <Contact />
       </main>
