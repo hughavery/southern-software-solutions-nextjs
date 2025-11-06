@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://southernsoftwaresolutions.tech'),
+  metadataBase: new URL('https://www.southernsoftwaresolutions.tech'),
   title: {
     default: "Southern Software Solutions | Web Design & Development Christchurch",
     template: "%s | Southern Software Solutions"
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Hugh Avery" }],
   creator: "Hugh Avery",
   alternates: {
-    canonical: 'https://southernsoftwaresolutions.tech',
+    canonical: 'https://www.southernsoftwaresolutions.tech',
   },
   icons: {
     icon: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_NZ',
-    url: 'https://southernsoftwaresolutions.tech',
+    url: 'https://www.southernsoftwaresolutions.tech',
     siteName: 'Southern Software Solutions',
     title: 'Southern Software Solutions | Web Design & Development Christchurch',
     description: 'Professional web design and software development services in Christchurch, New Zealand. Custom websites, software applications, and ongoing maintenance.',

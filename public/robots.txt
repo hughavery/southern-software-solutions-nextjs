@@ -7,4 +7,4 @@ Allow: /
 # Disallow: /api/
 
 # Sitemap location
-Sitemap: https://southernsoftwaresolutions.tech/sitemap.xml
+Sitemap: https://www.southernsoftwaresolutions.tech/sitemap.xml
