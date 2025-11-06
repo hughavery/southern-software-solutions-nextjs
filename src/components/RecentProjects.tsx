@@ -1,7 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
+import { motion, useInView } from 'framer-motion';
 
 const RecentProjects = () => {
   const projects = [
@@ -47,62 +48,81 @@ const RecentProjects = () => {
         </div>
 
         <div className="space-y-24">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className={`flex flex-col ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              } gap-12 items-center`}
-            >
-              {/* Project Info */}
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold bg-gradient-to-r ${project.gradient} text-white`}>
-                    {project.company}
-                  </div>
-                  <div className="inline-block px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700">
-                    {project.type}
-                  </div>
-                </div>
+          {projects.map((project, index) => {
+            const ProjectCard = () => {
+              const ref = useRef(null);
+              const isInView = useInView(ref, { once: true, amount: 0.3 });
 
-                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                  {project.title}
-                </h3>
-
-                <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  {project.description}
-                </p>
-
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
+              return (
+                <div
+                  ref={ref}
+                  className={`flex flex-col ${
+                    index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                  } gap-12 items-center`}
+                >
+                  {/* Project Info */}
+                  <motion.div
+                    className="flex-1"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                   >
-                    Learn More About Nexus
-                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </a>
-                )}
-              </div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold bg-gradient-to-r ${project.gradient} text-white`}>
+                        {project.company}
+                      </div>
+                      <div className="inline-block px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700">
+                        {project.type}
+                      </div>
+                    </div>
 
-              {/* Project Image */}
-              <div className="flex-1 flex justify-center items-center">
-                <div className="relative w-full max-w-3xl">
-                  <Image
-                    src={project.image}
-                    alt={`${project.title} - ${project.company}`}
-                    width={1200}
-                    height={800}
-                    className="w-full h-auto"
-                    priority
-                  />
+                    <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      {project.title}
+                    </h3>
+
+                    <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                      {project.description}
+                    </p>
+
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
+                      >
+                        Learn More About Nexus
+                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                      </a>
+                    )}
+                  </motion.div>
+
+                  {/* Project Image */}
+                  <motion.div
+                    className="flex-1 flex justify-center items-center"
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                    transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                  >
+                    <div className="relative w-full max-w-3xl">
+                      <Image
+                        src={project.image}
+                        alt={`${project.title} - ${project.company}`}
+                        width={1200}
+                        height={800}
+                        className="w-full h-auto"
+                        priority
+                      />
+                    </div>
+                  </motion.div>
                 </div>
-              </div>
-            </div>
-          ))}
+              );
+            };
+
+            return <ProjectCard key={index} />;
+          })}
         </div>
       </div>
     </section>

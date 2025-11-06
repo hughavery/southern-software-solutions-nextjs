@@ -7,6 +7,14 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 const BlogPage = () => {
   const posts = [
     {
+      slug: 'taranaki-custom-website',
+      title: 'How a Custom Website Can Help Your Taranaki Business Beat the Competition and Win More Local Customers',
+      excerpt: 'Taranaki businesses have a golden opportunity to dominate local search results—but the window is closing fast. Here\'s why your business needs to get online now, before your competitors do.',
+      date: '2025-11-06',
+      readTime: '7 min read',
+      category: 'Local Business Growth'
+    },
+    {
       slug: 'ai-website-builders-2025',
       title: 'How AI Website Builders Like Bolt.new Are Changing Web Design in 2025 (And Why You Still Need a Developer)',
       excerpt: 'AI tools like Bolt.new and Lovable are disrupting Wix and Squarespace. But does that mean websites will get cheaper? Here\'s the honest truth from a Christchurch developer.',
