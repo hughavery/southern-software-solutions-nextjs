@@ -28,7 +28,7 @@ const WebDesignMessage: React.FC = () => {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className={styles.highlightQuestion}
               >
-                Hey! Are you looking for a sexy, well-dressed, super-powered salesperson that works 24 hours a day, 7 days a week?
+                HEY YOU! Are you looking for a sexy, well-dressed, super-powered salesperson that works 24 hours a day, 7 days a week?
               </motion.h2>
 
               <motion.div

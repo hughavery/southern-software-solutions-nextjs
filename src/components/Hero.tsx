@@ -62,9 +62,9 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-white text-6xl md:text-8xl lg:text-9xl font-extrabold mb-10 leading-tight z-10"
+          className="text-white text-[2.7rem] md:text-[5.4rem] lg:text-[7.2rem] font-extrabold mb-10 leading-tight z-10"
         >
-          <span className="text-gray-300 block mb-4 text-3xl md:text-4xl lg:text-5xl font-semibold">
+          <span className="text-gray-300 block mb-4 text-[1.8rem] md:text-[3.6rem] lg:text-[4.5rem] font-semibold">
             We specialise in
           </span>
           <span className="text-cyan-400 border-b-4 border-cyan-400 inline-block whitespace-nowrap">
@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
             onClick={scrollToContact}
             whileHover={{ scale: 1.06, boxShadow: '0 8px 30px rgba(6,182,212,0.25)' }}
             whileTap={{ scale: 0.96 }}
-            className="bg-cyan-400 text-black px-12 py-5 rounded-full font-semibold text-xl uppercase tracking-wide"
+            className="bg-cyan-400 text-black px-8 py-3 md:px-12 md:py-5 rounded-full font-semibold text-base md:text-xl uppercase tracking-wide"
           >
             Start a Project
           </motion.button>
