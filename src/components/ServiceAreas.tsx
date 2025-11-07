@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const ServiceAreas = () => {
   return (
@@ -8,19 +11,43 @@ const ServiceAreas = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <motion.h2
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            >
               We service the whole of New Zealand!
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+              className="text-xl text-gray-700 leading-relaxed mb-6"
+            >
               Based in <strong>Christchurch</strong> and <strong>New Plymouth</strong>, we're proud to serve businesses across the entire country.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
+              className="text-lg text-gray-600 leading-relaxed"
+            >
               From Whangārei to Dunedin, Auckland to Queenstown—no matter where your business is located, we bring professional web design and software solutions directly to you. Distance is no barrier to great service.
-            </p>
+            </motion.p>
           </div>
 
           {/* Map Image */}
-          <div className="flex-1 flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
+            className="flex-1 flex justify-center"
+          >
             <div className="relative w-full max-w-2xl">
               <Image
                 src="/mapNZ.webp"
@@ -31,7 +58,7 @@ const ServiceAreas = () => {
                 priority
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

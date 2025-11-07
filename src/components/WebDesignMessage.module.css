@@ -1,0 +1,300 @@
+/* WebDesignMessage.module.css */
+.messageSection {
+  background: #f8f9fa;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.messageContent {
+  max-width: 1400px;
+  text-align: center;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.textContent {
+  text-align: left;
+}
+
+.visualContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 300px;
+}
+
+.incomeVisual {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none;
+}
+
+.incomeVisual.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sectionTitle {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #1a202c;
+  margin: 0 0 40px 0;
+  line-height: 1.3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.sectionMessage {
+  font-size: 1.5rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 0 0 40px 0;
+  text-align: left;
+}
+
+.highlightQuestion {
+  font-size: 3.5rem;
+  color: #000000;
+  margin-bottom: 30px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.answerIntro {
+  font-size: 2rem;
+  color: #1a202c;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.featuresText {
+  font-size: 1.75rem;
+  color: #4a5568;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.featuresList li {
+  font-size: 1.75rem;
+  color: #4a5568;
+  margin-bottom: 16px;
+  padding-left: 35px;
+  position: relative;
+  font-weight: 500;
+}
+
+.featuresList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.featureHighlight {
+  color: #667eea;
+  font-weight: 700;
+}
+
+.closingStatement {
+  font-size: 2rem;
+  color: #1a202c;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #667eea;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px 60px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  border: none;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+/* Animations */
+.moneyIcon {
+  animation: float 3s ease-in-out infinite;
+}
+
+.chartBar {
+  animation: grow 2s ease-out infinite alternate;
+}
+
+.laptopScreen {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.delay1 {
+  animation-delay: 1s;
+}
+
+.delay2 {
+  animation-delay: 2s;
+}
+
+.delay02 {
+  animation-delay: 0.2s;
+}
+
+.delay04 {
+  animation-delay: 0.4s;
+}
+
+.delay06 {
+  animation-delay: 0.6s;
+}
+
+/* New animation classes for additional visuals */
+.rotateAnimation {
+  animation: rotate 20s linear infinite;
+  transform-origin: center;
+}
+
+.hourHand {
+  animation: rotateHour 10s linear infinite;
+  transform-origin: 200px 150px;
+}
+
+.minuteHand {
+  animation: rotateMinute 5s linear infinite;
+  transform-origin: 200px 150px;
+}
+
+.pulseIcon {
+  animation: pulseScale 2s ease-in-out infinite;
+}
+
+.slideUp {
+  animation: slideUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes grow {
+  0% { transform: scaleY(0.8); }
+  100% { transform: scaleY(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotateHour {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotateMinute {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulseScale {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .highlightQuestion {
+    font-size: 1.75rem;
+  }
+
+  .answerIntro {
+    font-size: 1.5rem;
+  }
+
+  .featuresText {
+    font-size: 1.25rem;
+  }
+
+  .featuresList li {
+    font-size: 1.25rem;
+  }
+
+  .closingStatement {
+    font-size: 1.5rem;
+  }
+
+  .sectionMessage {
+    font-size: 1.125rem;
+  }
+
+  .messageSection {
+    padding: 60px 20px;
+  }
+
+  .contentWrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .textContent {
+    text-align: center;
+  }
+
+  .incomeVisual {
+    max-width: 300px;
+  }
+
+  .ctaButton {
+    font-size: 1.25rem;
+    padding: 18px 50px;
+  }
+}

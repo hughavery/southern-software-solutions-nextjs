@@ -1,152 +1,111 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, Sparkles, Play, Shield, Smartphone, Zap } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
-const Hero = () => {
-  const [currentPhrase, setCurrentPhrase] = useState(0);
-  const [fade, setFade] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
+const specialties = ['Web Design', 'SEO', 'Software Apps', 'Digital Marketing'];
 
-  const desktopPhrases = ['Convert','Boost Sales','Rank Higher'];
-  const mobilePhrases = ['Convert','Get Noticed', 'Boost Sales'];
-  const phrases = isMobile ? mobilePhrases : desktopPhrases;
-
-  const router = useRouter();
+const Hero: React.FC = () => {
+  const [displayedText, setDisplayedText] = useState('');
+  const [currentWord, setCurrentWord] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768); // md breakpoint
+    const current = specialties[currentWord];
+    const typingSpeed = isDeleting ? 50 : 100;
+
+    const handleTyping = () => {
+      if (!isDeleting && displayedText.length < current.length) {
+        setDisplayedText(current.slice(0, displayedText.length + 1));
+      } else if (isDeleting && displayedText.length > 0) {
+        setDisplayedText(current.slice(0, displayedText.length - 1));
+      } else if (!isDeleting && displayedText.length === current.length) {
+        setTimeout(() => setIsDeleting(true), 1200);
+        return;
+      } else if (isDeleting && displayedText.length === 0) {
+        setIsDeleting(false);
+        setCurrentWord((prev) => (prev + 1) % specialties.length);
+        return;
+      }
     };
 
-    checkIfMobile();
-    window.addEventListener('resize', checkIfMobile);
-    return () => window.removeEventListener('resize', checkIfMobile);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFade(false); // Start fade-out
-      setTimeout(() => {
-        setCurrentPhrase((prev) => (prev + 1) % phrases.length);
-        setFade(true); // Fade-in new phrase
-      }, 500); // Duration of fade-out
-    }, 3000); // Total time per phrase
-    return () => clearInterval(interval);
-  }, [phrases.length]);
-
-  // Reset phrase index when switching between mobile/desktop to avoid out-of-bounds
-  useEffect(() => {
-    if (currentPhrase >= phrases.length) {
-      setCurrentPhrase(0);
-    }
-  }, [phrases.length, currentPhrase]);
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [displayedText, isDeleting, currentWord]);
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const scrollToWebsiteProcess = () => {
-    router.push('/website-design#website-process');
-  };
-
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        {/* Floating geometric shapes - hidden on mobile, shown on large screens */}
-        <div className="hidden lg:block absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-blue-200 to-indigo-200 rounded-full opacity-20 animate-bounce-color"></div>
-        <div className="hidden lg:block absolute top-3/4 right-1/4 w-32 h-32 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full opacity-30 animate-bounce-color-delayed"></div>
-        <div className="hidden lg:block absolute top-1/2 right-1/3 w-48 h-48 bg-gradient-to-r from-indigo-200 to-blue-200 rounded-full opacity-10 animate-bounce-color-slow"></div>
-        <div className="hidden lg:block absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-r from-cyan-200 to-blue-200 rounded-full opacity-15 animate-bounce-color"></div>
-        <div className="hidden lg:block absolute bottom-1/4 left-1/3 w-20 h-20 bg-gradient-to-r from-pink-200 to-purple-200 rounded-full opacity-25 animate-bounce-color-delayed"></div>
+    <section
+      id="home"
+      className="relative min-h-screen flex flex-col justify-center bg-black overflow-hidden pt-24"
+    >
+      {/* Background effects */}
+      <div
+        className="absolute inset-0 bg-[url('/stars.svg')] bg-cover bg-center opacity-25 pointer-events-none"
+        aria-hidden
+      />
+      <motion.div
+        className="absolute w-[400px] h-[400px] rounded-full bg-cyan-500/10 blur-3xl"
+        animate={{ x: [0, 30, -30, 0], y: [0, 20, -20, 0] }}
+        transition={{ repeat: Infinity, duration: 12, ease: 'easeInOut' }}
+        aria-hidden
+      />
 
-        {/* Animated grid pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="grid grid-cols-12 gap-4 h-full">
-            {[...Array(144)].map((_, i) => (
-              <div key={i} className="bg-blue-600 animate-pulse" style={{ animationDelay: `${i * 0.1}s` }}></div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        {/* Typing headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="text-white text-6xl md:text-8xl lg:text-9xl font-extrabold mb-10 leading-tight z-10"
+        >
+          <span className="text-gray-300 block mb-4 text-3xl md:text-4xl lg:text-5xl font-semibold">
+            We specialise in
+          </span>
+          <span className="text-cyan-400 border-b-4 border-cyan-400 inline-block whitespace-nowrap">
+            {displayedText}
+            <span className="inline-block ml-1 animate-pulse">|</span>
+          </span>
+        </motion.h1>
 
-      <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="flex items-center justify-center mb-6">
-            <Sparkles className="h-6 w-6 text-blue-600 mr-2" />
-            <span className="text-blue-600 font-semibold tracking-wide uppercase text-sm">
-              Christchurch • Serving New Zealand & Australia 
-            </span>
-          </div>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+          className="text-gray-400 text-2xl md:text-3xl mb-12 z-10 max-w-3xl"
+        >
+          Innovative digital experiences that captivate and convert.
+        </motion.p>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight animate-fade-in-up">
-            We Design Websites That{' '}
-            <span
-              className={`bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent inline-block transform transition-all duration-500 ${
-                fade ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
-              }`}
-            >
-              {phrases[currentPhrase]}
-            </span>
-          </h1>
+        {/* Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 0.7 }}
+          className="flex flex-col sm:flex-row gap-6 z-10"
+        >
+          <motion.button
+            onClick={scrollToContact}
+            whileHover={{ scale: 1.06, boxShadow: '0 8px 30px rgba(6,182,212,0.25)' }}
+            whileTap={{ scale: 0.96 }}
+            className="bg-cyan-400 text-black px-12 py-5 rounded-full font-semibold text-xl uppercase tracking-wide"
+          >
+            Start a Project
+          </motion.button>
 
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
-            Transform your digital presence with stunning, high-converting websites and software applications. 
-            We blend creativity with strategy to deliver exceptional results.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up animation-delay-400">
-            <button
-              onClick={scrollToContact}
-              className="group bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center font-semibold text-lg relative overflow-hidden cursor-pointer"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              Get a Free Quote
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </button>
-            <button
-              onClick={scrollToWebsiteProcess}
-              className="group text-gray-700 px-8 py-4 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300 font-semibold text-lg flex items-center backdrop-blur-sm cursor-pointer"
-            >
-              <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-200" />
-              See How We Work
-            </button>
-          </div>
-
-          {/* Key Benefits */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto animate-fade-in-up animation-delay-600">
-            <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 border border-blue-100/50 shadow-lg hover:shadow-xl">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Shield className="h-7 w-7 text-white" />
-              </div>
-              <h2 className="text-xl font-bold text-gray-900 mb-2">Stronger Brand</h2>
-              <p className="text-gray-600 text-sm leading-relaxed">Designs that make your business memorable and build trust with customers.</p>
-            </div>
-            <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 border border-blue-100/50 shadow-lg hover:shadow-xl">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Smartphone className="h-7 w-7 text-white" />
-              </div>
-              <h2 className="text-xl font-bold text-gray-900 mb-2">Mobile-First</h2>
-              <p className="text-gray-600 text-sm leading-relaxed">Optimized for all devices to maximize reach and user experience.</p>
-            </div>
-            <div className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 border border-blue-100/50 shadow-lg hover:shadow-x">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Zap className="h-7 w-7 text-white" />
-              </div>
-              <h2 className="text-xl font-bold text-gray-900 mb-2">Built to Last</h2>
-              <p className="text-gray-600 text-sm leading-relaxed">Websites that are fast, scalable, and easy to maintain long-term.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Scroll indicator - hidden on mobile */}
-      <div className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
-        </div>
+          <Link
+            href="#projects"
+            className="text-white flex items-center justify-center font-semibold text-xl hover:text-cyan-400 transition-all duration-300 px-12 py-5"
+          >
+            View Work
+            <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-200" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-black/95 backdrop-blur-md shadow-lg' : 'bg-black/50 backdrop-blur-sm'
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -48,7 +48,7 @@ const Header = () => {
               height={40}
               className="w-10 h-10"
             />
-            <span className="text-xl font-bold text-gray-900">Southern Software Solutions</span>
+            <span className="text-xl font-bold text-white">Southern Software Solutions</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -62,20 +62,20 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item.id)}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium cursor-pointer"
+                className="text-white hover:text-cyan-400 transition-colors duration-200 font-medium cursor-pointer"
               >
                 {item.label}
               </button>
             ))}
             <Link
               href="/blog"
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium cursor-pointer"
+              className="text-white hover:text-cyan-400 transition-colors duration-200 font-medium cursor-pointer"
             >
               Blog
             </Link>
             <button
               onClick={() => handleNavigation('contact')}
-              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 font-medium cursor-pointer"
+              className="bg-cyan-400 text-black px-6 py-2 rounded-full hover:bg-cyan-500 transition-all duration-200 transform hover:scale-105 font-medium cursor-pointer"
             >
               Get Quote
             </button>
@@ -84,7 +84,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 cursor-pointer"
+            className="md:hidden p-2 cursor-pointer text-white"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}
           >
@@ -93,7 +93,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300 ${
+        <div className={`md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md shadow-lg transition-all duration-300 ${
           isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}>
           <div className="flex flex-col p-6 space-y-4">
@@ -106,7 +106,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item.id)}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left py-2 cursor-pointer"
+                className="text-white hover:text-cyan-400 transition-colors duration-200 font-medium text-left py-2 cursor-pointer"
               >
                 {item.label}
               </button>
@@ -114,13 +114,13 @@ const Header = () => {
             <Link
               href="/blog"
               onClick={() => setIsMenuOpen(false)}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left py-2 cursor-pointer"
+              className="text-white hover:text-cyan-400 transition-colors duration-200 font-medium text-left py-2 cursor-pointer"
             >
               Blog
             </Link>
             <button
               onClick={() => handleNavigation('contact')}
-              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-200 font-medium text-center mt-4 cursor-pointer"
+              className="bg-cyan-400 text-black px-6 py-3 rounded-full hover:bg-cyan-500 transition-all duration-200 font-medium text-center mt-4 cursor-pointer"
             >
               Get Quote
             </button>
