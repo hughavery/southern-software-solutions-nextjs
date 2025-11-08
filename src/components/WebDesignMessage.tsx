@@ -1,11 +1,13 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import styles from './WebDesignMessage.module.css';
 
 const WebDesignMessage: React.FC = () => {
   const [activeVisual, setActiveVisual] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -17,15 +19,15 @@ const WebDesignMessage: React.FC = () => {
 
   return (
     <section className={styles.messageSection}>
-      <div className={styles.messageContent}>
+      <div className={styles.messageContent} ref={ref}>
         <div className={styles.contentWrapper}>
           <div className={styles.textContent}>
             <div className={styles.sectionMessage}>
               <motion.h2
                 initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
+                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                style={{ willChange: 'transform, opacity' }}
                 className={styles.highlightQuestion}
               >
                 HEY YOU! ARE YOU LOOKING FOR A SEXY, WELL-DRESSED, SUPER-POWERED SALESPERSON THAT WORKS 24 HOURS A DAY, 7 DAYS A WEEK?
@@ -33,9 +35,9 @@ const WebDesignMessage: React.FC = () => {
 
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "0px 0px -80px 0px" }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
+                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                style={{ willChange: 'transform, opacity' }}
               >
                 <p className={styles.answerIntro}>
                   <strong>You&apos;re in luck — that&apos;s exactly what we provide.</strong>
@@ -44,9 +46,9 @@ const WebDesignMessage: React.FC = () => {
 
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "0px 0px -60px 0px" }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
+                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                style={{ willChange: 'transform, opacity' }}
               >
                 <p className={styles.featuresText}>Our websites are designed to:</p>
                 <ul className={styles.featuresList}>
@@ -58,9 +60,9 @@ const WebDesignMessage: React.FC = () => {
 
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "0px 0px -40px 0px" }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
+                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                style={{ willChange: 'transform, opacity' }}
               >
                 <p className={styles.closingStatement}>
                   Most importantly, they help our clients <strong>grow their ventures — fast.</strong>
@@ -71,9 +73,9 @@ const WebDesignMessage: React.FC = () => {
           <motion.div
             className={styles.visualContent}
             initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "0px 0px -150px 0px" }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            style={{ willChange: 'transform, opacity' }}
           >
             {/* Visual 1: Revenue Growth */}
             <svg
@@ -230,9 +232,9 @@ const WebDesignMessage: React.FC = () => {
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "0px 0px -20px 0px" }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          style={{ willChange: 'transform, opacity' }}
         >
           <a href="/website-design" className={styles.ctaButton}>
             View Process
