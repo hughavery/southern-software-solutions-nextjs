@@ -66,6 +66,7 @@ const RecentProjects = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
+                    style={{ willChange: 'transform, opacity' }}
                   >
                     <div className="flex items-center gap-3 mb-4">
                       <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold bg-gradient-to-r ${project.gradient} text-white`}>
@@ -105,6 +106,7 @@ const RecentProjects = () => {
                     initial={{ opacity: 0, x: 50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
                     transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                    style={{ willChange: 'transform, opacity' }}
                   >
                     <div className="relative w-full max-w-3xl">
                       <Image
@@ -113,7 +115,8 @@ const RecentProjects = () => {
                         width={1200}
                         height={800}
                         className="w-full h-auto"
-                        priority
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </div>
                   </motion.div>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
-const specialties = ['Web Design', 'SEO', 'Software Apps', 'Digital Marketing'];
+const specialties = ['Web Design', 'Digital Marketing','SEO', 'Software Apps'];
 
 const Hero: React.FC = () => {
   const [displayedText, setDisplayedText] = useState('');
@@ -63,6 +63,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-white text-[2.7rem] md:text-[5.4rem] lg:text-[7.2rem] font-extrabold mb-10 leading-tight z-10"
+          style={{ willChange: 'transform, opacity' }}
         >
           <span className="text-gray-300 block mb-4 text-[1.8rem] md:text-[3.6rem] lg:text-[4.5rem] font-semibold">
             We specialise in
@@ -88,6 +89,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.7 }}
           className="flex flex-col sm:flex-row gap-6 z-10"
+          style={{ willChange: 'transform, opacity' }}
         >
           <motion.button
             onClick={scrollToContact}

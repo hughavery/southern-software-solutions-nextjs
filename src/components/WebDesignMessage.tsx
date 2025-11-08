@@ -28,7 +28,7 @@ const WebDesignMessage: React.FC = () => {
                 transition={{ duration: 0.6, ease: 'easeOut' }}
                 className={styles.highlightQuestion}
               >
-                HEY YOU! Are you looking for a sexy, well-dressed, super-powered salesperson that works 24 hours a day, 7 days a week?
+                HEY YOU! ARE YOU LOOKING FOR A SEXY, WELL-DRESSED, SUPER-POWERED SALESPERSON THAT WORKS 24 HOURS A DAY, 7 DAYS A WEEK?
               </motion.h2>
 
               <motion.div
@@ -38,7 +38,7 @@ const WebDesignMessage: React.FC = () => {
                 transition={{ duration: 0.6, ease: 'easeOut' }}
               >
                 <p className={styles.answerIntro}>
-                  <strong>You&apos;re in luck — that&apos;s exactly what we build.</strong>
+                  <strong>You&apos;re in luck — that&apos;s exactly what we provide.</strong>
                 </p>
               </motion.div>
 

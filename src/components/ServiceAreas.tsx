@@ -17,6 +17,7 @@ const ServiceAreas = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+              style={{ willChange: 'transform, opacity' }}
             >
               We service the whole of New Zealand!
             </motion.h2>
@@ -26,6 +27,7 @@ const ServiceAreas = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
               className="text-xl text-gray-700 leading-relaxed mb-6"
+              style={{ willChange: 'transform, opacity' }}
             >
               Based in <strong>Christchurch</strong> and <strong>New Plymouth</strong>, we're proud to serve businesses across the entire country.
             </motion.p>
@@ -35,6 +37,7 @@ const ServiceAreas = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
               className="text-lg text-gray-600 leading-relaxed"
+              style={{ willChange: 'transform, opacity' }}
             >
               From Whangārei to Dunedin, Auckland to Queenstown—no matter where your business is located, we bring professional web design and software solutions directly to you. Distance is no barrier to great service.
             </motion.p>
@@ -47,6 +50,7 @@ const ServiceAreas = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
             className="flex-1 flex justify-center"
+            style={{ willChange: 'transform, opacity' }}
           >
             <div className="relative w-full max-w-2xl">
               <Image
@@ -55,7 +59,8 @@ const ServiceAreas = () => {
                 width={800}
                 height={600}
                 className="w-full h-auto"
-                priority
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </motion.div>
