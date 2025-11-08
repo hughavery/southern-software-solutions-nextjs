@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Restrict touch actions to vertical scrolling only on mobile */
+body {
+  touch-action: pan-y;
+  overscroll-behavior-x: none;
+}
+
 @keyframes bounce-color {
   0%, 100% {
     transform: translateY(0) scale(1);
