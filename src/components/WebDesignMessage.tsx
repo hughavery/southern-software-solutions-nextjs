@@ -24,8 +24,8 @@ const WebDesignMessage: React.FC = () => {
               <motion.h2
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
                 className={styles.highlightQuestion}
               >
                 HEY YOU! Are you looking for a sexy, well-dressed, super-powered salesperson that works 24 hours a day, 7 days a week?
@@ -34,8 +34,8 @@ const WebDesignMessage: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 1, ease: 'easeOut' }}
+                viewport={{ once: true, margin: "0px 0px -80px 0px" }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
               >
                 <p className={styles.answerIntro}>
                   <strong>You&apos;re in luck — that&apos;s exactly what we build.</strong>
@@ -45,8 +45,8 @@ const WebDesignMessage: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 1.3, ease: 'easeOut' }}
+                viewport={{ once: true, margin: "0px 0px -60px 0px" }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
               >
                 <p className={styles.featuresText}>Our websites are designed to:</p>
                 <ul className={styles.featuresList}>
@@ -59,8 +59,8 @@ const WebDesignMessage: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 1.6, ease: 'easeOut' }}
+                viewport={{ once: true, margin: "0px 0px -40px 0px" }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
               >
                 <p className={styles.closingStatement}>
                   Most importantly, they help our clients <strong>grow their ventures — fast.</strong>
@@ -72,8 +72,8 @@ const WebDesignMessage: React.FC = () => {
             className={styles.visualContent}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 1.3, ease: 'easeOut' }}
+            viewport={{ once: true, margin: "0px 0px -150px 0px" }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             {/* Visual 1: Revenue Growth */}
             <svg
@@ -231,8 +231,8 @@ const WebDesignMessage: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 1.9, ease: 'easeOut' }}
+          viewport={{ once: true, margin: "0px 0px -20px 0px" }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <a href="/website-design" className={styles.ctaButton}>
             View Process
