@@ -6,8 +6,20 @@ import styles from './WebDesignMessage.module.css';
 
 const WebDesignMessage: React.FC = () => {
   const [activeVisual, setActiveVisual] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,9 +36,9 @@ const WebDesignMessage: React.FC = () => {
           <div className={styles.textContent}>
             <div className={styles.sectionMessage}>
               <motion.h2
-                initial={{ opacity: 0, x: -50 }}
-                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                animate={isMobile ? { opacity: 1, x: 0 } : (isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 })}
+                transition={isMobile ? { duration: 0 } : { duration: 0.6, ease: "easeOut" }}
                 style={{ willChange: 'transform, opacity' }}
                 className={styles.highlightQuestion}
               >
@@ -34,9 +46,9 @@ const WebDesignMessage: React.FC = () => {
               </motion.h2>
 
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                animate={isMobile ? { opacity: 1, x: 0 } : (isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 })}
+                transition={isMobile ? { duration: 0 } : { duration: 0.6, ease: "easeOut" }}
                 style={{ willChange: 'transform, opacity' }}
               >
                 <p className={styles.answerIntro}>
@@ -45,9 +57,9 @@ const WebDesignMessage: React.FC = () => {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                animate={isMobile ? { opacity: 1, x: 0 } : (isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 })}
+                transition={isMobile ? { duration: 0 } : { duration: 0.6, ease: "easeOut" }}
                 style={{ willChange: 'transform, opacity' }}
               >
                 <p className={styles.featuresText}>Our websites are designed to:</p>
@@ -59,9 +71,9 @@ const WebDesignMessage: React.FC = () => {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                animate={isMobile ? { opacity: 1, x: 0 } : (isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 })}
+                transition={isMobile ? { duration: 0 } : { duration: 0.6, ease: "easeOut" }}
                 style={{ willChange: 'transform, opacity' }}
               >
                 <p className={styles.closingStatement}>
@@ -72,9 +84,9 @@ const WebDesignMessage: React.FC = () => {
           </div>
           <motion.div
             className={styles.visualContent}
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            animate={isMobile ? { opacity: 1, x: 0 } : (isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 })}
+            transition={isMobile ? { duration: 0 } : { duration: 0.6, ease: "easeOut", delay: 0.2 }}
             style={{ willChange: 'transform, opacity' }}
           >
             {/* Visual 1: Revenue Growth */}
@@ -231,9 +243,9 @@ const WebDesignMessage: React.FC = () => {
           </motion.div>
         </div>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          initial={isMobile ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          animate={isMobile ? { opacity: 1, y: 0 } : (isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 })}
+          transition={isMobile ? { duration: 0 } : { duration: 0.6, ease: "easeOut" }}
           style={{ willChange: 'transform, opacity' }}
         >
           <a href="/website-design" className={styles.ctaButton}>
