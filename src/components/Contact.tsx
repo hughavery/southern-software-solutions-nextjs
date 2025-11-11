@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Location</h4>
-                  <p className="text-gray-600">Christchurch, New Zealand</p>
+                  <p className="text-gray-600">New Plymouth, Taranaki</p>
                   <p className="text-sm text-gray-500">Serving NZ & Australia</p>
                 </div>
               </div>

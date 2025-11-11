@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.southernsoftwaresolutions.tech'),
   title: {
-    default: "Southern Software Solutions | Web Design & Development Christchurch",
+    default: "Southern Software Solutions | Web Design & Development Taranaki",
     template: "%s | Southern Software Solutions"
   },
-  description: "Professional web design and software development services in Christchurch, New Zealand. Custom websites, software applications, and ongoing maintenance for businesses across NZ & Australia.",
-  keywords: ["web design Christchurch", "software development New Zealand", "custom websites NZ", "web developer Christchurch", "website design New Zealand", "software solutions", "website maintenance NZ"],
+  description: "Professional web design and software development services in Taranaki, New Zealand. Serving New Plymouth, Stratford, and Hawera with custom websites, software applications, and ongoing maintenance for businesses across NZ & Australia.",
+  keywords: ["web design Taranaki", "web design New Plymouth", "software development Taranaki", "custom websites NZ", "web developer Taranaki", "web developer New Plymouth", "website design New Zealand", "software solutions", "website maintenance NZ"],
   authors: [{ name: "Hugh Avery" }],
   creator: "Hugh Avery",
   alternates: {
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     locale: 'en_NZ',
     url: 'https://www.southernsoftwaresolutions.tech',
     siteName: 'Southern Software Solutions',
-    title: 'Southern Software Solutions | Web Design & Development Christchurch',
-    description: 'Professional web design and software development services in Christchurch, New Zealand. Custom websites, software applications, and ongoing maintenance.',
+    title: 'Southern Software Solutions | Web Design & Development Taranaki',
+    description: 'Professional web design and software development services in Taranaki, New Zealand. Serving New Plymouth and surrounding areas with custom websites, software applications, and ongoing maintenance.',
     images: [
       {
         url: '/og-image.png',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Southern Software Solutions | Web Design & Development',
-    description: 'Professional web design and software development services in Christchurch, New Zealand.',
+    description: 'Professional web design and software development services in Taranaki, New Zealand.',
     images: ['/og-image.png'],
   },
   robots: {

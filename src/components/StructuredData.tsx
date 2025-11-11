@@ -12,7 +12,7 @@ const StructuredData = () => {
       "width": "512",
       "height": "512"
     },
-    "description": "Professional web design and software development services in Christchurch, New Zealand",
+    "description": "Professional web design and software development services in Taranaki, New Zealand",
     "founder": {
       "@type": "Person",
       "name": "Hugh Avery"
@@ -21,7 +21,8 @@ const StructuredData = () => {
     "telephone": ["+61430126624", "+64224993402"],
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Christchurch",
+      "addressLocality": "New Plymouth",
+      "addressRegion": "Taranaki",
       "addressCountry": "NZ"
     },
     "sameAs": [
@@ -40,11 +41,11 @@ const StructuredData = () => {
       "width": "512",
       "height": "512"
     },
-    "description": "Professional web design and software development services in Christchurch, New Zealand. Custom websites, software applications, and ongoing maintenance.",
+    "description": "Professional web design and software development services in Taranaki, New Zealand. Custom websites, software applications, and ongoing maintenance.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Christchurch",
-      "addressRegion": "Canterbury",
+      "addressLocality": "New Plymouth",
+      "addressRegion": "Taranaki",
       "addressCountry": "NZ"
     },
     "url": "https://southernsoftwaresolutions.tech",

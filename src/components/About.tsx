@@ -26,7 +26,7 @@ const About = () => {
         <div className="max-w-3xl mx-auto mb-16 text-left">
           <div className="flex items-center mb-6">
             <MapPin className="h-6 w-6 text-blue-600 mr-2" />
-            <span className="text-blue-600 font-semibold">Based in Christchurch, New Zealand</span>
+            <span className="text-blue-600 font-semibold">Based in Taranaki, New Zealand</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -35,7 +35,7 @@ const About = () => {
 
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
             I'm Hugh Avery, the founder and lead developer behind Southern Software Solutions. I started
-            this company in 2025 helping local businesses in Christchurch build their online presence. After
+            this company in 2025 helping local businesses in Taranaki build their online presence. After
             seeing the impact that great websites could have on small businesses, I made the shift to do
             this full-time and am now serving clients across New Zealand and Australia.
           </p>

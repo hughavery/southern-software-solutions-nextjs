@@ -145,7 +145,7 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-bold mb-6">Contact Info</h4>
               <div className="space-y-3">
-                <p className="text-gray-300">Christchurch, New Zealand</p>
+                <p className="text-gray-300">New Plymouth, Taranaki</p>
                 <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-gray-300 hover:text-blue-400 transition-colors block">
                   contact@southernsoftwaresolutions.tech
                 </a>

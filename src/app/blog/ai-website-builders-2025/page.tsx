@@ -43,7 +43,7 @@ const BlogPost = () => {
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed">
-                AI tools like Bolt.new and Lovable are disrupting Wix and Squarespace. But does that mean websites will get cheaper? Here's the honest truth from a Christchurch developer.
+                AI tools like Bolt.new and Lovable are disrupting Wix and Squarespace. But does that mean websites will get cheaper? Here's the honest truth from a Taranaki developer.
               </p>
             </header>
 
@@ -56,7 +56,7 @@ const BlogPost = () => {
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                As a web developer in Christchurch, I get asked constantly: <em>"Does this mean I can skip hiring you and just use AI?"</em>
+                As a web developer in Taranaki, I get asked constantly: <em>"Does this mean I can skip hiring you and just use AI?"</em>
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -258,7 +258,7 @@ const BlogPost = () => {
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                <strong>Good news for Christchurch businesses:</strong> developers who use AI can now deliver better sites, faster, at lower cost than traditional agencies. You get the best of both worlds.
+                <strong>Good news for Taranaki businesses:</strong> developers who use AI can now deliver better sites, faster, at lower cost than traditional agencies. You get the best of both worlds.
               </p>
 
               {/* CTA Section */}
@@ -298,7 +298,7 @@ const BlogPost = () => {
                     <p className="font-bold text-gray-900">Hugh Avery</p>
                     <p className="text-gray-600 text-sm">Founder, Southern Software Solutions</p>
                     <p className="text-gray-600 text-sm mt-2">
-                      Christchurch-based web developer helping local businesses grow online. Combining modern AI tools with
+                      Taranaki-based web developer helping local businesses grow online. Combining modern AI tools with
                       proven development practices to build websites that actually convert.
                     </p>
                   </div>

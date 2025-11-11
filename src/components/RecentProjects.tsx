@@ -27,7 +27,7 @@ const RecentProjects = () => {
     {
       title: 'Nexus',
       company: 'Triage Plus',
-      description: 'We contributed to the development of Nexus, a Triage Plus app used for managing patients and incidents before hospital arrival. Our work included building web dashboards and assisting with backend features to improve multi-device access and performance.',
+      description: 'We contributed to the development of Nexus, a Triage Plus application designed to manage patients and incidents before hospital arrival. Our work included building responsive web dashboards and enhancing backend functionality to improve multi-device access and overall performance. Triage Plus has since become one of New Zealand’s leading emergency response software companies, with its platform now used nationwide by emergency rescue teams to streamline critical pre-hospital operations.',
       image: '/triageplus.png',
       gradient: 'from-blue-500 to-cyan-600',
       type: 'Software App',

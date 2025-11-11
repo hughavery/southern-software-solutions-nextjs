@@ -29,7 +29,7 @@ const ServiceAreas = () => {
               className="text-xl text-gray-700 leading-relaxed mb-6"
               style={{ willChange: 'transform, opacity' }}
             >
-              Based in <strong>Christchurch</strong> and <strong>New Plymouth</strong>, we're proud to serve businesses across the entire country.
+              Based in <strong>Taranaki</strong> (New Plymouth), we're proud to serve businesses across the entire country.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -50 }}
