@@ -7,9 +7,9 @@ import { motion, useInView } from 'framer-motion';
 const RecentProjects = () => {
   const projects = [
     {
-      title: 'Jordan Stirling Personal Training',
+      title: 'JordanTrains',
       company: 'Jordan Stirling',
-      description: 'We created a professional website for personal trainer Jordan Stirling to showcase his brand and attract new clients. The site features modern design with bold branding, clear call-to-actions, and engaging visuals that communicate Jordan\'s mission to help clients "level up" their fitness game. The platform enhances Jordan\'s professional presence, making it easier for potential clients to learn about his services and get in touch.',
+      description: 'When Jordan approached us, he was looking to grow his online coaching business through Everfit and boost his visibility in Christchurch. We built a sleek, energetic website that links directly to his Everfit system and strengthens his brand identity — making it easier for new clients to find him, learn about his training approach, and sign up online.',
       image: '/jordantrains.png',
       gradient: 'from-yellow-400 to-lime-500',
       type: 'Website',
