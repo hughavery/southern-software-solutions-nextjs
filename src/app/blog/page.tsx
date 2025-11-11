@@ -17,7 +17,7 @@ const BlogPage = () => {
     {
       slug: 'ai-website-builders-2025',
       title: 'How AI Website Builders Like Bolt.new Are Changing Web Design in 2025 (And Why You Still Need a Developer)',
-      excerpt: 'AI tools like Bolt.new and Lovable are disrupting Wix and Squarespace. But does that mean websites will get cheaper? Here\'s the honest truth from a Christchurch developer.',
+      excerpt: 'AI tools like Bolt.new and Lovable are disrupting Wix and Squarespace. But does that mean websites will get cheaper? Here\'s the honest truth from a Taranaki developer.',
       date: '2025-10-20',
       readTime: '6 min read',
       category: 'Industry Insights'
