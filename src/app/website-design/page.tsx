@@ -28,12 +28,12 @@ const WebsiteDesign = () => {
         'Responsive design',
         'Basic SEO setup',
         'Contact form',
-        'Ongoing support'
+        'Custom Domain'
       ]
     },
     {
       name: 'Professional Website ',
-      price: '$2,999',
+      price: '$4,999',
       description: 'Includes everything in the Basic Website plus advanced features for growing businesses',
       features: [
         'Unlimited pages',
