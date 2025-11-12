@@ -43,11 +43,10 @@ export async function POST(request: Request) {
               <td align="center">
                 <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 
-                  <!-- Header with Profile -->
+                  <!-- Header -->
                   <tr>
                     <td align="center" style="padding: 40px 20px 20px 20px;">
-                      <img src="https://southernsoftwaresolutions.tech/hughavery.jpg" alt="Hugh Avery" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 4px solid #2563eb;">
-                      <h2 style="margin: 15px 0 5px 0; color: #1f2937; font-size: 24px;">Hugh Avery</h2>
+                      <h2 style="margin: 0 0 5px 0; color: #1f2937; font-size: 24px;">Hugh Avery</h2>
                       <p style="margin: 0; color: #6b7280; font-size: 14px;">Founder & Lead Developer</p>
                       <p style="margin: 5px 0 0 0; color: #2563eb; font-size: 14px; font-weight: 600;">Southern Software Solutions</p>
                       <a href="https://southernsoftwaresolutions.tech" style="display: inline-block; margin-top: 10px; color: #2563eb; font-size: 14px; text-decoration: none;">www.southernsoftwaresolutions.tech</a>
@@ -70,13 +69,6 @@ export async function POST(request: Request) {
                       <p style="color: #4b5563; font-size: 16px; line-height: 1.6; margin: 20px 0 0 0;">
                         Looking forward to discussing how we can help bring your vision to life.
                       </p>
-                    </td>
-                  </tr>
-
-                  <!-- Footer Banner -->
-                  <tr>
-                    <td style="padding: 0;">
-                      <img src="https://southernsoftwaresolutions.tech/We%20create%20websites.png" alt="Southern Software Solutions - Affordable websites. Exceptional results." style="width: 100%; height: auto; display: block;">
                     </td>
                   </tr>
 

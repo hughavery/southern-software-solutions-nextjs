@@ -18,7 +18,7 @@ const FAQ = () => {
       faqs: [
         {
           question: 'Do you use Wix or third-party software?',
-          answer: 'No. We hand-code every website from scratch using modern technologies like React, Next.js, and Tailwind CSS. This means no Wix, no Squarespace, no WordPress. You get complete ownership of your code, faster load times, better SEO, and no expensive monthly platform subscriptions. Plus, you are not locked into a proprietary system – you own your website completely.'
+          answer: 'While we have experience building websites on platforms like Wix, Squarespace, and WordPress, we primarily hand-code every website from scratch using modern technologies like React, Next.js, and Tailwind CSS. This approach gives you complete ownership of your code, faster load times, better SEO, and no expensive monthly platform subscriptions. You are not locked into a proprietary system – you own your website completely. That said, if you prefer a platform-based solution, we can certainly accommodate that – we are not closing that door.'
         },
         {
           question: 'How long does it take to build a website?',
@@ -89,8 +89,30 @@ const FAQ = () => {
     }
   ];
 
+  // Generate FAQ Schema for SEO
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqCategories.flatMap(category =>
+      category.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    )
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      {/* FAQ Schema Markup for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <Header />
 
       {/* Hero Section */}
