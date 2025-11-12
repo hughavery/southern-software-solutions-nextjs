@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { Monitor, Check } from 'lucide-react';
+import { Check, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import WebsiteProcess from '@/components/WebsiteProcess';
@@ -53,48 +53,96 @@ const WebsiteDesign = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+      <section className="pt-32 pb-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="bg-gradient-to-r from-blue-500 to-cyan-500 w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <Monitor className="h-10 w-10 text-white" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
+            {/* Left Column - Heading & Illustration */}
+            <div>
+              <div className="mb-6">
+                <span className="text-sm font-medium text-gray-500">/01.</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Website Design
+
+              <h1 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+                Custom Website Design
               </h1>
-              <p className="text-2xl text-gray-700 font-medium">
-                Custom, responsive websites that look stunning and perform flawlessly across all devices
+
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Transform your vision into a digital reality with our bespoke web design solutions.
+                Our Taranaki website designers don't just create pretty pages – we craft strategic
+                digital experiences that guide visitors toward conversion.
               </p>
+
+              <div className="mt-8 space-y-6">
+                <div className="flex items-start">
+                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
+                  <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
+                    Your website is your first impression — most people will check you online before they ever call, visit, or buy.
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
+                  <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
+                    Your website should tell your story, not just list your services.
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
+                  <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
+                    If your website feels outdated, so does your brand.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            {/* Key Benefits Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Hand-Coded from Scratch</h3>
-                <p className="text-gray-600">
-                  No Wix, no Squarespace. We build every website with clean, custom code for complete flexibility and control.
+            {/* Right Column - Features List */}
+            <div className="space-y-8 pt-16">
+              <div>
+                <div className="flex items-start mb-3">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <h3 className="text-xl font-semibold text-gray-900">1. Tailored to Your Business Goals</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  We do not do cookie-cutter templates. Every design decision starts with understanding your objectives
+                  and audience. From layout to colour palette, we craft responsive web design solutions that align with
+                  your business strategy, ensuring your site does not just look great — it drives real results and sets
+                  you apart from competitors.
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Lower Ongoing Costs</h3>
-                <p className="text-gray-600">
-                  Custom code means no expensive monthly platform subscriptions. You own your website completely.
+              <div>
+                <div className="flex items-start mb-3">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <h3 className="text-xl font-semibold text-gray-900">2. Seamless Brand Connection</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  Your website should feel unmistakably you. We blend your brand's personality, colours, and tone into
+                  every corner of your site. Whether you already have strong visuals or need help developing them, we will
+                  ensure your online presence looks and feels cohesive across every platform.
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Built for Performance</h3>
-                <p className="text-gray-600">
-                  Hand-coded websites load faster and rank better in search engines than template-based solutions.
+              <div>
+                <div className="flex items-start mb-3">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <h3 className="text-xl font-semibold text-gray-900">3. Designed for Action, Not Just Looks</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  A beautiful website means nothing if visitors leave confused. We design clear, intuitive pathways that
+                  guide users exactly where you want them to go — whether that is making a purchase, booking a call, or
+                  signing up. Every element has a purpose: to reduce friction, boost engagement, and drive conversions
+                  for your business.
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Mobile-First Design</h3>
-                <p className="text-gray-600">
-                  Modern development practices ensure your site looks perfect and functions flawlessly on every device.
+              <div>
+                <div className="flex items-start mb-3">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <h3 className="text-xl font-semibold text-gray-900">4. Built for Every Screen</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  With around 64% of website traffic in New Zealand coming from mobile devices, your site needs to look stunning on any
+                  device. We build fully responsive designs that adapt gracefully from desktop to smartphone — fast,
+                  intuitive, and perfectly optimised for every screen size.
                 </p>
               </div>
             </div>
@@ -105,7 +153,7 @@ const WebsiteDesign = () => {
       <WebsiteProcess />
 
       {/* Packages Section */}
-      <section className="py-16 bg-gray-50">
+      <section id="packages" className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Choose Your Package
