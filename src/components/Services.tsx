@@ -1,89 +1,100 @@
 import React from 'react';
-import { Monitor, Smartphone, Wrench } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Services = () => {
   const services = [
     {
-      icon: Monitor,
+      icon: '/design.png',
       title: 'Website Design',
-      description: 'Custom, responsive websites that look stunning and perform flawlessly across all devices.',
-      features: ['Responsive Design', 'SEO Optimized', 'Fast Loading', 'Modern UI/UX', 'Branding'],
-      gradient: 'from-blue-500 to-cyan-500',
+      description: 'Custom, hand-coded websites built with modern technologies. Fast, responsive, and optimised for search engines.',
       link: '/website-design'
     },
     {
-      icon: Smartphone,
-      title: 'Software Apps',
-      description: 'Powerful software apps built with advanced technology to streamline your business processes.',
-      features: ['Modern Frameworks', 'Database Integration', 'API Development', 'Cloud Deployment', 'AI integration'],
-      gradient: 'from-purple-500 to-pink-500',
+      icon: '/software.png',
+      title: 'Software Applications',
+      description: 'Powerful web and mobile applications tailored to your business needs with seamless integrations.',
       link: '/software-apps'
     },
     {
-      icon: Wrench,
-      title: 'Maintenance',
-      description: 'Keep your website secure, updated, and running smoothly with our maintenance packages.',
-      features: ['Security Updates', 'Content Updates', 'Performance Monitoring', 'Ongoing Support', 'Design Tweaks'],
-      gradient: 'from-sky-400 to-teal-800',
+      icon: '/branding.png',
+      title: 'Branding',
+      description: 'Professional branding services including logo design, email signatures, and business photography to elevate your brand identity.',
+      link: '/website-design'
+    },
+    {
+      icon: '/digitalMarketing.png',
+      title: 'Digital Marketing',
+      description: 'Comprehensive digital marketing services including SEO, Google Analytics, Google Ads, social media marketing, and more to grow your online presence.',
       link: '/maintenance'
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-white relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-50/50 to-transparent"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-purple-50 to-transparent rounded-full"></div>
-      </div>
-
+    <section id="services" className="py-20 bg-gray-900 relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Services
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            From concept to launch and beyond, we provide comprehensive digital solutions 
-            tailored to your business needs.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 relative overflow-hidden"
-            >
-              <div className={`bg-gradient-to-r ${service.gradient} w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
-                <service.icon className="h-8 w-8 text-white" />
-              </div>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {service.title}
-              </h3>
-
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {service.description}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* Left Column */}
+          <div className="max-w-lg">
+            <div className="mb-8">
+              <p className="text-cyan-400 text-sm font-semibold tracking-wider mb-6">
+                OUR SERVICES
               </p>
-
-              <ul className="space-y-2 mb-6">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="text-sm text-gray-500 flex items-center">
-                    <div className={`w-2 h-2 bg-gradient-to-r ${service.gradient} rounded-full mr-3`}></div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-
-              <Link
-                href={service.link}
-                className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${service.gradient} text-white text-sm font-medium rounded-lg hover:opacity-90 transition-opacity duration-200 cursor-pointer`}
-              >
-                Learn More About {service.title}
-              </Link>
+              <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
+                WHAT WE <span className="text-cyan-400">DO?</span>
+              </h2>
+              <div className="w-32 h-1 bg-cyan-400 mb-8"></div>
             </div>
-          ))}
+
+            <div className="space-y-6">
+              <p className="text-gray-400 leading-relaxed">
+                We specialise in creating exceptional digital experiences for businesses across
+                New Zealand and Australia. From custom website design to powerful software applications,
+                we build solutions that drive real results for your business.
+              </p>
+              <p className="text-gray-400 leading-relaxed">
+                Our team combines technical expertise with strategic thinking to deliver projects
+                that not only look great but also achieve your business goals. Whether you need
+                a brand new website or ongoing support, we are here to help you succeed online.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column - Service Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {services.map((service, index) => (
+              <Link
+                key={index}
+                href={service.link}
+                className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 hover:bg-gray-800 transition-all duration-300 border border-gray-700/50 group cursor-pointer relative"
+              >
+                {/* Number indicator */}
+                <div className="absolute top-6 right-6 text-gray-600 text-sm font-medium">
+                  {String(index + 1).padStart(2, '0')}
+                </div>
+
+                <div className="mb-6 mt-4">
+                  <div className="w-20 h-20 mb-6 relative">
+                    <Image
+                      src={service.icon}
+                      alt={service.title}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-contain brightness-0 invert"
+                    />
+                  </div>
+                </div>
+
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
+                  {service.title}
+                </h3>
+
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
