@@ -56,10 +56,6 @@ const StructuredData = () => {
       {
         "@type": "Country",
         "name": "New Zealand"
-      },
-      {
-        "@type": "Country",
-        "name": "Australia"
       }
     ]
   };
@@ -72,7 +68,7 @@ const StructuredData = () => {
       "@type": "Organization",
       "name": "Southern Software Solutions"
     },
-    "areaServed": ["New Zealand", "Australia"],
+    "areaServed": ["New Zealand"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Web Development Services",

@@ -49,7 +49,7 @@ const Services = () => {
             <div className="space-y-6">
               <p className="text-gray-400 leading-relaxed">
                 We specialise in creating exceptional digital experiences for businesses across
-                New Zealand and Australia. From custom website design to powerful software applications,
+                Taranaki and New Zealand. From custom website design to powerful software applications,
                 we build solutions that drive real results for your business.
               </p>
               <p className="text-gray-400 leading-relaxed">

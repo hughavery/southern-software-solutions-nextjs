@@ -65,8 +65,8 @@ const Footer = () => {
                 <span className="text-xl font-bold">Southern Software Solutions</span>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Creating exceptional digital experiences for businesses across 
-                New Zealand and Australia.
+                Creating exceptional digital experiences for businesses across
+                Taranaki and New Zealand.
               </p>
               <div className="flex space-x-4">
                 <a

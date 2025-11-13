@@ -37,7 +37,7 @@ const About = () => {
             I'm Hugh Avery, the founder and lead developer behind Southern Software Solutions. I started
             this company in 2025 helping local businesses in Taranaki build their online presence. After
             seeing the impact that great websites could have on small businesses, I made the shift to do
-            this full-time and am now serving clients across New Zealand and Australia.
+            this full-time and am now serving clients across New Zealand.
           </p>
 
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -48,7 +48,7 @@ const About = () => {
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             With a focus on modern design principles, advanced technology, and user-centered development,
-            we help businesses across New Zealand and Australia establish a powerful online presence that
+            we help businesses across New Zealand establish a powerful online presence that
             converts visitors into customers and builds lasting relationships.
           </p>
         </div>

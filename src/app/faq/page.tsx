@@ -68,7 +68,7 @@ const FAQ = () => {
         },
         {
           question: 'Do you work with businesses outside Taranaki?',
-          answer: 'Absolutely! While we are based in Taranaki (New Plymouth), we serve clients across all of New Zealand and Australia. From Whangārei to Dunedin, Auckland to Queenstown – distance is no barrier to great service. We work remotely and can communicate via video calls, phone, and email.'
+          answer: 'Absolutely! While we are based in Taranaki (New Plymouth), we serve clients across all of New Zealand. From Whangārei to Dunedin, Auckland to Queenstown – distance is no barrier to great service. We work remotely and can communicate via video calls, phone, and email.'
         }
       ]
     },

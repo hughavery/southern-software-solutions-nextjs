@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "Southern Software Solutions | Web Design & Development Taranaki",
     template: "%s | Southern Software Solutions"
   },
-  description: "Professional web design and software development services in Taranaki, New Zealand. Serving New Plymouth, Stratford, and Hawera with custom websites, software applications, and ongoing maintenance for businesses across NZ & Australia.",
+  description: "Professional web design and software development services in Taranaki, New Zealand. Serving New Plymouth, Stratford, and Hawera with custom websites, software applications, and ongoing maintenance for businesses across New Zealand.",
   keywords: ["web design Taranaki", "web design New Plymouth", "software development Taranaki", "custom websites NZ", "web developer Taranaki", "web developer New Plymouth", "website design New Zealand", "software solutions", "website maintenance NZ"],
   authors: [{ name: "Hugh Avery" }],
   creator: "Hugh Avery",

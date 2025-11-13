@@ -26,8 +26,8 @@ const Testimonials = () => {
             What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied clients 
-            across New Zealand and Australia have to say.
+            Don't just take our word for it. Here's what our satisfied clients
+            across New Zealand have to say.
           </p>
         </div>
 
