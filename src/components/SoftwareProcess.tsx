@@ -39,13 +39,13 @@ const SoftwareProcess = () => {
     {
       icon: FileText,
       title: 'Architecture & Planning',
-      description: 'Design the system architecture, database structure, and user interfaces with scalability and security in mind.',
+      description: 'Design the system architecture with scalability and security in mind.',
       color: 'from-purple-500 to-pink-500'
     },
     {
       icon: Code,
       title: 'Custom Development',
-      description: 'Build your application from scratch using modern frameworks, ensuring full ownership and complete customization.',
+      description: 'Build your application using modern frameworks, ensuring full ownership and complete customization.',
       color: 'from-green-500 to-emerald-500'
     },
     {
