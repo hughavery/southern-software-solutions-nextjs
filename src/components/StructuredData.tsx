@@ -98,6 +98,90 @@ const StructuredData = () => {
     }
   };
 
+  // TODO: Add LocalBusiness Schema for Local SEO
+  // Critical for "web design near me" and Google Maps visibility
+  // When you set up Google Business Profile, update the address details below to match exactly
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.southernsoftwaresolutions.tech/#localbusiness",
+    "name": "Southern Software Solutions",
+    "image": "https://www.southernsoftwaresolutions.tech/og-image.png",
+    "description": "Professional web design and software development services in Taranaki, New Zealand. Custom websites, software applications, and SEO services for local businesses.",
+    "url": "https://www.southernsoftwaresolutions.tech",
+    "telephone": "+64224993402",
+    "email": "contact@southernsoftwaresolutions.tech",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      // TODO: When Google Business Profile is set up, add streetAddress here to match GBP
+      // Example: "streetAddress": "123 Devon Street East",
+      "addressLocality": "New Plymouth",
+      "addressRegion": "Taranaki",
+      "postalCode": "4310",
+      "addressCountry": "NZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-39.0556",
+      "longitude": "174.0752"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "New Zealand"
+      },
+      {
+        "@type": "City",
+        "name": "New Plymouth"
+      },
+      {
+        "@type": "City",
+        "name": "Stratford"
+      },
+      {
+        "@type": "City",
+        "name": "Hawera"
+      },
+      {
+        "@type": "State",
+        "name": "Taranaki"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Design Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Basic Website Design",
+            "description": "5-page responsive website with SEO optimization"
+          },
+          "price": "1499",
+          "priceCurrency": "NZD"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Professional Website Design",
+            "description": "Unlimited pages with advanced features and integrations"
+          },
+          "price": "4999",
+          "priceCurrency": "NZD"
+        }
+      ]
+    }
+  };
+
   return (
     <>
       <script
@@ -111,6 +195,10 @@ const StructuredData = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
     </>
   );
