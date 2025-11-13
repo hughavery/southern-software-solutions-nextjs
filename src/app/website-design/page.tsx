@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import { Check, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import WebsiteProcess from '@/components/WebsiteProcess';
 
@@ -79,17 +80,16 @@ const WebsiteDesign = () => {
                     Your website is your first impression — most people will check you online before they ever call, visit, or buy.
                   </p>
                 </div>
-                <div className="flex items-start">
-                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
-                  <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
-                    Your website should tell your story, not just list your services.
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
-                  <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
-                    If your website feels outdated, so does your brand.
-                  </p>
+
+                {/* Web Design Image */}
+                <div className="mt-8">
+                  <Image
+                    src="/design.png"
+                    alt="Website Design"
+                    width={400}
+                    height={400}
+                    className="w-full max-w-md object-contain"
+                  />
                 </div>
               </div>
             </div>

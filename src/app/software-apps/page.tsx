@@ -1,58 +1,114 @@
 'use client';
 
-import React from 'react';
-import { Smartphone } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import SoftwareProcess from '@/components/SoftwareProcess';
 
 const SoftwareApplications = () => {
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-purple-50 to-pink-50">
+      <section className="pt-32 pb-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-purple-500 to-pink-500 w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto shadow-lg">
-              <Smartphone className="h-10 w-10 text-white" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
+            {/* Left Column - Heading & Illustration */}
+            <div>
+              <div className="mb-6">
+                <span className="text-sm font-medium text-gray-500">/02.</span>
+              </div>
+
+              <h1 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+                Custom Software & App Development
+              </h1>
+
+              <p className="text-lg text-gray-700 leading-relaxed">
+                We're one of the few teams in Taranaki offering full-scale software development — building powerful mobile and web applications tailored to how your business actually works. From concept to code, we create smart, scalable digital tools that streamline operations and give you a competitive edge.
+              </p>
+
+              <div className="mt-8 space-y-6">
+                <div className="flex items-start">
+                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
+                  <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
+                    A great app should simplify processes, not complicate them.
+                  </p>
+                </div>
+
+                {/* Software Image */}
+                <div className="mt-8">
+                  <Image
+                    src="/software.png"
+                    alt="Software Applications"
+                    width={400}
+                    height={400}
+                    className="w-full max-w-md object-contain"
+                  />
+                </div>
+              </div>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Software Apps
-            </h1>
-            <p className="text-2xl text-gray-700 font-medium mb-8">
-              Custom software applications built to grow with your business
-            </p>
 
-            {/* Key Benefits Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Built from Scratch</h3>
-                <p className="text-gray-600">
-                  We craft custom applications tailored to your exact needs, giving you full ownership without off-the-shelf constraints.
+            {/* Right Column - Features List */}
+            <div className="space-y-8 pt-16">
+              <div>
+                <div className="flex items-start mb-3">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <h3 className="text-xl font-semibold text-gray-900">1. Mobile App Development</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  We design and develop fast, intuitive mobile apps that perform flawlessly on iOS and Android.
+                  From concept to launch, our apps combine beautiful design with strong functionality — keeping
+                  your users engaged and your business connected on the go.
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Scalable & Secure</h3>
-                <p className="text-gray-600">
-                  Built with secure backends and modern frameworks that grow with your business demands.
+              <div>
+                <div className="flex items-start mb-3">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <h3 className="text-xl font-semibold text-gray-900">2. Web Application Development</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  Bring your business online with powerful, secure, and responsive web apps. Whether it is a
+                  dashboard, booking system, or full SaaS platform, we build scalable applications that automate
+                  processes, deliver real-time data, and elevate user experience.
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Seamless Integration</h3>
-                <p className="text-gray-600">
-                  Connect with your existing tools and workflows. We build integrations that automate processes and boost productivity.
+              <div>
+                <div className="flex items-start mb-3">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <h3 className="text-xl font-semibold text-gray-900">3. Backend Systems</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  Your data should work for you. We build reliable back-end systems that connect, manage, and
+                  secure your data — ensuring your app runs smoothly and performs under pressure. From analytics
+                  to cloud storage, we make your information easily accessible and actionable.
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">AI-Powered Features</h3>
-                <p className="text-gray-600">
-                  From customer portals to inventory systems and advanced AI analytics, we build software that helps you operate smarter.
+              <div>
+                <div className="flex items-start mb-3">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <h3 className="text-xl font-semibold text-gray-900">4. API Integration</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  We connect your systems so they work together seamlessly. Whether it is linking to third-party
+                  software, payment gateways, or CRMs, our integrations streamline operations, reduce manual tasks,
+                  and keep your business data in sync.
                 </p>
               </div>
             </div>
@@ -63,7 +119,7 @@ const SoftwareApplications = () => {
       <SoftwareProcess />
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Ready to Build Your Software App?
@@ -73,7 +129,7 @@ const SoftwareApplications = () => {
           </p>
           <Link
             href="/#contact"
-            className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white py-4 px-8 rounded-lg font-medium hover:opacity-90 transition-opacity"
+            className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-8 rounded-lg font-medium hover:opacity-90 transition-opacity"
           >
             Start Your Project
           </Link>
