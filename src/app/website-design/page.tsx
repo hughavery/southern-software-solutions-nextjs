@@ -150,6 +150,98 @@ const WebsiteDesign = () => {
         </div>
       </section>
 
+      {/* Performance Showcase Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            {/* Section Header */}
+            <div className="text-center md:text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-left md:text-center">
+                Where Design Meets Performance.
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto text-left md:text-center">
+                We do not just build websites that look good — we build them to perform at the highest level.
+                Our sites are tested and perfected using <strong>Google PageSpeed Insights</strong>, a global benchmark for website performance.
+              </p>
+            </div>
+
+            {/* Performance Results */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+              {/* Screenshot */}
+              <div className="order-2 lg:order-1">
+                <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-200">
+                  <Image
+                    src="/pageSpeedInsight.png"
+                    alt="PageSpeed Insights Perfect Score - 100 Performance, 95 Accessibility, 96 Best Practices, 100 SEO"
+                    width={1200}
+                    height={900}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="mt-6 text-center">
+                  <p className="text-gray-600 mb-3">Don't believe us? Check it yourself:</p>
+                  <a
+                    href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.southernsoftwaresolutions.tech%2F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
+                  >
+                    Test Our Site on PageSpeed Insights
+                    <ChevronRight className="h-5 w-5 ml-1" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Explanation */}
+              <div className="order-1 lg:order-2 space-y-6">
+                <div>
+                  <div className="flex items-start mb-3">
+                    <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                    <h3 className="text-xl font-semibold text-gray-900">Perfect 100/100 Performance Score</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed pl-7">
+                    Our website achieves a flawless performance score—something only <strong>1% of websites</strong> manage
+                    to accomplish. Fast load times mean visitors stay longer, engage more, and convert better.
+                  </p>
+                </div>
+
+                <div>
+                  <div className="flex items-start mb-3">
+                    <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                    <h3 className="text-xl font-semibold text-gray-900">Perfect 100/100 SEO Score</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed pl-7">
+                    Achieving a <strong>perfect 100/100 SEO score</strong> means your website is fully optimized for search engines—proper structure,
+                    fast loading, mobile-friendly design, and clean code. This isn't just a number; it directly translates to
+                    <strong> higher search rankings, more organic traffic, and better visibility</strong> when potential customers are looking for your services.
+                  </p>
+                </div>
+
+                <div>
+                  <div className="flex items-start mb-3">
+                    <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                    <h3 className="text-xl font-semibold text-gray-900">How We Compare</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed pl-7">
+                    The average New Zealand small business website scores between <strong>60–80</strong> on performance.
+                    Many struggle with slow load times, bloated code, and poor mobile experience. Our sites consistently
+                    hit <strong>95–100</strong>, putting you miles ahead of the competition.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-r from-orange-50 to-yellow-50 border-l-4 border-orange-500 p-6 rounded-r-lg">
+                  <p className="text-gray-800 font-semibold mb-2">The Bottom Line:</p>
+                  <p className="text-gray-700">
+                    When you work with us, you're not just getting a website—you're getting a <strong>performance-optimized,
+                    conversion-focused digital asset</strong> that works as hard as you do.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <WebsiteProcess />
 
       {/* Packages Section */}

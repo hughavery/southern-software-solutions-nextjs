@@ -45,8 +45,14 @@ const Hero: React.FC = () => {
       className="relative min-h-screen flex flex-col justify-center bg-black overflow-hidden pt-24"
     >
       {/* Background effects */}
+      {/* Mobile stars */}
       <div
-        className="absolute inset-0 bg-[url('/stars.svg')] bg-cover bg-center opacity-25 pointer-events-none"
+        className="absolute inset-0 bg-[url('/stars-mobile.svg')] bg-cover bg-center opacity-50 pointer-events-none md:hidden"
+        aria-hidden
+      />
+      {/* Desktop stars */}
+      <div
+        className="absolute inset-0 bg-[url('/stars.svg')] bg-cover bg-center opacity-50 pointer-events-none hidden md:block"
         aria-hidden
       />
       <motion.div

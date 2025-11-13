@@ -42,7 +42,7 @@ const WebDesignMessage: React.FC = () => {
                 style={{ willChange: 'transform, opacity' }}
                 className={styles.highlightQuestion}
               >
-                HEY YOU! ARE YOU LOOKING FOR A SEXY, WELL-DRESSED, SUPER-POWERED SALESPERSON THAT WORKS 24 HOURS A DAY, 7 DAYS A WEEK?
+                ARE YOU LOOKING FOR A SEXY, WELL-DRESSED, SUPER-POWERED SALESPERSON THAT WORKS 24 HOURS A DAY, 7 DAYS A WEEK?
               </motion.h2>
 
               <motion.div
@@ -247,10 +247,16 @@ const WebDesignMessage: React.FC = () => {
           animate={isMobile ? { opacity: 1, y: 0 } : (isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 })}
           transition={isMobile ? { duration: 0 } : { duration: 0.6, ease: "easeOut" }}
           style={{ willChange: 'transform, opacity' }}
+          className={styles.scrollPrompt}
         >
-          <a href="/website-design" className={styles.ctaButton}>
-            View Process
-          </a>
+          <p className={styles.scrollText}>
+            All Services
+          </p>
+          <div className={styles.scrollArrow}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
         </motion.div>
       </div>
     </section>

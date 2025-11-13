@@ -71,11 +71,11 @@ const WebsiteProcess = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center md:text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-left md:text-center">
             Website Development Process
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto text-left md:text-center">
             From initial concept to live website, our streamlined process ensures
             your project is delivered on time and exceeds expectations.
           </p>
@@ -107,7 +107,7 @@ const WebsiteProcess = () => {
                   }`}
                 >
                   {/* Content */}
-                  <div className="flex-1 text-center lg:text-left">
+                  <div className="flex-1 text-left lg:text-left">
                     <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4 ${
                       activeStep >= index
                         ? 'bg-blue-100 text-blue-600'

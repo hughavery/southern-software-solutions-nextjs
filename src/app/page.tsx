@@ -20,9 +20,9 @@ export default function Home() {
       <main>
         <Hero />
         <WebDesignMessage />
+        <Services />
         <RecentProjects />
         <ServiceAreas />
-        <Services />
         <About />
         <Testimonials />
         <Contact />
