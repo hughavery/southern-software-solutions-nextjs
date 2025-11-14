@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Email Signature Design Taranaki | Professional HTML Email Signatures NZ',
+  title: 'Email Signature Design Taranaki & NZ',
   description: 'Professional email signature design for Taranaki and New Zealand businesses. Custom HTML signatures for Gmail, Outlook, and Apple Mail. Get your professional signature package from $99.',
   keywords: [
     'email signature design Taranaki',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_NZ',
-    title: 'Professional Email Signature Design | Taranaki & New Zealand',
+    title: 'Email Signature Design Taranaki & NZ',
     description: 'Custom HTML email signatures for New Zealand businesses. Mobile-responsive, brand-consistent, compatible with all major email platforms. From $150.',
     url: 'https://www.southernsoftwaresolutions.tech/branding/email-signatures',
     siteName: 'Southern Software Solutions',

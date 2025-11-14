@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.southernsoftwaresolutions.tech'),
   title: {
-    default: "Southern Software Solutions | Web Design & Development Taranaki",
+    default: "Southern Software Solutions | Web & Digital Agency Taranaki",
     template: "%s | Southern Software Solutions"
   },
-  description: "Professional web design and software development services in Taranaki, New Zealand. Serving New Plymouth, Stratford, and Hawera with custom websites, software applications, and ongoing maintenance for businesses across New Zealand.",
+  description: "Web design, software development, branding, SEO & digital marketing in Taranaki, NZ ✓ Custom websites from $1,499 ✓ Serving all of New Zealand",
   keywords: ["web design Taranaki", "web design New Plymouth", "software development Taranaki", "custom websites NZ", "web developer Taranaki", "web developer New Plymouth", "website design New Zealand", "software solutions", "website maintenance NZ"],
   authors: [{ name: "Hugh Avery" }],
   creator: "Hugh Avery",

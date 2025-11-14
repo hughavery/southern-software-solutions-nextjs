@@ -1,15 +1,15 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog - Web Design & Development Insights',
-  description: 'Expert insights on web design, development trends, and growing your business online. From a Taranaki-based developer.',
+  title: 'Blog | Southern Software Solutions',
+  description:'Transform your online presence with expert web design insights. Learn development best practices, AI implementation, and growth strategies from a Taranaki developer.',
   keywords: ['web design blog', 'web development tips', 'Taranaki web developer', 'New Plymouth web developer', 'AI website builders', 'business website advice'],
   alternates: {
     canonical: 'https://www.southernsoftwaresolutions.tech/blog',
   },
   openGraph: {
     title: 'Blog | Southern Software Solutions',
-    description: 'Expert insights on web design, development trends, and growing your business online.',
+    description: 'Transform your online presence with expert web design insights. Learn development best practices, AI implementation, and growth strategies from a Taranaki developer.',
     url: 'https://www.southernsoftwaresolutions.tech/blog',
   },
 }
