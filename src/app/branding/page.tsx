@@ -95,9 +95,9 @@ const Branding = () => {
                   <h3 className="text-xl font-semibold text-gray-900">3. Business Photography</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
-                  Authentic, high-quality photography brings your brand to life. We capture professional images of
-                  your team, workspace, products, and services — creating visual content that resonates with your
-                  audience and adds personality to your website, social media, and marketing materials.
+                  When creating websites, it's great to have authentic photos of your team, workspace, products, and
+                  services. We shoot high-quality images using the Nikon Z7 II — creating visual content that adds
+                  personality to your website, social media, and marketing materials.
                 </p>
               </div>
 
