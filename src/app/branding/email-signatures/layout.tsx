@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Email Signature Design Taranaki | Professional HTML Email Signatures NZ',
-  description: 'Professional email signature design for Taranaki and New Zealand businesses. Custom HTML signatures for Gmail, Outlook, and Apple Mail. Mobile-responsive, brand-consistent signatures from $150.',
+  description: 'Professional email signature design for Taranaki and New Zealand businesses. Custom HTML signatures for Gmail, Outlook, and Apple Mail. Get your professional signature package from $99.',
   keywords: [
     'email signature design Taranaki',
     'email signature design New Plymouth',
