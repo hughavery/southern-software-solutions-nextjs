@@ -87,12 +87,34 @@ const Branding = () => {
                   include your logo, contact details, social links, and brand colours — giving your team a polished,
                   unified look in every inbox and reinforcing brand recognition with every message sent.
                 </p>
-                <Link
-                  href="/branding/email-signatures"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold mt-3 ml-7 transition-colors"
-                >
-                  Learn more about Email Signatures
-                  <ChevronRight className="h-4 w-4 ml-1" />
+
+                {/* Featured Visual CTA Card */}
+                <Link href="/branding/email-signatures" className="block ml-7 mt-6">
+                  <div className="border-2 border-orange-500 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 group bg-gradient-to-br from-orange-50 to-white">
+                    <div className="p-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center">
+                          <span className="text-orange-600 font-bold text-sm uppercase tracking-wide">Featured Service</span>
+                        </div>
+                        <ChevronRight className="h-5 w-5 text-orange-500 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                      <div className="mb-3">
+                        <Image
+                          src="/emailSignatureExample.png"
+                          alt="Professional Email Signature Example"
+                          width={600}
+                          height={200}
+                          className="w-full h-auto rounded border border-gray-200"
+                        />
+                      </div>
+                      <p className="text-gray-900 font-semibold text-lg group-hover:text-orange-600 transition-colors">
+                        See Our Email Signature Design Portfolio & Pricing →
+                      </p>
+                      <p className="text-gray-600 text-sm mt-1">
+                        View examples, features, and how we transform every email into a branding opportunity
+                      </p>
+                    </div>
+                  </div>
                 </Link>
               </div>
 

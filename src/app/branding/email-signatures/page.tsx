@@ -91,7 +91,7 @@ const EmailSignatures = () => {
                 <span className="text-sm font-medium text-gray-500">/03.2</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Professional Email Signature Design for Taranaki Businesses
+                Professional Email Signature Design | Taranaki
               </h1>
               <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">
                 Transform every email into a branding opportunity. We design professional HTML email signatures

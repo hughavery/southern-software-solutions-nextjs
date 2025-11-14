@@ -42,7 +42,7 @@ const WebDesignMessage: React.FC = () => {
                 style={{ willChange: 'transform, opacity' }}
                 className={styles.highlightQuestion}
               >
-                ARE YOU LOOKING FOR A SEXY, WELL-DRESSED, SUPER-POWERED SALESPERSON THAT WORKS 24 HOURS A DAY, 7 DAYS A WEEK?
+                LOOKING FOR A SALESMAN THAT’S SEXY, SMART, AND BASICALLY A SUPERHERO FOR YOUR BUSINESS?
               </motion.h2>
 
               <motion.div
