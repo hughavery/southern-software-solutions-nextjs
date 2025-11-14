@@ -20,7 +20,7 @@ const Services = () => {
       icon: '/branding.png',
       title: 'Branding',
       description: 'Professional branding services including logo design, email signatures, and business photography to elevate your brand identity.',
-      link: '/website-design'
+      link: '/branding'
     },
     {
       icon: '/digitalMarketing.png',
