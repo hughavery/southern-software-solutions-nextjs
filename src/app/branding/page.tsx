@@ -87,6 +87,13 @@ const Branding = () => {
                   include your logo, contact details, social links, and brand colours — giving your team a polished,
                   unified look in every inbox and reinforcing brand recognition with every message sent.
                 </p>
+                <Link
+                  href="/branding/email-signatures"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold mt-3 ml-7 transition-colors"
+                >
+                  Learn more about Email Signatures
+                  <ChevronRight className="h-4 w-4 ml-1" />
+                </Link>
               </div>
 
               <div>
