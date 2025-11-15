@@ -46,6 +46,10 @@ const About = () => {
             digital experiences come from true collaboration and understanding your unique needs.
           </p>
 
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+            Starting a new hustle? We are here to help
+          </h3>
+
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             With a focus on modern design principles, advanced technology, and user-centered development,
             we help businesses across New Zealand establish a powerful online presence that

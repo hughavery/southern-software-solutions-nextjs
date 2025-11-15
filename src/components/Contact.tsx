@@ -53,13 +53,28 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-24">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Let's Build Something Amazing
+            Ready to transform your digital presence?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ready to transform your digital presence? Get in touch with us today 
-            for a free consultation and quote.
+            We're just a phone call or email away.
+            Book your free consultation or request a{' '}
+            <a
+              href="/quote"
+              className="text-gray-900 font-semibold transition-colors relative inline-block"
+              style={{
+                textDecoration: 'none',
+                backgroundImage: 'linear-gradient(to right, #06B6D4, #06B6D4)',
+                backgroundSize: '100% 3px',
+                backgroundPosition: '0 100%',
+                backgroundRepeat: 'no-repeat',
+                paddingBottom: '2px'
+              }}
+            >
+              personalized quote
+            </a>
+            {' '}today.
           </p>
         </div>
 
@@ -141,6 +156,28 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div>
+            <div className="mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
+              <p className="text-gray-600">
+                Have questions about our services? We'll get back to you within 24 hours. You can also check our{' '}
+                <a
+                  href="/faq"
+                  className="text-gray-900 font-semibold transition-colors relative inline-block"
+                  style={{
+                    textDecoration: 'none',
+                    backgroundImage: 'linear-gradient(to right, #F97316, #F97316)',
+                    backgroundSize: '100% 3px',
+                    backgroundPosition: '0 100%',
+                    backgroundRepeat: 'no-repeat',
+                    paddingBottom: '2px'
+                  }}
+                >
+                  FAQ page
+                </a>
+                {' '}for instant answers to common questions.
+              </p>
+            </div>
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

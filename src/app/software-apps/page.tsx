@@ -128,10 +128,10 @@ const SoftwareApplications = () => {
             Let's discuss your software application needs and turn your ideas into reality.
           </p>
           <Link
-            href="/#contact"
+            href="/quote"
             className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-8 rounded-lg font-medium hover:opacity-90 transition-opacity"
           >
-            Start Your Project
+            Get Your Free Quote
           </Link>
         </div>
       </section>

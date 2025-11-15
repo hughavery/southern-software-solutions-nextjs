@@ -73,6 +73,35 @@ const FAQ = () => {
       ]
     },
     {
+      category: 'PRICING & QUOTES',
+      faqs: [
+        {
+          question: 'How do I get a free website quote in Taranaki or New Zealand?',
+          answer: 'Getting a free website quote is simple! Contact us through our website, and we will provide you with a detailed, no-obligation quote within 24 hours. We also offer free software app quotes, free branding quotes, and free email signature quotes for businesses across Taranaki and New Zealand. Whether you need a basic website, custom software application, or complete digital marketing package, all our quotes are completely free. Just tell us what you need, and we will give you transparent pricing with no hidden costs.',
+          link: '/quote',
+          linkText: 'Get Your Free Quote Now'
+        },
+        {
+          question: 'How much does a website cost in Taranaki and New Zealand?',
+          answer: 'Website costs in New Zealand depend on your specific requirements. Our Basic Website package starts at $1,499 and includes a professional 5-page website with mobile-responsive design, SEO optimization, and a contact form. Our Professional Website package is $4,999 and includes unlimited pages, e-commerce, payment systems, and advanced integrations. We also offer free email signature design quotes (from $99), free software app quotes, and free branding package quotes. Get a free website quote today to see exactly what your project will cost — no obligation, completely transparent pricing.',
+          link: '/website-design#packages',
+          linkText: 'View All Packages & Pricing'
+        },
+        {
+          question: 'Do you offer free consultations for website design in Taranaki?',
+          answer: 'Yes! We provide completely free, no-obligation consultations for all services including website design, software development, branding, and digital marketing. Book a free consultation to discuss your project, get expert advice, and receive a free quote for your website, software app, email signatures, or any other digital service. Available for businesses in New Plymouth, Taranaki, and throughout New Zealand. You can meet us in person in Taranaki or schedule a free video consultation.',
+          link: '/quote',
+          linkText: 'Book Your Free Consultation'
+        },
+        {
+          question: 'Can I get a quote for multiple services like website, branding, and email signatures?',
+          answer: 'Absolutely! We offer bundled quotes that can save you money when combining services. For example, you can get a free quote for a new website plus professional email signatures, or a complete package including website design, branding, and digital marketing. Many Taranaki businesses choose our combined packages for a cohesive digital presence. Contact us for a free comprehensive quote covering all your needs — website development, software apps, email signature design, logo design, and more.',
+          link: '/quote',
+          linkText: 'Request Multi-Service Quote'
+        }
+      ]
+    },
+    {
       category: 'GENERAL',
       faqs: [
         {
