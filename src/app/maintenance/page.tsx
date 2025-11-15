@@ -3,6 +3,7 @@
 import React from 'react';
 import { Wrench } from 'lucide-react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const Maintenance = () => {
 
@@ -102,6 +103,7 @@ const Maintenance = () => {
         </div>
       </section>
 
+      <Footer />
     </div>
   );
 };

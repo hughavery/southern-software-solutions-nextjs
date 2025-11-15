@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import SoftwareProcess from '@/components/SoftwareProcess';
+import Footer from '@/components/Footer';
 
 const SoftwareApplications = () => {
 
@@ -135,6 +136,8 @@ const SoftwareApplications = () => {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

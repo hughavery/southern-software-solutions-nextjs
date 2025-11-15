@@ -5,6 +5,7 @@ import { Check, ChevronRight, Mail, ArrowLeft, Plus, Minus } from 'lucide-react'
 import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const EmailSignatures = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -194,6 +195,8 @@ const EmailSignatures = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

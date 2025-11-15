@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import WebsiteProcess from '@/components/WebsiteProcess';
+import Footer from '@/components/Footer';
 
 const WebsiteDesign = () => {
 
@@ -313,6 +314,8 @@ const WebsiteDesign = () => {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

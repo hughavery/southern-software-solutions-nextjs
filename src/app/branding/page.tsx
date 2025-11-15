@@ -5,6 +5,7 @@ import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const Branding = () => {
 
@@ -145,6 +146,8 @@ const Branding = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
