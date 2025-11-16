@@ -38,7 +38,7 @@ const EmailSignatures = () => {
   const faqs = [
     {
       question: 'How much does a professional email signature cost?',
-      answer: 'Our email signature design service starts from just $150 for a single signature template. Team packages (multiple signatures with consistent branding) are available from $350. Contact us for a custom quote for your Taranaki business.'
+      answer: 'Our email signature design service starts from just $49 for a single signature template. Team packages (multiple signatures with consistent branding) are also available. Contact us for a custom quote for your business.'
     },
     {
       question: 'Will my email signature work on mobile devices?',

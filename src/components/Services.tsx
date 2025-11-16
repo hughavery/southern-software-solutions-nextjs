@@ -26,7 +26,7 @@ const Services = () => {
       icon: '/digitalMarketing.png',
       title: 'Digital Marketing',
       description: 'Comprehensive digital marketing services including SEO, Google Analytics, Google Ads, social media marketing, and more to grow your online presence.',
-      link: '/maintenance'
+      link: '/digital-marketing'
     }
   ];
 

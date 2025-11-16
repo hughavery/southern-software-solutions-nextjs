@@ -277,6 +277,11 @@
 
   .featuresList li {
     font-size: 1.25rem;
+    padding-left: 0;
+  }
+
+  .featuresList li::before {
+    display: none;
   }
 
   .closingStatement {

@@ -83,7 +83,7 @@ const FAQ = () => {
         },
         {
           question: 'How much does a website cost in Taranaki and New Zealand?',
-          answer: 'Website costs in New Zealand depend on your specific requirements. Our Basic Website package starts at $1,499 and includes a professional 5-page website with mobile-responsive design, SEO optimization, and a contact form. Our Professional Website package is $4,999 and includes unlimited pages, e-commerce, payment systems, and advanced integrations. We also offer free email signature design quotes (from $99), free software app quotes, and free branding package quotes. Get a free website quote today to see exactly what your project will cost — no obligation, completely transparent pricing.',
+          answer: 'Website costs in New Zealand depend on your specific requirements. Our Basic Website package starts at $1,499 and includes a professional 5-page website with mobile-responsive design, SEO optimization, and a contact form. Our Professional Website package is $4,999 and includes unlimited pages, e-commerce, payment systems, and advanced integrations. We also offer free email signature design quotes (from $49), free software app quotes, and free branding package quotes. Get a free website quote today to see exactly what your project will cost — no obligation, completely transparent pricing.',
           link: '/website-design#packages',
           linkText: 'View All Packages & Pricing'
         },

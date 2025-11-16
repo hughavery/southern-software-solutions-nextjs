@@ -334,7 +334,7 @@ const ContactPage = () => {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2">Transparent Pricing</h3>
                   <p className="text-gray-600">
-                    Clear quotes with no hidden fees. Web design from $1,499, email signatures from $99.
+                    Clear quotes with no hidden fees. Web design from $1,499, email signatures from $49.
                   </p>
                 </div>
               </div>

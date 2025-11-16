@@ -52,7 +52,7 @@ const WebDesignMessage: React.FC = () => {
                 style={{ willChange: 'transform, opacity' }}
               >
                 <p className={styles.answerIntro}>
-                  <strong>You&apos;re in luck — that&apos;s exactly what we provide.</strong>
+                  <strong>You&apos;re in luck</strong>
                 </p>
               </motion.div>
 
@@ -64,9 +64,9 @@ const WebDesignMessage: React.FC = () => {
               >
                 <p className={styles.featuresText}>Our websites are designed to:</p>
                 <ul className={styles.featuresList}>
-                  <li><span className={styles.featureHighlight}>Rank on Google</span></li>
                   <li><span className={styles.featureHighlight}>Captivate visitors</span> with stunning design</li>
                   <li><span className={styles.featureHighlight}>Make it effortless</span> for users to engage</li>
+                  <li><span className={styles.featureHighlight}>Rank on Google</span></li>
                 </ul>
               </motion.div>
 

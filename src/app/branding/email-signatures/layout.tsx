@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Email Signature Design Taranaki & NZ',
-  description: 'Professional email signature design for Taranaki and New Zealand businesses. Custom HTML signatures for Gmail, Outlook, and Apple Mail. Get your professional signature package from $99.',
+  description: 'Professional email signature design for Taranaki and New Zealand businesses. Custom HTML signatures for Gmail, Outlook, and Apple Mail. Get your professional signature package from $49.',
   keywords: [
     'email signature design Taranaki',
     'email signature design New Plymouth',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_NZ',
     title: 'Email Signature Design Taranaki & NZ',
-    description: 'Custom HTML email signatures for New Zealand businesses. Mobile-responsive, brand-consistent, compatible with all major email platforms. From $150.',
+    description: 'Custom HTML email signatures for New Zealand businesses. Mobile-responsive, brand-consistent, compatible with all major email platforms. From $49.',
     url: 'https://www.southernsoftwaresolutions.tech/branding/email-signatures',
     siteName: 'Southern Software Solutions',
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Email Signature Design Taranaki | Professional HTML Signatures',
-    description: 'Custom email signatures for NZ businesses. Mobile-responsive, brand-consistent. From $150.',
+    description: 'Custom email signatures for NZ businesses. Mobile-responsive, brand-consistent. From $49.',
     images: ['/emailSignatureExample.png'],
   },
 }
