@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 
@@ -147,7 +148,26 @@ const Branding = () => {
                 The Language<br />of Visual Identity
               </h2>
               <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed font-light">
-                Every color, font, and design choice communicates something about your business before a single word is read.
+                Where every{' '}
+                <span style={{ fontWeight: 'bold' }}>
+                  <span style={{ color: '#8B5CF6' }}>C</span>
+                  <span style={{ color: '#7C3AED' }}>o</span>
+                  <span style={{ color: '#6D28D9' }}>l</span>
+                  <span style={{ color: '#5B21B6' }}>o</span>
+                  <span style={{ color: '#4C1D95' }}>r</span>
+                </span>
+                {', '}
+                <span style={{ fontFamily: '"Courier New", Courier, monospace', fontWeight: 'bold', letterSpacing: '0.1em' }}>FONT</span>
+                {', and '}
+                <span style={{
+                  background: 'linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  fontWeight: 'bold',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase'
+                }}>DESIGN</span>
+                {' choice communicates something about your business before a single word is read.'}
               </p>
             </div>
 
@@ -226,6 +246,13 @@ const Branding = () => {
           </div>
         </div>
       </section>
+
+      <CTASection
+        title="Ready to build your brand?"
+        subtitle="Let's create a memorable identity"
+        buttonText="START YOUR BRAND"
+        buttonLink="/quote"
+      />
 
       <Footer />
     </div>

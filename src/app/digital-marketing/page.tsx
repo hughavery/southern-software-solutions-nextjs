@@ -2,8 +2,8 @@
 
 import React, { useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
-import Link from 'next/link';
 import Header from '@/components/Header';
+import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
 const DigitalMarketing = () => {
@@ -196,23 +196,12 @@ const DigitalMarketing = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Grow Your Online Presence?
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Let's create a digital marketing strategy that drives real results for your Taranaki business.
-          </p>
-          <Link
-            href="/quote"
-            className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-8 rounded-lg font-medium hover:opacity-90 transition-opacity"
-          >
-            Get Your Free Quote
-          </Link>
-        </div>
-      </section>
+      <CTASection
+        title="Ready to grow your online presence?"
+        subtitle="Let's drive real results together"
+        buttonText="GET STARTED"
+        buttonLink="/quote"
+      />
 
       <Footer />
     </div>

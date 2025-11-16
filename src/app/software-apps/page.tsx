@@ -2,9 +2,9 @@
 
 import React, { useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
-import Link from 'next/link';
 import Header from '@/components/Header';
 import SoftwareProcess from '@/components/SoftwareProcess';
+import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
 const SoftwareApplications = () => {
@@ -107,23 +107,12 @@ const SoftwareApplications = () => {
 
       <SoftwareProcess />
 
-      {/* CTA Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Build Your Software App?
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Let's discuss your software application needs and turn your ideas into reality.
-          </p>
-          <Link
-            href="/quote"
-            className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-8 rounded-lg font-medium hover:opacity-90 transition-opacity"
-          >
-            Get Your Free Quote
-          </Link>
-        </div>
-      </section>
+      <CTASection
+        title="Ready to build your custom software?"
+        subtitle="Let's turn your ideas into reality"
+        buttonText="GET STARTED"
+        buttonLink="/quote"
+      />
 
       <Footer />
     </div>

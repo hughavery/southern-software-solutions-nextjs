@@ -144,32 +144,20 @@ const FAQ = () => {
 
       <Header />
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-12 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-700 mb-6">
-              Got Questions?
-            </h1>
-            <p className="text-xl text-gray-600 mb-4">
-              We have got (most of) the answers!
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Here you will find responses to the most common questions about our services. You will also find handy guides and tips to help you master online advertising. Still cannot find what you need? Just{' '}
-              <Link href="/#contact" className="text-blue-600 hover:text-blue-700 font-semibold">
-                reach out
-              </Link>
-              {' '}— we are happy to help!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ List */}
-      <section className="py-20 bg-white">
+      {/* FAQ Section */}
+      <section className="pt-32 pb-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-12">FAQs</h2>
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Got questions? We've got answers.
+            </h1>
+            <p className="text-xl text-gray-600 mb-16 leading-relaxed">
+              Browse our most common FAQs and quick tips. Still stuck?{' '}
+              <Link href="/#contact" className="text-blue-600 hover:text-blue-700 font-semibold">
+                Reach out
+              </Link>
+              {' '}— we're here to help.
+            </p>
 
             {faqCategories.map((category, categoryIndex) => (
               <div key={categoryIndex} className="mb-12">

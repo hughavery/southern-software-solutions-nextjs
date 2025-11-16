@@ -2,10 +2,10 @@
 
 import React, { useEffect } from 'react';
 import { Check, ChevronRight } from 'lucide-react';
-import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import WebsiteProcess from '@/components/WebsiteProcess';
+import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
 const WebsiteDesign = () => {
@@ -287,23 +287,12 @@ const WebsiteDesign = () => {
 
 
 
-      {/* CTA Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Start Your Project?
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Get in touch today to find the package that's the best fit for your business.
-          </p>
-          <Link
-            href="/#contact"
-            className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 px-8 rounded-lg font-medium hover:opacity-90 transition-opacity"
-          >
-            Contact Us Today
-          </Link>
-        </div>
-      </section>
+      <CTASection
+        title="Let's bring your vision to life"
+        subtitle="Request your free proposal now"
+        buttonText="LET'S BEGIN"
+        buttonLink="/quote"
+      />
 
       <Footer />
     </div>

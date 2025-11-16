@@ -34,40 +34,40 @@ const WebsiteProcess = () => {
       icon: MessageSquare,
       title: 'Discovery & Planning',
       description: 'We analyse your business goals, target audience, and brand requirements to create a comprehensive website strategy.',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-orange-400 to-orange-600'
     },
     {
       icon: Palette,
       title: 'Design & Mockups',
       description: 'Custom designs that reflect your brand identity with user-friendly layouts optimized for conversions.',
-      color: 'from-purple-500 to-pink-500'
+      color: 'from-orange-400 to-orange-600'
     },
     {
       icon: Code,
       title: 'Custom Development',
       description: 'Hand-coded from scratch using modern technologies, ensuring fast loading speeds and perfect responsiveness.',
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-orange-400 to-orange-600'
     },
     {
       icon: CheckCircle,
       title: 'Testing & SEO',
       description: 'Comprehensive testing across all devices and browsers, plus SEO optimization for better search rankings.',
-      color: 'from-orange-500 to-red-500'
+      color: 'from-orange-400 to-orange-600'
     },
     {
       icon: Rocket,
       title: 'Launch & Training',
       description: 'We handle the launch process and provide training so you can easily manage your new website.',
-      color: 'from-indigo-500 to-purple-500'
+      color: 'from-orange-400 to-orange-600'
     }
   ];
 
   return (
-    <section id="website-process" ref={sectionRef} className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <section id="website-process" ref={sectionRef} className="py-20 bg-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200 rounded-full opacity-10 animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-200 rounded-full opacity-10 animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-100 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-orange-100 rounded-full opacity-20 animate-pulse delay-1000"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -87,7 +87,7 @@ const WebsiteProcess = () => {
             {/* Progress line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-200 rounded-full hidden lg:block">
               <div
-                className="bg-gradient-to-b from-blue-500 to-purple-500 w-full rounded-full transition-all duration-1000 ease-out"
+                className="bg-orange-500 w-full rounded-full transition-all duration-1000 ease-out"
                 style={{ height: `${((activeStep + 1) / steps.length) * 100}%` }}
               ></div>
             </div>
@@ -110,7 +110,7 @@ const WebsiteProcess = () => {
                   <div className="flex-1 text-left lg:text-left">
                     <div className={`inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4 ${
                       activeStep >= index
-                        ? 'bg-blue-100 text-blue-600'
+                        ? 'bg-orange-100 text-orange-600'
                         : 'bg-gray-100 text-gray-500'
                     }`}>
                       Step {index + 1}

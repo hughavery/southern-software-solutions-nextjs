@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Calendar, Send, X } from 'lucide-react';
 import { InlineWidget } from 'react-calendly';
 import Image from 'next/image';
@@ -14,6 +14,18 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [showCalendly, setShowCalendly] = useState(false);
+
+  // Prefetch Calendly resources for faster loading
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.href = 'https://calendly.com/hughavery101/30min';
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -251,28 +263,30 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Calendly Modal */}
-        {showCalendly && (
+        {/* Calendly Widget - Always rendered, controlled by modal visibility */}
+        <div
+          className={`fixed inset-0 backdrop-blur-sm bg-white/80 z-50 flex items-center justify-center p-4 transition-opacity duration-200 ${
+            showCalendly ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
+          onClick={() => setShowCalendly(false)}
+        >
           <div
-            className="fixed inset-0 backdrop-blur-sm bg-white/80 z-50 flex items-center justify-center p-4"
-            onClick={() => setShowCalendly(false)}
+            className="relative max-w-4xl w-full"
+            onClick={(e) => e.stopPropagation()}
           >
-            <div
-              className="relative max-w-4xl w-full"
-              onClick={(e) => e.stopPropagation()}
+            <button
+              onClick={() => setShowCalendly(false)}
+              className={`absolute -top-12 right-0 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors shadow-lg ${
+                showCalendly ? 'block' : 'hidden'
+              }`}
             >
-              <button
-                onClick={() => setShowCalendly(false)}
-                className="absolute -top-12 right-0 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors shadow-lg"
-              >
-                <X className="h-6 w-6 text-gray-600" />
-              </button>
-              <div className="h-[700px] rounded-2xl overflow-hidden shadow-2xl">
-                <InlineWidget url="https://calendly.com/hughavery101/30min" />
-              </div>
+              <X className="h-6 w-6 text-gray-600" />
+            </button>
+            <div className="h-[700px] rounded-2xl overflow-hidden shadow-2xl bg-white">
+              <InlineWidget url="https://calendly.com/hughavery101/30min" />
             </div>
           </div>
-        )}
+        </div>
       </div>
     </section>
   );
