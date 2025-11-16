@@ -14,7 +14,7 @@ const CTASection: React.FC<CTASectionProps> = ({
   title = "Let's make something great together",
   subtitle = "Hop to us for a free proposal today",
   buttonText = "LET'S DO THIS",
-  buttonLink = "/quote"
+  buttonLink = "/quote?step=1"
 }) => {
   return (
     <section className="py-16">

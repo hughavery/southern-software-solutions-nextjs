@@ -111,7 +111,7 @@ const SoftwareApplications = () => {
         title="Ready to build your custom software?"
         subtitle="Let's turn your ideas into reality"
         buttonText="GET STARTED"
-        buttonLink="/quote"
+        buttonLink="/quote?step=1"
       />
 
       <Footer />

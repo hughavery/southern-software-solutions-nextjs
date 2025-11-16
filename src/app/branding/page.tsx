@@ -251,7 +251,7 @@ const Branding = () => {
         title="Ready to build your brand?"
         subtitle="Let's create a memorable identity"
         buttonText="START YOUR BRAND"
-        buttonLink="/quote"
+        buttonLink="/quote?step=1"
       />
 
       <Footer />

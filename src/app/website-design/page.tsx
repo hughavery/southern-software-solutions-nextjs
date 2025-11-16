@@ -291,7 +291,7 @@ const WebsiteDesign = () => {
         title="Let's bring your vision to life"
         subtitle="Request your free proposal now"
         buttonText="LET'S BEGIN"
-        buttonLink="/quote"
+        buttonLink="/quote?step=1"
       />
 
       <Footer />

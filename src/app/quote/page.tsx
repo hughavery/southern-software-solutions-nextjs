@@ -1,14 +1,36 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import { Mail, Phone, MapPin, Calendar, Send, X, Check } from 'lucide-react';
 import { InlineWidget } from 'react-calendly';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import QuoteForm from '@/components/QuoteForm';
+import { useSearchParams } from 'next/navigation';
+
+function QuotePageContent() {
+  const searchParams = useSearchParams();
+  const showForm = searchParams.get('step');
+
+  // If step parameter exists, show the form
+  if (showForm) {
+    return <QuoteForm />;
+  }
+
+  return <QuoteLandingPage />;
+}
 
 const ContactPage = () => {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
+      <QuotePageContent />
+    </Suspense>
+  );
+};
+
+const QuoteLandingPage = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -101,18 +123,15 @@ const ContactPage = () => {
               {' '}or send us a message below...
             </p>
 
-            <button
-              onClick={() => {
-                const contactForm = document.getElementById('contact-form');
-                contactForm?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="group bg-black text-white px-10 py-6 rounded-full hover:bg-gray-800 transition-all duration-300 font-bold text-xl flex items-center gap-4 mb-12"
+            <Link
+              href="/quote?step=1"
+              className="group bg-black text-white px-10 py-6 rounded-full hover:bg-gray-800 transition-all duration-300 font-bold text-xl inline-flex items-center gap-4 mb-12"
             >
               GET A FREE QUOTE
               <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center group-hover:translate-x-1 transition-transform">
                 <span className="text-white text-xl">→</span>
               </div>
-            </button>
+            </Link>
 
             <div className="flex flex-wrap gap-8 text-lg text-gray-600">
               <div className="flex items-center">

@@ -200,7 +200,7 @@ const DigitalMarketing = () => {
         title="Ready to grow your online presence?"
         subtitle="Let's drive real results together"
         buttonText="GET STARTED"
-        buttonLink="/quote"
+        buttonLink="/quote?step=1"
       />
 
       <Footer />

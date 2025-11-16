@@ -62,12 +62,12 @@ const Header = () => {
             >
               Blog
             </Link>
-            <button
-              onClick={() => handleNavigation('contact')}
+            <Link
+              href="/quote?step=1"
               className="bg-cyan-400 text-black px-6 py-2 rounded-full hover:bg-cyan-500 transition-all duration-200 transform hover:scale-105 font-medium cursor-pointer"
             >
               Get Quote
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -107,12 +107,13 @@ const Header = () => {
             >
               Blog
             </Link>
-            <button
-              onClick={() => handleNavigation('contact')}
-              className="bg-cyan-400 text-black px-6 py-3 rounded-full hover:bg-cyan-500 transition-all duration-200 font-medium text-center mt-4 cursor-pointer"
+            <Link
+              href="/quote?step=1"
+              onClick={() => setIsMenuOpen(false)}
+              className="bg-cyan-400 text-black px-6 py-3 rounded-full hover:bg-cyan-500 transition-all duration-200 font-medium text-center mt-4 cursor-pointer block"
             >
               Get Quote
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
