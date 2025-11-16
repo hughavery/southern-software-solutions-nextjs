@@ -75,13 +75,26 @@ const Services = () => {
 
                 <div className="mb-6 mt-4">
                   <div className="w-20 h-20 mb-6 relative">
-                    <Image
-                      src={service.icon}
-                      alt={service.title}
-                      width={80}
-                      height={80}
-                      className="w-full h-full object-contain brightness-0 invert"
-                    />
+                    {/* Rotating neon border */}
+                    <div className="absolute inset-0 rounded-lg animate-spin-slow opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-400 via-cyan-300/50 to-transparent blur-sm group-hover:blur-lg"></div>
+                    </div>
+                    {/* Additional glow layer on hover */}
+                    <div className="absolute inset-0 rounded-lg animate-spin-slow opacity-0 group-hover:opacity-80 transition-opacity duration-300">
+                      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-300 via-transparent to-transparent blur-md"></div>
+                    </div>
+                    {/* Static glow */}
+                    <div className="absolute inset-0 rounded-lg bg-cyan-400/10 group-hover:bg-cyan-400/30 transition-all duration-300"></div>
+                    {/* Icon */}
+                    <div className="relative z-10">
+                      <Image
+                        src={service.icon}
+                        alt={service.title}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-contain brightness-0 invert"
+                      />
+                    </div>
                   </div>
                 </div>
 

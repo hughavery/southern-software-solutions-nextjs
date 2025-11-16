@@ -25,8 +25,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      {/* Newsletter Section - Only on homepage */}
-      {pathname === '/' && (
+      {/* Newsletter Section - Only on homepage and blog */}
+      {(pathname === '/' || pathname.startsWith('/blog')) && (
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 py-12">
           <div className="container mx-auto px-6">
             <div className="text-center">

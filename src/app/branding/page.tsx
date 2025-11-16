@@ -249,8 +249,8 @@ const Branding = () => {
 
       <CTASection
         title="Ready to build your brand?"
-        subtitle="Let's create a memorable identity"
-        buttonText="START YOUR BRAND"
+        subtitle="Request your free proposal now"
+        buttonText="GET STARTED"
         buttonLink="/quote?step=1"
       />
 

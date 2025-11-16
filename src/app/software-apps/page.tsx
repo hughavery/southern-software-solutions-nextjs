@@ -109,7 +109,7 @@ const SoftwareApplications = () => {
 
       <CTASection
         title="Ready to build your custom software?"
-        subtitle="Let's turn your ideas into reality"
+        subtitle="Request your free proposal now"
         buttonText="GET STARTED"
         buttonLink="/quote?step=1"
       />

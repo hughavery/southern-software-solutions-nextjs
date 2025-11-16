@@ -8,7 +8,7 @@ const Testimonials = () => {
       name: 'Dean Brown',
       role: 'Founder, Triage Plus',
       content: 'Hugh is highly reliable and dedicated. He made sure every aspect of the project was perfect, and his support didn\'t stop after delivery.',
-      avatar: '/defaultavatar.jpeg'
+      avatar: '/deanbrown.jpg'
     },
     {
       name: 'Jordan Stirling',

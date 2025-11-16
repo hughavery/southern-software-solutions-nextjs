@@ -29,13 +29,13 @@ const BlogPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-white border-b border-gray-200">
+      <section className="pt-32 pb-6 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
               Blog
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg text-gray-600">
               Insights on web design, development, and growing your business online
             </p>
           </div>
@@ -43,7 +43,7 @@ const BlogPage = () => {
       </section>
 
       {/* Blog Posts */}
-      <section className="py-20">
+      <section className="py-10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto space-y-12">
             {posts.map((post) => (
