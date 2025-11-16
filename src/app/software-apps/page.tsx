@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import SoftwareProcess from '@/components/SoftwareProcess';
 import Footer from '@/components/Footer';
@@ -48,17 +47,6 @@ const SoftwareApplications = () => {
                   <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
                     A great app should simplify processes, not complicate them.
                   </p>
-                </div>
-
-                {/* Software Image */}
-                <div className="mt-8">
-                  <Image
-                    src="/software.png"
-                    alt="Software Applications"
-                    width={400}
-                    height={400}
-                    className="w-full max-w-md object-contain"
-                  />
                 </div>
               </div>
             </div>

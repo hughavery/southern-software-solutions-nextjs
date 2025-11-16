@@ -81,17 +81,6 @@ const WebsiteDesign = () => {
                     Your website is your first impression — most people will check you online before they ever call, visit, or buy.
                   </p>
                 </div>
-
-                {/* Web Design Image */}
-                <div className="mt-8">
-                  <Image
-                    src="/design.png"
-                    alt="Website Design"
-                    width={400}
-                    height={400}
-                    className="w-full max-w-md object-contain"
-                  />
-                </div>
               </div>
             </div>
 
@@ -169,7 +158,7 @@ const WebsiteDesign = () => {
             {/* Performance Results */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               {/* Screenshot */}
-              <div className="order-2 lg:order-1">
+              <div className="order-1 lg:order-1">
                 <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-200">
                   <Image
                     src="/pageSpeedInsight.png"
@@ -179,22 +168,10 @@ const WebsiteDesign = () => {
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="mt-6 text-center">
-                  <p className="text-gray-600 mb-3">Don't believe us? Check it yourself:</p>
-                  <a
-                    href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.southernsoftwaresolutions.tech%2F"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
-                  >
-                    Test Our Site on PageSpeed Insights
-                    <ChevronRight className="h-5 w-5 ml-1" />
-                  </a>
-                </div>
               </div>
 
               {/* Explanation */}
-              <div className="order-1 lg:order-2 space-y-6">
+              <div className="order-2 lg:order-2 space-y-6">
                 <div>
                   <div className="flex items-start mb-3">
                     <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
@@ -236,6 +213,19 @@ const WebsiteDesign = () => {
                     When you work with us, you're not just getting a website—you're getting a <strong>performance-optimized,
                     conversion-focused digital asset</strong> that works as hard as you do.
                   </p>
+                </div>
+
+                <div className="mt-6 text-center">
+                  <p className="text-gray-600 mb-3">Don't believe us? Check it yourself:</p>
+                  <a
+                    href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.southernsoftwaresolutions.tech%2F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
+                  >
+                    Test Our Site on PageSpeed Insights
+                    <ChevronRight className="h-5 w-5 ml-1" />
+                  </a>
                 </div>
               </div>
             </div>

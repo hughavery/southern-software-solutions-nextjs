@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -49,17 +48,6 @@ const DigitalMarketing = () => {
                   <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
                     A beautiful website is wasted if no one can find it — ranking on Google is how you win customers.
                   </p>
-                </div>
-
-                {/* Digital Marketing Image */}
-                <div className="mt-8">
-                  <Image
-                    src="/digitalMarketing.png"
-                    alt="Digital Marketing & SEO"
-                    width={400}
-                    height={400}
-                    className="w-full max-w-md object-contain"
-                  />
                 </div>
               </div>
             </div>

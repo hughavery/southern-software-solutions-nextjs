@@ -3,9 +3,9 @@
 import React, { useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 const Branding = () => {
 
@@ -49,17 +49,6 @@ const Branding = () => {
                   <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
                     Strong branding builds instant trust — customers are far more likely to engage with a business that looks polished and consistent.
                   </p>
-                </div>
-
-                {/* Branding Image */}
-                <div className="mt-8">
-                  <Image
-                    src="/branding.png"
-                    alt="Branding and Visual Identity Design"
-                    width={400}
-                    height={400}
-                    className="w-full max-w-md object-contain"
-                  />
                 </div>
               </div>
             </div>
