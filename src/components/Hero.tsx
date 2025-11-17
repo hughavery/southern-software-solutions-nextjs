@@ -55,11 +55,9 @@ const Hero: React.FC = () => {
         className="absolute inset-0 bg-[url('/stars.svg')] bg-cover bg-center opacity-50 pointer-events-none hidden md:block"
         aria-hidden
       />
-      <motion.div
-        className="absolute w-[400px] h-[400px] rounded-full bg-cyan-500/10 blur-3xl"
-        animate={{ x: [0, 30, -30, 0], y: [0, 20, -20, 0] }}
-        transition={{ repeat: Infinity, duration: 12, ease: 'easeInOut' }}
-        aria-hidden
+      <div
+        className="absolute w-[400px] h-[400px] rounded-full bg-cyan-500/10 blur-3xl animate-float"
+        aria-hidden="true"
       />
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20">

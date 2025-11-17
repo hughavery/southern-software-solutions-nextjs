@@ -1,9 +1,22 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { Mail, Phone, MapPin, Calendar, Send, X } from 'lucide-react';
-import { InlineWidget } from 'react-calendly';
 import Image from 'next/image';
+
+// Lazy load Calendly only when needed
+const InlineWidget = dynamic(
+  () => import('react-calendly').then((mod) => mod.InlineWidget),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-full flex items-center justify-center">
+        <div className="text-gray-600">Loading calendar...</div>
+      </div>
+    ),
+  }
+);
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,18 +27,6 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [showCalendly, setShowCalendly] = useState(false);
-
-  // Prefetch Calendly resources for faster loading
-  useEffect(() => {
-    const link = document.createElement('link');
-    link.rel = 'prefetch';
-    link.href = 'https://calendly.com/hughavery101/30min';
-    document.head.appendChild(link);
-
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
