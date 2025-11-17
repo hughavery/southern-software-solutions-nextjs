@@ -51,22 +51,32 @@ const BlogPage = () => {
                 key={post.slug}
                 className="bg-white rounded-2xl border border-gray-200 hover:border-blue-300 transition-all duration-300 overflow-hidden hover:shadow-xl"
               >
-                <div className="p-8">
-                  <div className="flex items-center gap-4 mb-4">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">
-                      {post.category}
-                    </span>
-                    <div className="flex items-center text-gray-500 text-sm">
-                      <Calendar className="h-4 w-4 mr-2" />
-                      {new Date(post.date).toLocaleDateString('en-NZ', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                      })}
+                <div className="p-6 md:p-8">
+                  {/* Mobile-optimized metadata layout */}
+                  <div className="mb-4 space-y-3">
+                    {/* Category badge - full width on mobile */}
+                    <div>
+                      <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">
+                        {post.category}
+                      </span>
                     </div>
-                    <div className="flex items-center text-gray-500 text-sm">
-                      <Clock className="h-4 w-4 mr-2" />
-                      {post.readTime}
+
+                    {/* Date and read time - stacked on mobile, side by side on desktop */}
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-gray-500">
+                      <div className="flex items-center">
+                        <Calendar className="h-4 w-4 mr-2 flex-shrink-0" />
+                        <span>
+                          {new Date(post.date).toLocaleDateString('en-NZ', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                          })}
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-2 flex-shrink-0" />
+                        <span>{post.readTime}</span>
+                      </div>
                     </div>
                   </div>
 

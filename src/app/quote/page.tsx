@@ -191,7 +191,7 @@ const QuoteLandingPage = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Email</h4>
-                    <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-sm md:text-base text-gray-600 hover:text-blue-600 transition-colors break-all">
                       contact@southernsoftwaresolutions.tech
                     </a>
                   </div>
