@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
@@ -62,13 +61,7 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Typing headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-white text-[2.7rem] md:text-[5.4rem] lg:text-[7.2rem] font-extrabold mb-10 leading-tight z-10"
-          style={{ willChange: 'transform, opacity' }}
-        >
+        <h1 className="text-white text-[2.7rem] md:text-[5.4rem] lg:text-[7.2rem] font-extrabold mb-10 leading-tight z-10">
           <span className="text-gray-300 block mb-4 text-[1.8rem] md:text-[3.6rem] lg:text-[4.5rem] font-semibold">
             We specialise in
           </span>
@@ -76,42 +69,29 @@ const Hero: React.FC = () => {
             {displayedText}
             <span className="inline-block ml-1 animate-pulse">|</span>
           </span>
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
-          className="text-gray-400 text-2xl md:text-3xl mb-12 z-10 max-w-3xl"
-        >
+        <p className="text-gray-400 text-2xl md:text-3xl mb-12 z-10 max-w-3xl">
           Innovative digital experiences that captivate and convert.
-        </motion.p>
+        </p>
 
         {/* Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.7 }}
-          className="flex flex-col sm:flex-row gap-6 z-10"
-          style={{ willChange: 'transform, opacity' }}
-        >
-          <motion.button
+        <div className="flex flex-col sm:flex-row gap-6 z-10">
+          <button
             onClick={scrollToContact}
-            whileHover={{ scale: 1.06, boxShadow: '0 8px 30px rgba(6,182,212,0.25)' }}
-            whileTap={{ scale: 0.96 }}
-            className="bg-cyan-400 text-black px-8 py-3 md:px-12 md:py-5 rounded-full font-semibold text-base md:text-xl uppercase tracking-wide"
+            className="bg-cyan-400 text-black px-8 py-3 md:px-12 md:py-5 rounded-full font-semibold text-base md:text-xl uppercase tracking-wide hover:bg-cyan-500 transition-colors active:scale-95"
           >
             Start a Project
-          </motion.button>
+          </button>
 
           <Link
             href="#projects"
-            className="text-white flex items-center justify-center font-semibold text-xl hover:text-cyan-400 transition-all duration-300 px-12 py-5"
+            className="text-white flex items-center justify-center font-semibold text-xl hover:text-cyan-400 transition-all duration-300 px-12 py-5 group"
           >
             View Work
             <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-200" />
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
