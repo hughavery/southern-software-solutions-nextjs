@@ -1,14 +1,27 @@
 'use client';
 
 import React, { useState, Suspense } from 'react';
+import dynamic from 'next/dynamic';
 import { Mail, Phone, MapPin, Calendar, Send, X, Check } from 'lucide-react';
-import { InlineWidget } from 'react-calendly';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import QuoteForm from '@/components/QuoteForm';
 import { useSearchParams } from 'next/navigation';
+
+// Lazy load Calendly only when needed
+const InlineWidget = dynamic(
+  () => import('react-calendly').then((mod) => mod.InlineWidget),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-full flex items-center justify-center">
+        <div className="text-gray-600">Loading calendar...</div>
+      </div>
+    ),
+  }
+);
 
 function QuotePageContent() {
   const searchParams = useSearchParams();
@@ -39,19 +52,6 @@ const QuoteLandingPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [showCalendly, setShowCalendly] = useState(false);
-
-  // Preload Calendly immediately on mount - always render it
-  React.useEffect(() => {
-    // Prefetch Calendly resources
-    const link = document.createElement('link');
-    link.rel = 'prefetch';
-    link.href = 'https://calendly.com/hughavery101/30min';
-    document.head.appendChild(link);
-
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -402,30 +402,28 @@ const QuoteLandingPage = () => {
         </div>
       </section>
 
-      {/* Calendly Widget - Always rendered, controlled by modal visibility */}
-      <div
-        className={`fixed inset-0 backdrop-blur-sm bg-white/80 z-50 flex items-center justify-center p-4 transition-opacity duration-200 ${
-          showCalendly ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-        onClick={() => setShowCalendly(false)}
-      >
+      {/* Calendly Widget - Only rendered when opened */}
+      {showCalendly && (
         <div
-          className="relative max-w-4xl w-full"
-          onClick={(e) => e.stopPropagation()}
+          className="fixed inset-0 backdrop-blur-sm bg-white/80 z-50 flex items-center justify-center p-4"
+          onClick={() => setShowCalendly(false)}
         >
-          <button
-            onClick={() => setShowCalendly(false)}
-            className={`absolute -top-12 right-0 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors shadow-lg ${
-              showCalendly ? 'block' : 'hidden'
-            }`}
+          <div
+            className="relative max-w-4xl w-full"
+            onClick={(e) => e.stopPropagation()}
           >
-            <X className="h-6 w-6 text-gray-600" />
-          </button>
-          <div className="h-[700px] rounded-2xl overflow-hidden shadow-2xl bg-white">
-            <InlineWidget url="https://calendly.com/hughavery101/30min" />
+            <button
+              onClick={() => setShowCalendly(false)}
+              className="absolute -top-12 right-0 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors shadow-lg"
+            >
+              <X className="h-6 w-6 text-gray-600" />
+            </button>
+            <div className="h-[700px] rounded-2xl overflow-hidden shadow-2xl bg-white">
+              <InlineWidget url="https://calendly.com/hughavery101/30min" />
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <Footer />
     </div>
