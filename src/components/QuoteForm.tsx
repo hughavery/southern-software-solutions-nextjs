@@ -108,9 +108,14 @@ const QuoteForm = () => {
     'Website Design',
     'Software App',
     'Branding',
+    'Logo Design',
     'Email Signature',
     'Digital Marketing',
     'SEO',
+    'Google Ads',
+    'Social Media Management',
+    'Business Photography',
+    'Content Writing',
     'Maintenance',
     'Other'
   ];
