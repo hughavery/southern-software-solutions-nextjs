@@ -8,7 +8,7 @@ const Testimonials = () => {
       name: 'Dean Brown',
       role: 'Founder, Triage Plus',
       content: 'Hugh is highly reliable and dedicated. He made sure every aspect of the project was perfect, and his support didn\'t stop after delivery.',
-      avatar: '/deanbrown.jpg'
+      avatar: '/deanbrown.webp'
     },
     {
       name: 'Jordan Stirling',
@@ -19,13 +19,13 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <section className="py-20 bg-gradient-to-br from-cyan-50 to-purple-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             Don't just take our word for it. Here's what our satisfied clients
             across New Zealand have to say.
           </p>
@@ -37,7 +37,7 @@ const Testimonials = () => {
               key={index}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <Quote className="h-8 w-8 text-blue-200 mb-4" />
+              <Quote className="h-8 w-8 text-cyan-200 mb-4" />
 
               <p className="text-gray-600 mb-6 leading-relaxed">
                 "{testimonial.content}"
