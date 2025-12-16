@@ -44,7 +44,7 @@ const WebDesignMessage: React.FC = () => {
                 style={{ willChange: 'transform, opacity' }}
                 className={styles.hookHeadline}
               >
-                Helping Kiwi Businesses <span className={styles.hookAccent}>Shine Online</span>
+                Helping Kiwi Businesses <span className={styles.hookAccent}>Shine</span> Online
               </motion.h2>
 
               <motion.div

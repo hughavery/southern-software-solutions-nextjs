@@ -114,20 +114,21 @@
 
 .hookAccent {
   display: inline;
-  background: linear-gradient(135deg, #0e7490 0%, #0891b2 50%, #06b6d4 100%);
+  background: linear-gradient(90deg, #0e7490 0%, #22d3ee 25%, #06b6d4 50%, #22d3ee 75%, #0e7490 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: shimmer 3s ease-in-out infinite;
-  background-size: 200% 200%;
+  animation: shimmer 10s linear infinite;
+  background-size: 300% 100%;
+  filter: brightness(1.2);
 }
 
 @keyframes shimmer {
-  0%, 100% {
-    background-position: 0% 50%;
+  0% {
+    background-position: -300% 0;
   }
-  50% {
-    background-position: 100% 50%;
+  100% {
+    background-position: 300% 0;
   }
 }
 

@@ -22,6 +22,30 @@ const About = () => {
 
   return (
     <section id="about" className="bg-white">
+      {/* Story Section */}
+      <div className="bg-gray-900 py-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-600"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-6xl mx-auto">
+            <div className="lg:col-span-4">
+              <h3 className="text-4xl md:text-5xl font-bold text-white">
+                OUR STORY
+              </h3>
+            </div>
+            <div className="lg:col-span-8">
+              <p className="text-xl text-gray-300 leading-relaxed mb-6">
+                We are a small but growing business, currently made up of a web designer, a graphic designer, and a software engineer. We started Southern Software Solutions after seeing too many companies pay top dollar for websites that didn't reflect their brand or connect with their audience.
+              </p>
+              <p className="text-xl text-gray-300 leading-relaxed">
+                With our combined skills, we focus on creating websites that blend technical precision with clean, effective visuals. Our goal is to help businesses put their best digital foot forward, making every online interaction count.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Mission Section */}
       <div className="bg-blue-500 py-20">
         <div className="container mx-auto px-6">
@@ -34,33 +58,6 @@ const About = () => {
             <div className="lg:col-span-8">
               <p className="text-xl text-white leading-relaxed">
                 At Southern Software Solutions, our mission is to equip New Zealand businesses with digital tools that genuinely move the needle. We focus on understanding your goals first, then designing websites and systems that elevate your brand, simplify your operations, and support long-term growth.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Vision Section */}
-      <div className="bg-gray-900 py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-600"></div>
-        </div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-6xl mx-auto">
-            <div className="lg:col-span-4">
-              <h3 className="text-4xl md:text-5xl font-bold text-white">
-                OUR VISION
-              </h3>
-            </div>
-            <div className="lg:col-span-8">
-              <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                We envision a future where every business, regardless of size, has access to world-class
-                digital solutions that level the playing field.
-              </p>
-              <p className="text-xl text-gray-300 leading-relaxed">
-                With a focus on modern design principles, advanced technology, and user-centered development,
-                we're building a digital landscape across New Zealand where businesses thrive online —
-                converting visitors into customers and building lasting relationships.
               </p>
             </div>
           </div>
