@@ -15,6 +15,12 @@ const Testimonials = () => {
       role: 'Personal Trainer, Flex Fitness Christchurch',
       content: 'I wanted to attract more clients to my online personal training business. The website they developed for my brand, Jordan Trains, not only helped me gain new clients but also added a polished, professional touch to my brand.',
       avatar: '/jordanstirling.jpg'
+    },
+    {
+      name: 'James Oliver',
+      role: 'Club President, Gisborne',
+      content: 'We reached out from Gisborne and Hugh delivered an outstanding logo for our cricket club. Professional work and great communication throughout the process.',
+      avatar: '/defaultavatar.jpeg'
     }
   ];
 
