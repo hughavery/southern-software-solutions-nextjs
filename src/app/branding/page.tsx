@@ -46,7 +46,7 @@ const Branding = () => {
 
               <div className="mt-8 space-y-6">
                 <div className="flex items-start">
-                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
+                  <span className="text-cyan-500 text-2xl md:text-3xl mr-4 shrink-0">•</span>
                   <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
                     Strong branding builds instant trust — customers are far more likely to engage with a business that looks polished and consistent.
                   </p>
@@ -58,7 +58,7 @@ const Branding = () => {
             <div className="space-y-8 pt-16">
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">1. Logo Design & Brand Guidelines</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -70,7 +70,7 @@ const Branding = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">2. Professional Email Signatures</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -81,13 +81,13 @@ const Branding = () => {
 
                 {/* Featured Visual CTA Card */}
                 <Link href="/branding/email-signatures" className="block ml-7 mt-6">
-                  <div className="border-2 border-orange-500 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 group bg-gradient-to-br from-orange-50 to-white">
+                  <div className="border-2 border-cyan-500 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 group bg-gradient-to-br from-cyan-50 to-white">
                     <div className="p-4">
                       <div className="flex items-center justify-between mb-3">
                         <div className="flex items-center">
-                          <span className="text-orange-600 font-bold text-sm uppercase tracking-wide">Featured Service</span>
+                          <span className="text-cyan-600 font-bold text-sm uppercase tracking-wide">Featured Service</span>
                         </div>
-                        <ChevronRight className="h-5 w-5 text-orange-500 group-hover:translate-x-1 transition-transform" />
+                        <ChevronRight className="h-5 w-5 text-cyan-500 group-hover:translate-x-1 transition-transform" />
                       </div>
                       <div className="mb-3">
                         <Image
@@ -98,7 +98,7 @@ const Branding = () => {
                           className="w-full h-auto rounded border border-gray-200"
                         />
                       </div>
-                      <p className="text-gray-900 font-semibold text-lg group-hover:text-orange-600 transition-colors">
+                      <p className="text-gray-900 font-semibold text-lg group-hover:text-cyan-600 transition-colors">
                         See Our Email Signature Design Portfolio & Pricing →
                       </p>
                       <p className="text-gray-600 text-sm mt-1">
@@ -111,7 +111,7 @@ const Branding = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">3. Business Photography</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -123,7 +123,7 @@ const Branding = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">4. Marketing Collateral Design</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">

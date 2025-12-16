@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 import Header from '@/components/Header';
-import SoftwareProcess from '@/components/SoftwareProcess';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
@@ -38,12 +37,12 @@ const SoftwareApplications = () => {
               </h1>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                We're one of the few teams in Taranaki offering full-scale software development — building powerful mobile and web applications tailored to how your business actually works. From concept to code, we create smart, scalable digital tools that streamline operations and give you a competitive edge.
+                We design and build software that solves real business problems. Whether it's a web platform, internal tool, or mobile app, our solutions are built to improve efficiency, reduce manual work, and scale as your business grows.
               </p>
 
               <div className="mt-8 space-y-6">
                 <div className="flex items-start">
-                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
+                  <span className="text-cyan-500 text-2xl md:text-3xl mr-4 shrink-0">•</span>
                   <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
                     A great app should simplify processes, not complicate them.
                   </p>
@@ -55,7 +54,7 @@ const SoftwareApplications = () => {
             <div className="space-y-8 pt-16">
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">1. Mobile App Development</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -67,7 +66,7 @@ const SoftwareApplications = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">2. Web Application Development</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -79,7 +78,7 @@ const SoftwareApplications = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">3. Backend Systems</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -91,7 +90,7 @@ const SoftwareApplications = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">4. API Integration</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -104,8 +103,6 @@ const SoftwareApplications = () => {
           </div>
         </div>
       </section>
-
-      <SoftwareProcess />
 
       <CTASection
         title="Ready to build your custom software?"

@@ -44,7 +44,7 @@ const DigitalMarketing = () => {
 
               <div className="mt-8 space-y-6">
                 <div className="flex items-start">
-                  <span className="text-orange-500 text-2xl md:text-3xl mr-4 flex-shrink-0">•</span>
+                  <span className="text-cyan-500 text-2xl md:text-3xl mr-4 shrink-0">•</span>
                   <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
                     A beautiful website is wasted if no one can find it — ranking on Google is how you win customers.
                   </p>
@@ -56,7 +56,7 @@ const DigitalMarketing = () => {
             <div className="space-y-8 pt-16">
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">1. Search Engine Optimization (SEO)</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -69,7 +69,7 @@ const DigitalMarketing = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">2. Google Ads & Pay-Per-Click (PPC)</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -81,7 +81,7 @@ const DigitalMarketing = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">3. Google Analytics & Conversion Tracking</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">
@@ -93,7 +93,7 @@ const DigitalMarketing = () => {
 
               <div>
                 <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
                   <h3 className="text-xl font-semibold text-gray-900">4. Content Strategy & Social Media Marketing</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed pl-7">

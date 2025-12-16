@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
 
 const specialties = ['Web Design', 'Digital Marketing','SEO', 'Software Apps'];
 
@@ -38,6 +37,10 @@ const Hero: React.FC = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToProjects = () => {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section
       id="home"
@@ -59,9 +62,9 @@ const Hero: React.FC = () => {
         aria-hidden="true"
       />
 
-      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         {/* Typing headline */}
-        <h1 className="text-white text-[2.7rem] md:text-[5.4rem] lg:text-[7.2rem] font-extrabold mb-10 leading-tight z-10">
+        <h1 className="text-white text-[2.7rem] md:text-[5.4rem] lg:text-[7.2rem] font-extrabold mb-10 leading-tight">
           <span className="text-gray-300 block mb-4 text-[1.8rem] md:text-[3.6rem] lg:text-[4.5rem] font-semibold">
             We specialise in
           </span>
@@ -71,12 +74,12 @@ const Hero: React.FC = () => {
           </span>
         </h1>
 
-        <p className="text-gray-400 text-2xl md:text-3xl mb-12 z-10 max-w-3xl">
+        <p className="text-gray-400 text-2xl md:text-3xl mb-12 max-w-3xl">
           Innovative digital experiences that captivate and convert.
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 z-10">
+        <div className="flex flex-col sm:flex-row gap-6 relative">
           <button
             onClick={scrollToContact}
             className="bg-cyan-400 text-black px-8 py-3 md:px-12 md:py-5 rounded-full font-semibold text-base md:text-xl uppercase tracking-wide hover:bg-cyan-500 transition-colors active:scale-95"
@@ -84,13 +87,13 @@ const Hero: React.FC = () => {
             Start a Project
           </button>
 
-          <Link
-            href="#projects"
-            className="text-white flex items-center justify-center font-semibold text-xl hover:text-cyan-400 transition-all duration-300 px-12 py-5 group"
+          <button
+            onClick={scrollToProjects}
+            className="text-white flex items-center justify-center font-semibold text-xl hover:text-cyan-400 transition-all duration-300 px-12 py-5 group active:scale-95"
           >
             View Work
             <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform duration-200" />
-          </Link>
+          </button>
         </div>
       </div>
     </section>
