@@ -1,25 +1,43 @@
 /* WebDesignMessage.module.css */
 .messageSection {
-  background: #f8f9fa;
-  padding: 80px 20px;
+  background: #ffffff;
+  padding: 120px 20px;
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.messageSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(34, 211, 238, 0.05) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .messageContent {
-  max-width: 1400px;
-  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
 }
 
 .contentWrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 60px;
-  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .textContent {
+  max-width: 100%;
   text-align: left;
 }
 
@@ -57,90 +75,103 @@
 
 .sectionMessage {
   font-size: 1.5rem;
-  color: #4a5568;
   line-height: 1.8;
-  margin: 0 0 40px 0;
+  margin: 0;
   text-align: left;
 }
 
-.highlightQuestion {
-  font-size: 3.5rem;
-  color: #000000;
-  margin-bottom: 30px;
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.labelLine {
+  height: 4px;
+  width: 4rem;
+  background-color: #22d3ee;
+  flex-shrink: 0;
+}
+
+.labelText {
+  color: #22d3ee;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.hookHeadline {
+  font-size: 4rem;
+  color: #1a202c;
+  margin-bottom: 50px;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-align: left;
 }
 
-.answerIntro {
-  font-size: 2rem;
-  color: #1a202c;
-  margin-bottom: 30px;
-  font-weight: 700;
+.hookAccent {
+  display: inline;
+  background: linear-gradient(135deg, #0e7490 0%, #0891b2 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s ease-in-out infinite;
+  background-size: 200% 200%;
 }
 
-.featuresText {
-  font-size: 1.75rem;
+@keyframes shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.hookMessage {
+  font-size: 1.5rem;
   color: #4a5568;
-  margin-bottom: 20px;
-  font-weight: 600;
+  line-height: 1.9;
+  margin-bottom: 32px;
+  font-weight: 400;
+  text-align: left;
+  max-width: 900px;
 }
 
-.featuresList {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
-.featuresList li {
-  font-size: 1.75rem;
-  color: #4a5568;
-  margin-bottom: 16px;
-  padding-left: 35px;
-  position: relative;
-  font-weight: 500;
-}
-
-.featuresList li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #667eea;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-.featureHighlight {
-  color: #667eea;
+.hookMessage strong {
+  color: #0e7490;
   font-weight: 700;
-}
-
-.closingStatement {
-  font-size: 2rem;
-  color: #1a202c;
-  margin-bottom: 0;
-  font-weight: 600;
+  background: linear-gradient(135deg, #0e7490 0%, #0891b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .scrollPrompt {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .scrollText {
-  font-size: 1.25rem;
-  color: #4a5568;
+  font-size: 1rem;
+  color: #0891b2;
   font-weight: 600;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .scrollArrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #667eea;
+  color: #0891b2;
   animation: bounce 2s ease-in-out infinite;
 }
 
@@ -259,57 +290,38 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .sectionTitle {
-    font-size: 2.5rem;
-  }
-
-  .highlightQuestion {
-    font-size: 1.75rem;
-  }
-
-  .answerIntro {
-    font-size: 1.5rem;
-  }
-
-  .featuresText {
-    font-size: 1.25rem;
-  }
-
-  .featuresList li {
-    font-size: 1.25rem;
-    padding-left: 0;
-  }
-
-  .featuresList li::before {
-    display: none;
-  }
-
-  .closingStatement {
-    font-size: 1.5rem;
-  }
-
-  .sectionMessage {
-    font-size: 1.125rem;
-  }
-
   .messageSection {
-    padding: 60px 20px;
+    padding: 80px 20px;
+  }
+
+  .messageContent {
+    padding: 0 10px;
+  }
+
+  .hookHeadline {
+    font-size: 2.25rem;
+    margin-bottom: 35px;
+  }
+
+  .hookMessage {
+    font-size: 1.2rem;
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .scrollText {
+    font-size: 0.875rem;
+  }
+
+  .scrollPrompt {
+    margin-top: 40px;
   }
 
   .contentWrapper {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    flex-direction: column;
   }
 
   .textContent {
     text-align: left;
-  }
-
-  .incomeVisual {
-    max-width: 300px;
-  }
-
-  .scrollText {
-    font-size: 1rem;
   }
 }
