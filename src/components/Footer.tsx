@@ -25,31 +25,6 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      {/* Newsletter Section - Only on homepage and blog */}
-      {(pathname === '/' || pathname.startsWith('/blog')) && (
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 py-12">
-          <div className="container mx-auto px-6">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">Stay Updated</h3>
-              <p className="text-blue-100 mb-6 max-w-xl mx-auto">
-                Get the latest web design tips, industry insights, and exclusive offers
-                delivered straight to your inbox.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="flex-1 px-4 py-3 rounded-xl bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50"
-                  />
-                <button className="bg-white text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors font-semibold cursor-pointer">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Main Footer */}
       <div className="py-16">
         <div className="container mx-auto px-6">

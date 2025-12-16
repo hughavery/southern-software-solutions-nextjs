@@ -54,11 +54,15 @@ const WebDesignMessage: React.FC = () => {
                 style={{ willChange: 'transform, opacity' }}
               >
                 <p className={styles.hookMessage}>
+                  Dear Small Business Owners,
+                </p>
+
+                <p className={styles.hookMessage}>
                   If you&apos;re working hard but not being seen…
                 </p>
 
                 <p className={styles.hookMessage}>
-                  We help put your name in front of the right people with websites and digital solutions that look <strong>sharp</strong>, feel <strong>intuitive</strong>, and showcase your brand — turning <strong>visibility into enquiries and real results.</strong>
+                  We can help by putting your name in front of the right people with websites and digital solutions that look <strong>sharp</strong>, feel <strong>intuitive</strong>, and showcase your brand — turning <strong>visibility into enquiries and real results.</strong>
                 </p>
               </motion.div>
             </div>

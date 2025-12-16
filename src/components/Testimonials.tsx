@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       name: 'Dean Brown',
       role: 'Founder, Triage Plus',
-      content: 'Hugh is highly reliable and dedicated. He made sure every aspect of the project was perfect, and his support didn\'t stop after delivery.',
+      content: 'Hugh made a strong contribution to the backend systems on a large project, helping improve reliability and performance. He worked seamlessly with the wider team and provided valuable technical support throughout.',
       avatar: '/deanbrown.webp'
     },
     {
