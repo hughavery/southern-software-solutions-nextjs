@@ -7,6 +7,14 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 const BlogPage = () => {
   const posts = [
     {
+      slug: 'ai-search-taranaki-businesses',
+      title: 'How Taranaki Businesses Can Get Found in AI Search Results (Google AI Mode, AI Overviews, and ChatGPT)',
+      excerpt: 'Google\'s AI search is fundamentally changing how customers find local businesses. If your Taranaki business isn\'t optimized for AI search, you\'re about to become invisible to a huge portion of potential customers.',
+      date: '2025-12-21',
+      readTime: '8 min read',
+      category: 'AI & SEO Strategy'
+    },
+    {
       slug: 'taranaki-custom-website',
       title: 'How a Custom Website Can Help Your Taranaki Business Beat the Competition and Win More Local Customers',
       excerpt: 'Taranaki businesses have a golden opportunity to dominate local search results—but the window is closing fast. Here\'s why your business needs to get online now, before your competitors do.',
