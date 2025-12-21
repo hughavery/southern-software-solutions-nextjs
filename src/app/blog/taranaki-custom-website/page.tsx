@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, ArrowLeft, CheckCircle, AlertTriangle, TrendingUp } from 'lucide-react';
@@ -295,26 +294,6 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              {/* Author Bio */}
-              <div className="border-t border-gray-200 mt-12 pt-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden relative">
-                    <Image
-                      src="/hughavery.jpg"
-                      alt="Hugh Avery"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-bold text-gray-900">Hugh Avery</p>
-                    <p className="text-gray-600 text-sm">Founder, Southern Software Solutions</p>
-                    <p className="text-gray-600 text-sm mt-2">
-                      Web developer specializing in helping Taranaki and South Island businesses dominate their local markets online. Expert in local SEO, custom web development, and conversion-focused design.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
