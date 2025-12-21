@@ -27,7 +27,7 @@ const WebsiteDesign = () => {
       <section className="pt-32 pb-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
-            {/* Left Column - Heading & Illustration */}
+            {/* Left Column - Heading */}
             <div>
               <div className="mb-6">
                 <span className="text-sm font-medium text-gray-500">/01.</span>
@@ -37,70 +37,55 @@ const WebsiteDesign = () => {
                 Custom Website Design
               </h1>
 
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed mb-10">
                 Transform your vision into a digital reality with our bespoke web design solutions.
-                Our Taranaki website designers don't just create pretty pages – we craft strategic
-                digital experiences that guide visitors toward conversion.
+                Our Taranaki website designers don't just create pretty pages – we craft <span className="text-cyan-600 font-semibold">strategic
+                digital experiences</span> that guide visitors toward <span className="text-cyan-600 font-semibold">conversion</span>.
               </p>
 
-              <div className="mt-8 space-y-6">
-                <div className="flex items-start">
-                  <span className="text-cyan-500 text-2xl md:text-3xl mr-4 shrink-0">•</span>
-                  <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
-                    Your website is your first impression — most people will check you online before they ever call, visit, or buy.
-                  </p>
-                </div>
+              <div className="border-l-4 border-cyan-500 pl-6 py-2">
+                <p className="text-xl text-gray-800 font-medium leading-relaxed">
+                  Your website is your <span className="text-cyan-600">first impression</span> — most people will check you online before they ever call, visit, or buy.
+                </p>
               </div>
             </div>
 
             {/* Right Column - Features List */}
             <div className="space-y-8 pt-16">
-              <div>
-                <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900">1. Tailored to Your Business Goals</h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed pl-7">
-                  We do not do cookie-cutter templates. Every design decision starts with understanding your objectives
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Tailored to Your Business Goals</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We don't do cookie-cutter templates. Every design decision starts with understanding your objectives
                   and audience. From layout to colour palette, we craft responsive web design solutions that align with
-                  your business strategy, ensuring your site does not just look great — it drives real results and sets
+                  your business strategy, ensuring your site doesn't just look great — it <span className="text-cyan-600 font-semibold">drives real results</span> and sets
                   you apart from competitors.
                 </p>
               </div>
 
-              <div>
-                <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900">2. Seamless Brand Connection</h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed pl-7">
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Seamless Brand Connection</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Your website should feel unmistakably you. We blend your brand's personality, colours, and tone into
-                  every corner of your site. Whether you already have strong visuals or need help developing them, we will
+                  every corner of your site. Whether you already have strong visuals or need help developing them, we'll
                   ensure your online presence looks and feels cohesive across every platform.
                 </p>
               </div>
 
-              <div>
-                <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900">3. Designed for Action, Not Just Looks</h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed pl-7">
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Designed for Action, Not Just Looks</h3>
+                <p className="text-gray-600 leading-relaxed">
                   A beautiful website means nothing if visitors leave confused. We design clear, intuitive pathways that
-                  guide users exactly where you want them to go — whether that is making a purchase, booking a call, or
-                  signing up. Every element has a purpose: to reduce friction, boost engagement, and drive conversions
+                  guide users exactly where you want them to go — whether that's making a purchase, booking a call, or
+                  signing up. Every element has a purpose: to <span className="text-cyan-600 font-semibold">reduce friction, boost engagement, and drive conversions</span>
                   for your business.
                 </p>
               </div>
 
               <div>
-                <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900">4. Built for Every Screen</h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed pl-7">
-                  With around 64% of website traffic in New Zealand coming from mobile devices, your site needs to look stunning on any
-                  device. We build fully responsive designs that adapt gracefully from desktop to smartphone — fast,
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Built for Every Screen</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  With around <span className="text-cyan-600 font-semibold">64% of website traffic</span> in New Zealand coming from mobile devices, your site needs to look stunning on any
+                  device. We build <span className="text-cyan-600 font-semibold">fully responsive designs</span> that adapt gracefully from desktop to smartphone — fast,
                   intuitive, and perfectly optimised for every screen size.
                 </p>
               </div>

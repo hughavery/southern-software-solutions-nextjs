@@ -26,7 +26,7 @@ const DigitalMarketing = () => {
       <section className="pt-32 pb-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
-            {/* Left Column - Heading & Illustration */}
+            {/* Left Column - Heading */}
             <div>
               <div className="mb-6">
                 <span className="text-sm font-medium text-gray-500">/04.</span>
@@ -36,70 +36,55 @@ const DigitalMarketing = () => {
                 Digital Marketing & SEO
               </h1>
 
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed mb-10">
                 Having a great website is just the start — you need people to find it. Our digital marketing
-                services help Taranaki businesses get discovered, drive traffic, and convert visitors into
-                loyal customers through strategic SEO, Google Ads, and data-driven campaigns.
+                services help Taranaki businesses <span className="text-cyan-600 font-semibold">get discovered</span>, drive traffic, and <span className="text-cyan-600 font-semibold">convert visitors into
+                loyal customers</span> through strategic SEO, Google Ads, and data-driven campaigns.
               </p>
 
-              <div className="mt-8 space-y-6">
-                <div className="flex items-start">
-                  <span className="text-cyan-500 text-2xl md:text-3xl mr-4 shrink-0">•</span>
-                  <p className="text-xl md:text-2xl text-gray-800 font-bold leading-relaxed">
-                    A beautiful website is wasted if no one can find it — ranking on Google is how you win customers.
-                  </p>
-                </div>
+              <div className="border-l-4 border-cyan-500 pl-6 py-2">
+                <p className="text-xl text-gray-800 font-medium leading-relaxed">
+                  A beautiful website is wasted if no one can find it — <span className="text-cyan-600">ranking on Google</span> is how you win customers.
+                </p>
               </div>
             </div>
 
             {/* Right Column - Features List */}
             <div className="space-y-8 pt-16">
-              <div>
-                <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900">1. Search Engine Optimization (SEO)</h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed pl-7">
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Search Engine Optimization (SEO)</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Get your website ranking on Google for keywords that matter to your business. We optimize your
                   site structure, content, and technical performance to improve visibility in search results. For
-                  Taranaki businesses, local SEO ensures you appear when customers search for services in New Plymouth,
+                  Taranaki businesses, <span className="text-cyan-600 font-semibold">local SEO</span> ensures you appear when customers search for services in New Plymouth,
                   Stratford, or Hawera.
                 </p>
               </div>
 
-              <div>
-                <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900">2. Google Ads & Pay-Per-Click (PPC)</h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed pl-7">
-                  Get immediate visibility with targeted Google Ads campaigns. We create, manage, and optimize
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Google Ads & Pay-Per-Click (PPC)</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Get <span className="text-cyan-600 font-semibold">immediate visibility</span> with targeted Google Ads campaigns. We create, manage, and optimize
                   ad campaigns that drive qualified traffic to your site — only paying when people click. Perfect
                   for businesses that need leads fast while building long-term SEO momentum.
                 </p>
               </div>
 
-              <div>
-                <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900">3. Google Analytics & Conversion Tracking</h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed pl-7">
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Google Analytics & Conversion Tracking</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Understand exactly where your traffic comes from and what drives conversions. We set up
                   comprehensive analytics tracking so you can see which marketing efforts are working, what pages
-                  perform best, and where visitors drop off — giving you actionable insights to grow your business.
+                  perform best, and where visitors drop off — giving you <span className="text-cyan-600 font-semibold">actionable insights</span> to grow your business.
                 </p>
               </div>
 
               <div>
-                <div className="flex items-start mb-3">
-                  <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                  <h3 className="text-xl font-semibold text-gray-900">4. Content Strategy & Social Media Marketing</h3>
-                </div>
-                <p className="text-gray-600 leading-relaxed pl-7">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Content Strategy & Social Media Marketing</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Build authority and attract customers with valuable content. From blog posts that rank on Google
                   to strategic social media presence, we help you create content that resonates with your audience,
-                  drives engagement, and establishes your business as a trusted expert in your industry.
+                  <span className="text-cyan-600 font-semibold">drives engagement</span>, and establishes your business as a trusted expert in your industry.
                 </p>
               </div>
             </div>

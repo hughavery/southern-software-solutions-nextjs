@@ -1,107 +1,96 @@
 'use client';
 
-import React from 'react';
-import { Wrench } from 'lucide-react';
+import React, { useEffect } from 'react';
 import Header from '@/components/Header';
+import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
 const Maintenance = () => {
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-sky-50 to-teal-50">
+      <section className="pt-32 pb-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="bg-gradient-to-r from-sky-400 to-teal-800 w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <Wrench className="h-10 w-10 text-white" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-7xl mx-auto">
+            {/* Left Column - Heading */}
+            <div>
+              <div className="mb-6">
+                <span className="text-sm font-medium text-gray-500">/03.</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Website Maintenance
+
+              <h1 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+                Website Maintenance & Support
               </h1>
-              <p className="text-2xl text-gray-700 font-medium">
-                Keep your website secure, updated, and running smoothly
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-10">
+                Keep your website <span className="text-cyan-600 font-semibold">secure, updated, and running smoothly</span>. When we build your website, ongoing maintenance and support are included — so you can focus on your business while we handle the technical details.
               </p>
-            </div>
 
-            {/* Key Benefits Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Built-In Support</h3>
-                <p className="text-gray-600">
-                  When we build your website, ongoing maintenance and support are included. Focus on your business while we handle the technical details.
-                </p>
-              </div>
-
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">No Monthly Subscriptions</h3>
-                <p className="text-gray-600">
-                  Unlike agencies using third-party builders, our custom-coded websites have minimal ongoing costs and maximum flexibility.
-                </p>
-              </div>
-
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Proactive Monitoring</h3>
-                <p className="text-gray-600">
-                  We keep your site fast, secure, and search-engine optimized with regular security monitoring and performance optimization.
-                </p>
-              </div>
-
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Transparent Pricing</h3>
-                <p className="text-gray-600">
-                  No hidden fees or surprise charges. You'll know exactly what's included and what you're getting.
+              <div className="border-l-4 border-cyan-500 pl-6 py-2">
+                <p className="text-xl text-gray-800 font-medium leading-relaxed">
+                  Your website is a <span className="text-cyan-600">living digital asset</span> — it needs care to stay fast, secure, and effective.
                 </p>
               </div>
             </div>
 
-            {/* What's Included Callout */}
-            <div className="bg-gradient-to-r from-sky-400 to-teal-800 rounded-2xl p-8 text-white text-center">
-              <h3 className="text-2xl font-bold mb-3">Maintenance Included With Every Build</h3>
-              <p className="text-sky-50 text-lg">
-                When you choose us to build your website, comprehensive maintenance and support come standard.
-                We're invested in your long-term success.
-              </p>
+            {/* Right Column - Features List */}
+            <div className="space-y-8 pt-16">
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Security & Updates</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We proactively monitor your site for vulnerabilities and apply <span className="text-cyan-600 font-semibold">security patches</span> to protect against threats.
+                  Regular updates ensure your website stays compatible with the latest browsers and technologies.
+                </p>
+              </div>
+
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Performance Optimization</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Keep your site running at <span className="text-cyan-600 font-semibold">peak performance</span> with regular speed tests, code optimization, and
+                  image compression. Fast sites rank better on Google and keep visitors engaged.
+                </p>
+              </div>
+
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Content Updates & Changes</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Need to update text, images, or add new pages? We handle content changes quickly, ensuring your
+                  website stays <span className="text-cyan-600 font-semibold">current and relevant</span> to your audience without you needing technical skills.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Backup & Recovery</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Your data is protected with <span className="text-cyan-600 font-semibold">regular backups</span> and disaster recovery plans. If something goes
+                  wrong, we can restore your site quickly to minimize downtime and keep your business running.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
 
-      {/* Why Maintenance Matters */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Why Website Maintenance Matters
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl">🔒</div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Security</h3>
-              <p className="text-gray-600">Regular updates protect against vulnerabilities and cyber threats.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl">⚡</div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Performance</h3>
-              <p className="text-gray-600">Optimization ensures fast loading times and better user experience.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl">📈</div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">SEO</h3>
-              <p className="text-gray-600">Fresh content and technical maintenance improve search rankings.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title="Keep your website running smoothly"
+        subtitle="Request your free proposal now"
+        buttonText="GET STARTED"
+        buttonLink="/quote?step=1"
+      />
 
       <Footer />
     </div>
