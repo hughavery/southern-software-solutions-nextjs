@@ -27,7 +27,7 @@ const RecentProjects = () => {
               <div className="h-1 w-16 bg-cyan-400"></div>
               <span className="text-cyan-400 uppercase tracking-widest text-sm font-semibold">Featured Work</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
+            <h2 className="font-heading text-5xl md:text-7xl font-bold text-white mb-6">
               Latest Projects
             </h2>
             <p className="text-xl text-slate-300 max-w-2xl">
@@ -55,7 +55,7 @@ const RecentProjects = () => {
               {/* Project Info */}
               <div className="max-w-md">
                 <div className="flex items-center gap-3 mb-4">
-                  <h3 className="text-5xl md:text-6xl font-bold text-white">
+                  <h3 className="font-heading text-5xl md:text-6xl font-bold text-white">
                     JordanTrains
                   </h3>
                   <ArrowRight className="w-8 h-8 text-white" />

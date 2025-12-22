@@ -40,7 +40,7 @@ const Services = () => {
               <p className="text-cyan-400 text-sm font-semibold tracking-wider mb-6">
                 OUR SERVICES
               </p>
-              <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
+              <h2 className="font-heading text-5xl md:text-6xl font-bold text-white mb-4">
                 WHAT WE <span className="text-cyan-400">DO?</span>
               </h2>
               <div className="w-32 h-1 bg-cyan-400 mb-8"></div>
@@ -98,7 +98,7 @@ const Services = () => {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
+                <h3 className="font-heading text-xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
                   {service.title}
                 </h3>
 

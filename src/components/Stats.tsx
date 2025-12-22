@@ -95,7 +95,7 @@ const Stats = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-4">
             Proven Results
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">

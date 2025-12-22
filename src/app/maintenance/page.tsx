@@ -31,7 +31,7 @@ const Maintenance = () => {
                 <span className="text-sm font-medium text-gray-500">/03.</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+              <h1 className="font-heading text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
                 Website Maintenance & Support
               </h1>
 
@@ -49,7 +49,7 @@ const Maintenance = () => {
             {/* Right Column - Features List */}
             <div className="space-y-8 pt-16">
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Security & Updates</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">1. Security & Updates</h3>
                 <p className="text-gray-600 leading-relaxed">
                   We proactively monitor your site for vulnerabilities and apply <span className="text-cyan-600 font-semibold">security patches</span> to protect against threats.
                   Regular updates ensure your website stays compatible with the latest browsers and technologies.
@@ -57,7 +57,7 @@ const Maintenance = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Performance Optimization</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">2. Performance Optimization</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Keep your site running at <span className="text-cyan-600 font-semibold">peak performance</span> with regular speed tests, code optimization, and
                   image compression. Fast sites rank better on Google and keep visitors engaged.
@@ -65,7 +65,7 @@ const Maintenance = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Content Updates & Changes</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">3. Content Updates & Changes</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Need to update text, images, or add new pages? We handle content changes quickly, ensuring your
                   website stays <span className="text-cyan-600 font-semibold">current and relevant</span> to your audience without you needing technical skills.
@@ -73,7 +73,7 @@ const Maintenance = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Backup & Recovery</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">4. Backup & Recovery</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Your data is protected with <span className="text-cyan-600 font-semibold">regular backups</span> and disaster recovery plans. If something goes
                   wrong, we can restore your site quickly to minimize downtime and keep your business running.

@@ -192,7 +192,7 @@ const QuoteForm = () => {
             {/* Step 1: Name */}
             {currentStep === 1 && (
               <div className="animate-fadeIn">
-                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                <h1 className="font-heading text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                   Let's get started — what's your name?
                 </h1>
                 <p className="text-gray-600 text-lg mb-12">
@@ -220,7 +220,7 @@ const QuoteForm = () => {
             {/* Step 2: Company */}
             {currentStep === 2 && (
               <div className="animate-fadeIn">
-                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                <h1 className="font-heading text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                   Awesome! Who will we be helping today?
                 </h1>
                 <p className="text-gray-600 text-lg mb-12">
@@ -239,7 +239,7 @@ const QuoteForm = () => {
             {/* Step 3: Services */}
             {currentStep === 3 && (
               <div className="animate-fadeIn">
-                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                <h1 className="font-heading text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                   What do you need help with?
                 </h1>
                 <p className="text-gray-600 text-lg mb-8">Select everything that fits your goals — no limits.</p>
@@ -264,7 +264,7 @@ const QuoteForm = () => {
             {/* Step 4: Timeframe */}
             {currentStep === 4 && (
               <div className="animate-fadeIn">
-                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                <h1 className="font-heading text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                   When would you like to get started?
                 </h1>
                 <p className="text-gray-600 text-lg mb-12">
@@ -288,7 +288,7 @@ const QuoteForm = () => {
             {/* Step 5: Project Details */}
             {currentStep === 5 && (
               <div className="animate-fadeIn">
-                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                <h1 className="font-heading text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                   Tell us about your vision.
                 </h1>
                 <p className="text-gray-600 text-lg mb-12">
@@ -307,7 +307,7 @@ const QuoteForm = () => {
             {/* Step 6: Email */}
             {currentStep === 6 && (
               <div className="animate-fadeIn">
-                <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                <h1 className="font-heading text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                   Almost done! Where should we send your personalized quote?
                 </h1>
                 <p className="text-gray-600 text-lg mb-12">
@@ -341,7 +341,7 @@ const QuoteForm = () => {
                       className="w-28 h-28 md:w-32 md:h-32"
                     />
                   </div>
-                  <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                  <h1 className="font-heading text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                     Thank you, {formData.firstName}!
                   </h1>
                   <p className="text-xl text-gray-600 mb-8">

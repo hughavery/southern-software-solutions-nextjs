@@ -64,9 +64,9 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         {/* Typing headline */}
-        <h1 className="text-white text-[2.7rem] md:text-[5.4rem] lg:text-[7.2rem] font-extrabold mb-10 leading-tight">
+        <h1 className="font-heading text-white text-[2.7rem] md:text-[5.4rem] lg:text-[7.2rem] font-extrabold mb-10 leading-tight">
           <span className="text-gray-300 block mb-4 text-[1.8rem] md:text-[3.6rem] lg:text-[4.5rem] font-semibold">
-            We specialise in
+            We Specialise In
           </span>
           <span className="text-cyan-400 border-b-4 border-cyan-400 inline-block whitespace-nowrap">
             {displayedText}

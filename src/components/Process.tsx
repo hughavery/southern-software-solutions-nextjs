@@ -81,7 +81,7 @@ const Process = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our Process
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -122,7 +122,7 @@ const Process = () => {
                       Step {index + 1} • {step.duration}
                     </div>
                     
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    <h3 className="font-heading text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                       {step.title}
                     </h3>
                     

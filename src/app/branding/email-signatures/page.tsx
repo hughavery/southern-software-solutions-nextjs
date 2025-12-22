@@ -91,7 +91,7 @@ const EmailSignatures = () => {
                 <Mail className="h-8 w-8 text-blue-600 mr-3" />
                 <span className="text-sm font-medium text-gray-500">/03.2</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Professional Email Signature Design | Taranaki
               </h1>
               <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">
@@ -121,7 +121,7 @@ const EmailSignatures = () => {
             {/* What's Included Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">What's Included in Your Email Signature</h2>
+                <h2 className="font-heading text-3xl font-bold text-gray-900 mb-6">What's Included in Your Email Signature</h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   We create custom HTML email signatures that work seamlessly across all major email platforms —
                   Gmail, Outlook, Apple Mail, and more. Every signature is designed to match your brand identity
@@ -138,7 +138,7 @@ const EmailSignatures = () => {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Email Signatures Matter</h2>
+                <h2 className="font-heading text-3xl font-bold text-gray-900 mb-6">Why Email Signatures Matter</h2>
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   Think about how many emails your team sends each day. Every single one is a chance to reinforce
                   your brand, drive website traffic, and look more professional. Without a proper email signature,
@@ -156,7 +156,7 @@ const EmailSignatures = () => {
 
             {/* FAQ Section */}
             <div className="mb-20">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-8">
                 Email Signature Design FAQs
               </h2>
 

@@ -32,7 +32,7 @@ const DigitalMarketing = () => {
                 <span className="text-sm font-medium text-gray-500">/04.</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+              <h1 className="font-heading text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
                 Digital Marketing & SEO
               </h1>
 
@@ -52,7 +52,7 @@ const DigitalMarketing = () => {
             {/* Right Column - Features List */}
             <div className="space-y-8 pt-16">
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Search Engine Optimization (SEO)</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">1. Search Engine Optimization (SEO)</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Get your website ranking on Google for keywords that matter to your business. We optimize your
                   site structure, content, and technical performance to improve visibility in search results. For
@@ -62,7 +62,7 @@ const DigitalMarketing = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Google Ads & Pay-Per-Click (PPC)</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">2. Google Ads & Pay-Per-Click (PPC)</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Get <span className="text-cyan-600 font-semibold">immediate visibility</span> with targeted Google Ads campaigns. We create, manage, and optimize
                   ad campaigns that drive qualified traffic to your site — only paying when people click. Perfect
@@ -71,7 +71,7 @@ const DigitalMarketing = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Google Analytics & Conversion Tracking</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">3. Google Analytics & Conversion Tracking</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Understand exactly where your traffic comes from and what drives conversions. We set up
                   comprehensive analytics tracking so you can see which marketing efforts are working, what pages
@@ -80,7 +80,7 @@ const DigitalMarketing = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Content Strategy & Social Media Marketing</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">4. Content Strategy & Social Media Marketing</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Build authority and attract customers with valuable content. From blog posts that rank on Google
                   to strategic social media presence, we help you create content that resonates with your audience,
@@ -99,7 +99,7 @@ const DigitalMarketing = () => {
 
             {/* Opening Statement */}
             <div className="mb-32">
-              <h2 className="text-6xl md:text-7xl font-light text-gray-900 mb-12 leading-tight">
+              <h2 className="font-heading text-6xl md:text-7xl font-light text-gray-900 mb-12 leading-tight">
                 Understanding<br />Digital Marketing
               </h2>
               <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed font-light">
@@ -109,7 +109,7 @@ const DigitalMarketing = () => {
 
             {/* How Search Behavior Works */}
             <div className="mb-32">
-              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              <h3 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-8">
                 How Search Behavior Works
               </h3>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
@@ -126,7 +126,7 @@ const DigitalMarketing = () => {
 
             {/* The Power of Organic Rankings */}
             <div className="mb-32">
-              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              <h3 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-8">
                 The Power of Organic Rankings
               </h3>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
@@ -144,7 +144,7 @@ const DigitalMarketing = () => {
 
             {/* Measuring What Matters */}
             <div className="mb-32">
-              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              <h3 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-8">
                 Measuring What Matters
               </h3>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
@@ -162,7 +162,7 @@ const DigitalMarketing = () => {
 
             {/* Building Long-Term Value */}
             <div>
-              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              <h3 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-8">
                 Building Long-Term Value
               </h3>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">

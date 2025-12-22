@@ -32,7 +32,7 @@ const SoftwareApplications = () => {
                 <span className="text-sm font-medium text-gray-500">/02.</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+              <h1 className="font-heading text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
                 Custom Software & App Development
               </h1>
 
@@ -50,7 +50,7 @@ const SoftwareApplications = () => {
             {/* Right Column - Features List */}
             <div className="space-y-8 pt-16">
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Mobile App Development</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">1. Mobile App Development</h3>
                 <p className="text-gray-600 leading-relaxed">
                   We design and develop fast, intuitive mobile apps that perform flawlessly on <span className="text-cyan-600 font-semibold">iOS and Android</span>.
                   From concept to launch, our apps combine beautiful design with strong functionality — keeping
@@ -59,7 +59,7 @@ const SoftwareApplications = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Web Application Development</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">2. Web Application Development</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Bring your business online with powerful, secure, and responsive web apps. Whether it's a
                   dashboard, booking system, or full SaaS platform, we build <span className="text-cyan-600 font-semibold">scalable applications</span> that automate
@@ -68,7 +68,7 @@ const SoftwareApplications = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Backend Systems</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">3. Backend Systems</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Your data should work for you. We build <span className="text-cyan-600 font-semibold">reliable back-end systems</span> that connect, manage, and
                   secure your data — ensuring your app runs smoothly and performs under pressure. From analytics
@@ -77,7 +77,7 @@ const SoftwareApplications = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">4. API Integration</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">4. API Integration</h3>
                 <p className="text-gray-600 leading-relaxed">
                   We connect your systems so they work together seamlessly. Whether it's linking to third-party
                   software, payment gateways, or CRMs, our integrations <span className="text-cyan-600 font-semibold">streamline operations</span>, reduce manual tasks,

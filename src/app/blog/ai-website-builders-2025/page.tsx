@@ -37,7 +37,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 How AI Website Builders Like Bolt.new Are Changing Web Design in 2025 (And Why You Still Need a Developer)
               </h1>
 
@@ -48,7 +48,7 @@ const BlogPost = () => {
 
             {/* Content */}
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The AI Website Revolution Is Here</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">The AI Website Revolution Is Here</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 If you've been following tech news lately, you've probably heard about AI website builders like <strong>Bolt.new</strong>, <strong>Lovable</strong>, and <strong>V0.dev</strong>. These tools let you describe what you want in plain English, and boom—you get a working website in minutes.
@@ -62,7 +62,7 @@ const BlogPost = () => {
                 The short answer? <strong>Sort of, but not really.</strong>
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">What AI Website Builders Actually Do Well</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">What AI Website Builders Actually Do Well</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Let's be honest—these tools are genuinely impressive. Here's what they're great at:
@@ -105,7 +105,7 @@ const BlogPost = () => {
                 So yes, AI tools are a <strong>massive improvement over Wix/Squarespace</strong>. You avoid monthly fees, platform lock-in, and slow loading times.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Where AI Still Falls Short (And Why I'm Not Worried About My Job)</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">Where AI Still Falls Short (And Why I'm Not Worried About My Job)</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Here's the reality: <strong>AI can build you a website, but it can't build you a business.</strong>
@@ -155,7 +155,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">So, Will Website Costs Go Down in 2025?</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">So, Will Website Costs Go Down in 2025?</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 <strong>Yes and no.</strong>
@@ -166,7 +166,7 @@ const BlogPost = () => {
               </p>
 
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">The New Pricing Reality</h3>
+                <h3 className="font-heading text-xl font-bold text-gray-900 mb-4">The New Pricing Reality</h3>
                 <div className="space-y-4">
                   <div>
                     <p className="font-semibold text-gray-900">Basic Websites (5-10 pages, simple design):</p>
@@ -198,7 +198,7 @@ const BlogPost = () => {
                 <strong>Bottom line:</strong> AI makes the process <em>faster</em>, which means <em>slightly cheaper</em> for basic sites. But it doesn't eliminate the need for a developer—it just makes good developers more efficient.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">How I Actually Use AI in My Work</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">How I Actually Use AI in My Work</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Full transparency: I use AI tools every day. Here's my workflow:
@@ -217,7 +217,7 @@ const BlogPost = () => {
                 <strong>AI handles step 2. I handle everything else.</strong>
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Should Your Business Use AI Tools or Hire a Developer?</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">Should Your Business Use AI Tools or Hire a Developer?</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Here's my honest recommendation:
@@ -242,7 +242,7 @@ const BlogPost = () => {
                 </ul>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Verdict: AI Is a Tool, Not a Replacement</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">The Verdict: AI Is a Tool, Not a Replacement</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 AI website builders like Bolt.new are <strong>game-changers</strong>—but they're tools for developers, not replacements for them.
@@ -262,7 +262,7 @@ const BlogPost = () => {
 
               {/* CTA Section */}
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-8 mt-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Want a Website That Actually Works for Your Business?</h3>
+                <h3 className="font-heading text-2xl font-bold text-gray-900 mb-4">Want a Website That Actually Works for Your Business?</h3>
                 <p className="text-gray-700 mb-6">
                   I use AI tools to speed up development—but I bring the strategy, SEO, and custom integrations that AI can't. Get the best of both worlds.
                 </p>

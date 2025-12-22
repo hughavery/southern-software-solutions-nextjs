@@ -37,7 +37,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 How a Custom Website Can Help Your Taranaki Business Beat the Competition and Win More Local Customers
               </h1>
 
@@ -48,7 +48,7 @@ const BlogPost = () => {
 
             {/* Content */}
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Taranaki Advantage: Small Population, Big Opportunity</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">The Taranaki Advantage: Small Population, Big Opportunity</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Let's be honest—if you're running a business in New Plymouth, Stratford, or Hawera, you're not competing with hundreds of businesses like they are in Auckland or Wellington. <strong>That's actually your biggest advantage.</strong>
@@ -74,7 +74,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Why Your Taranaki Business Can't Afford to Wait</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">Why Your Taranaki Business Can't Afford to Wait</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Right now, if you search for most local services in Taranaki, you'll notice something: <strong>a lot of businesses still don't have proper websites.</strong> They're relying on Facebook pages, outdated sites, or just word-of-mouth.
@@ -125,7 +125,7 @@ const BlogPost = () => {
                 <strong>The reality:</strong> In 2025, if your business isn't on the first page of Google for local searches, you're invisible. And in Taranaki, getting there is still achievable—if you act now.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">How a Custom Website Actually Wins You Customers in Taranaki</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">How a Custom Website Actually Wins You Customers in Taranaki</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Let's get practical. Here's exactly how a well-built website helps your Taranaki business succeed:
@@ -171,7 +171,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Real Example: How Taranaki Businesses Are Winning with Custom Websites</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">Real Example: How Taranaki Businesses Are Winning with Custom Websites</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Let's say you run a personal training business in New Plymouth. Right now, when someone searches <strong>"personal trainer New Plymouth"</strong> or <strong>"fitness coach Taranaki,"</strong> they're probably finding:
@@ -203,7 +203,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">What Makes a Custom Website Better Than a DIY Solution?</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">What Makes a Custom Website Better Than a DIY Solution?</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 You might be thinking: <em>"Can't I just use Wix or Squarespace?"</em>
@@ -243,7 +243,7 @@ const BlogPost = () => {
                 <strong>Bottom line:</strong> If you're serious about growing your business online and beating competitors in Taranaki, a custom website is an investment that pays for itself many times over.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Time to Act Is Now</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">The Time to Act Is Now</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Here's the truth: <strong>Taranaki is still a wide-open opportunity for local businesses to dominate online.</strong> But that window is closing.
@@ -274,7 +274,7 @@ const BlogPost = () => {
 
               {/* CTA Section */}
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-8 mt-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Beat Your Taranaki Competition?</h3>
+                <h3 className="font-heading text-2xl font-bold text-gray-900 mb-4">Ready to Beat Your Taranaki Competition?</h3>
                 <p className="text-gray-700 mb-6">
                   I build custom websites designed to help Taranaki businesses dominate local search results and win more customers. Let's create a website that actually grows your business—before your competitors do.
                 </p>

@@ -37,7 +37,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 How Taranaki Businesses Can Get Found in AI Search Results (Google AI Mode, AI Overviews, and ChatGPT)
               </h1>
 
@@ -48,7 +48,7 @@ const BlogPost = () => {
 
             {/* Content */}
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The Search Revolution Happening Right Now in Taranaki</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">The Search Revolution Happening Right Now in Taranaki</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Here's something most Taranaki business owners don't realize yet: <strong>the way people find businesses online is evolving rapidly with the rise of AI search.</strong>
@@ -81,7 +81,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Real Example: How AI Search Is Changing Taranaki Business Discovery</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">Real Example: How AI Search Is Changing Taranaki Business Discovery</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Let's say you run an electrician business in New Plymouth. Here's how customers are finding electricians now vs. 6 months ago:
@@ -110,7 +110,7 @@ const BlogPost = () => {
                 This shift is already underway. People searching for services are increasingly turning to AI-powered search tools, and businesses that aren't prepared will struggle to be discovered by these potential customers.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">How AI Search Actually Works (And Why Traditional SEO Isn't Enough)</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">How AI Search Actually Works (And Why Traditional SEO Isn't Enough)</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Google AI Overviews and ChatGPT don't just crawl your website and look for keywords like traditional search engines. They:
@@ -149,14 +149,14 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Taranaki Use Case: What AI Search Looks Like in Practice</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">Taranaki Use Case: What AI Search Looks Like in Practice</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Let's use a <strong>real Taranaki scenario</strong> to show exactly how AI search changes customer behavior:
               </p>
 
               <div className="bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-200 rounded-xl p-6 mb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Scenario: Family Moving to New Plymouth Needs a Builder</h3>
+                <h3 className="font-heading text-xl font-bold text-gray-900 mb-4">Scenario: Family Moving to New Plymouth Needs a Builder</h3>
 
                 <p className="text-gray-700 mb-4">
                   <strong>The Customer:</strong> A young family relocating from Wellington to New Plymouth needs a builder for home renovations.
@@ -183,7 +183,7 @@ const BlogPost = () => {
                 See the difference? <strong>AI search rewards businesses that communicate clearly, build trust, and provide helpful information.</strong> Traditional SEO keyword stuffing ("builder New Plymouth builder Taranaki builder") doesn't work anymore.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">How to Optimize Your Taranaki Business for AI Search</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">How to Optimize Your Taranaki Business for AI Search</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Here's what actually works to get your business showing up in AI search results:
@@ -236,7 +236,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Why Most Taranaki Businesses Will Struggle with AI Search Optimization</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">Why Most Taranaki Businesses Will Struggle with AI Search Optimization</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 Here's the hard truth: <strong>AI search optimization is more complex than traditional SEO.</strong>
@@ -269,7 +269,7 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">What This Means for Your Business in 2025</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">What This Means for Your Business in 2025</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 If you're a Taranaki business owner, here's your reality check:
@@ -291,7 +291,7 @@ const BlogPost = () => {
                 <strong>The choice is obvious. The question is: who do you trust to do this right?</strong>
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">How Southern Software Solutions Optimizes Taranaki Websites for AI Search</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">How Southern Software Solutions Optimizes Taranaki Websites for AI Search</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 We don't just build websites—we build <strong>AI-optimized digital assets</strong> designed to get your Taranaki business found in the new era of search.
@@ -345,7 +345,7 @@ const BlogPost = () => {
                 <strong>Bottom line:</strong> We build websites that don't just rank in Google—they get <em>recommended</em> by AI. That's the difference between being found and being forgotten in 2025.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Don't Get Left Behind in the AI Search Revolution</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mt-12 mb-6">Don't Get Left Behind in the AI Search Revolution</h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 The businesses that thrive in Taranaki over the next 5-10 years won't be the ones with the biggest budgets or the most employees.
@@ -377,7 +377,7 @@ const BlogPost = () => {
 
               {/* CTA Section */}
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-8 mt-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Get Your Taranaki Business Optimized for AI Search</h3>
+                <h3 className="font-heading text-2xl font-bold text-gray-900 mb-4">Get Your Taranaki Business Optimized for AI Search</h3>
                 <p className="text-gray-700 mb-6">
                   We specialize in building AI-optimized websites for Taranaki businesses that get found in Google AI Overviews, ChatGPT, and the future of search. Don't let your competitors claim your AI search territory first.
                 </p>

@@ -33,7 +33,7 @@ const WebsiteDesign = () => {
                 <span className="text-sm font-medium text-gray-500">/01.</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+              <h1 className="font-heading text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
                 Custom Website Design
               </h1>
 
@@ -53,7 +53,7 @@ const WebsiteDesign = () => {
             {/* Right Column - Features List */}
             <div className="space-y-8 pt-16">
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Tailored to Your Business Goals</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">1. Tailored to Your Business Goals</h3>
                 <p className="text-gray-600 leading-relaxed">
                   We don't do cookie-cutter templates. Every design decision starts with understanding your objectives
                   and audience. From layout to colour palette, we craft responsive web design solutions that align with
@@ -63,7 +63,7 @@ const WebsiteDesign = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Seamless Brand Connection</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">2. Seamless Brand Connection</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Your website should feel unmistakably you. We blend your brand's personality, colours, and tone into
                   every corner of your site. Whether you already have strong visuals or need help developing them, we'll
@@ -72,7 +72,7 @@ const WebsiteDesign = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Designed for Action, Not Just Looks</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">3. Designed for Action, Not Just Looks</h3>
                 <p className="text-gray-600 leading-relaxed">
                   A beautiful website means nothing if visitors leave confused. We design clear, intuitive pathways that
                   guide users exactly where you want them to go — whether that's making a purchase, booking a call, or
@@ -82,7 +82,7 @@ const WebsiteDesign = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Built for Every Screen</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">4. Built for Every Screen</h3>
                 <p className="text-gray-600 leading-relaxed">
                   With around <span className="text-cyan-600 font-semibold">64% of website traffic</span> in New Zealand coming from mobile devices, your site needs to look stunning on any
                   device. We build <span className="text-cyan-600 font-semibold">fully responsive designs</span> that adapt gracefully from desktop to smartphone — fast,
@@ -100,7 +100,7 @@ const WebsiteDesign = () => {
           <div className="max-w-6xl mx-auto">
             {/* Section Header */}
             <div className="text-center md:text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-left md:text-center">
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-left md:text-center">
                 Where Design Meets Performance.
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto text-left md:text-center">
@@ -129,7 +129,7 @@ const WebsiteDesign = () => {
                 <div>
                   <div className="flex items-start mb-3">
                     <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                    <h3 className="text-xl font-semibold text-gray-900">Perfect 100/100 Performance Score</h3>
+                    <h3 className="font-heading text-xl font-semibold text-gray-900">Perfect 100/100 Performance Score</h3>
                   </div>
                   <p className="text-gray-600 leading-relaxed pl-7">
                     Our website achieves a flawless performance score—something only <strong>1% of websites</strong> manage
@@ -140,7 +140,7 @@ const WebsiteDesign = () => {
                 <div>
                   <div className="flex items-start mb-3">
                     <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                    <h3 className="text-xl font-semibold text-gray-900">Perfect 100/100 SEO Score</h3>
+                    <h3 className="font-heading text-xl font-semibold text-gray-900">Perfect 100/100 SEO Score</h3>
                   </div>
                   <p className="text-gray-600 leading-relaxed pl-7">
                     Achieving a <strong>perfect 100/100 SEO score</strong> means your website is fully optimized for search engines—proper structure,
@@ -152,7 +152,7 @@ const WebsiteDesign = () => {
                 <div>
                   <div className="flex items-start mb-3">
                     <ChevronRight className="h-5 w-5 text-cyan-500 mr-2 mt-1 shrink-0" />
-                    <h3 className="text-xl font-semibold text-gray-900">How We Compare</h3>
+                    <h3 className="font-heading text-xl font-semibold text-gray-900">How We Compare</h3>
                   </div>
                   <p className="text-gray-600 leading-relaxed pl-7">
                     The average New Zealand small business website scores between <strong>60–80</strong> on performance.

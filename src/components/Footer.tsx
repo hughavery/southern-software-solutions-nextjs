@@ -60,7 +60,7 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-lg font-bold mb-6">Quick Links</h4>
+              <h4 className="font-heading text-lg font-bold mb-6">Quick Links</h4>
               <ul className="space-y-3">
                 {[
                   { label: 'Home', id: 'home' },
@@ -98,7 +98,7 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="text-lg font-bold mb-6">Services</h4>
+              <h4 className="font-heading text-lg font-bold mb-6">Services</h4>
               <ul className="space-y-3">
                 <li>
                   <Link href="/website-design" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">
@@ -135,7 +135,7 @@ const Footer = () => {
 
             {/* Contact */}
             <div>
-              <h4 className="text-lg font-bold mb-6">Contact Info</h4>
+              <h4 className="font-heading text-lg font-bold mb-6">Contact Info</h4>
               <div className="space-y-3">
                 <p className="text-gray-300">New Plymouth, Taranaki</p>
                 <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-gray-300 hover:text-blue-400 transition-colors block">

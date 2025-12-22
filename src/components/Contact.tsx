@@ -67,8 +67,8 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Ready to transform your digital presence?
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Ready to Transform Your Digital Presence?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             We're just a phone call or email away.
@@ -105,7 +105,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900">Hugh Avery</h3>
+                <h3 className="font-heading text-2xl font-bold text-gray-900">Hugh Avery</h3>
                 <p className="text-gray-600">Founder & Lead Developer</p>
               </div>
             </div>
@@ -116,7 +116,7 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Location</h4>
+                  <h4 className="font-heading font-bold text-gray-900 mb-1">Location</h4>
                   <p className="text-gray-600">New Plymouth, Taranaki</p>
                   <p className="text-sm text-gray-500">Serving New Zealand</p>
                 </div>
@@ -127,7 +127,7 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Email</h4>
+                  <h4 className="font-heading font-bold text-gray-900 mb-1">Email</h4>
                   <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-sm md:text-base text-gray-600 hover:text-blue-600 transition-colors break-all">
                     contact@southernsoftwaresolutions.tech
                   </a>
@@ -139,7 +139,7 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
+                  <h4 className="font-heading font-bold text-gray-900 mb-1">Phone</h4>
                   <p className="text-gray-600">
                     <a href="tel:+61430126624" className="hover:text-blue-600 transition-colors">AU: +61 430 126 624</a>
                   </p>
@@ -153,7 +153,7 @@ const Contact = () => {
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
               <div className="flex items-center mb-4">
                 <Calendar className="h-6 w-6 text-blue-600 mr-3" />
-                <h4 className="font-bold text-gray-900">Book a Free Consultation</h4>
+                <h4 className="font-heading font-bold text-gray-900">Book a Free Consultation</h4>
               </div>
               <p className="text-gray-600 mb-6">
                 Schedule a 30-minute discovery call to discuss your project requirements and goals.
@@ -170,7 +170,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div>
             <div className="mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
+              <h2 className="font-heading text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
               <p className="text-gray-600">
                 Have questions about our services? We'll get back to you within 24 hours. You can also check our{' '}
                 <a

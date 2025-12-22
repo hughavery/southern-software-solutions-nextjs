@@ -148,7 +148,7 @@ const FAQ = () => {
       <section className="pt-32 pb-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="font-heading text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Got questions? We've got answers.
             </h1>
             <p className="text-xl text-gray-600 mb-16 leading-relaxed">
@@ -161,7 +161,7 @@ const FAQ = () => {
 
             {faqCategories.map((category, categoryIndex) => (
               <div key={categoryIndex} className="mb-12">
-                <h3 className="text-xl font-bold text-orange-500 mb-6 tracking-wide">
+                <h3 className="font-heading text-xl font-bold text-orange-500 mb-6 tracking-wide">
                   {category.category}
                 </h3>
 
@@ -214,7 +214,7 @@ const FAQ = () => {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="font-heading text-3xl font-bold text-gray-900 mb-4">
             Still Have Questions?
           </h2>
           <p className="text-xl text-gray-600 mb-8">

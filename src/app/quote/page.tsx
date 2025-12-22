@@ -96,7 +96,7 @@ const QuoteLandingPage = () => {
       <section className="pt-32 pb-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-8 leading-tight max-w-5xl">
+            <h1 className="font-heading text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-8 leading-tight max-w-5xl">
               Get Your Free Quote Today
             </h1>
             <p className="text-2xl md:text-3xl text-gray-600 leading-relaxed mb-6 max-w-4xl">
@@ -168,7 +168,7 @@ const QuoteLandingPage = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Hugh Avery</h3>
+                  <h3 className="font-heading text-2xl font-bold text-gray-900">Hugh Avery</h3>
                   <p className="text-gray-600">Founder & Lead Developer</p>
                 </div>
               </div>
@@ -179,7 +179,7 @@ const QuoteLandingPage = () => {
                     <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-1">Location</h4>
+                    <h4 className="font-heading font-bold text-gray-900 mb-1">Location</h4>
                     <p className="text-gray-600">New Plymouth, Taranaki</p>
                     <p className="text-sm text-gray-500">Serving New Zealand</p>
                   </div>
@@ -190,7 +190,7 @@ const QuoteLandingPage = () => {
                     <Mail className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-1">Email</h4>
+                    <h4 className="font-heading font-bold text-gray-900 mb-1">Email</h4>
                     <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-sm md:text-base text-gray-600 hover:text-blue-600 transition-colors break-all">
                       contact@southernsoftwaresolutions.tech
                     </a>
@@ -202,7 +202,7 @@ const QuoteLandingPage = () => {
                     <Phone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
+                    <h4 className="font-heading font-bold text-gray-900 mb-1">Phone</h4>
                     <p className="text-gray-600">
                       <a href="tel:+61430126624" className="hover:text-blue-600 transition-colors">AU: +61 430 126 624</a>
                     </p>
@@ -216,7 +216,7 @@ const QuoteLandingPage = () => {
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
                 <div className="flex items-center mb-4">
                   <Calendar className="h-6 w-6 text-blue-600 mr-3" />
-                  <h4 className="font-bold text-gray-900">Book a Free Consultation</h4>
+                  <h4 className="font-heading font-bold text-gray-900">Book a Free Consultation</h4>
                 </div>
                 <p className="text-gray-600 mb-6">
                   Schedule a 30-minute discovery call to discuss your project requirements and goals.
@@ -233,7 +233,7 @@ const QuoteLandingPage = () => {
             {/* Contact Form */}
             <div>
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
+                <h2 className="font-heading text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
                 <p className="text-gray-600">
                   Have questions about our services? We'll get back to you within 24 hours. You can also check our{' '}
                   <Link
@@ -333,7 +333,7 @@ const QuoteLandingPage = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
               Why Work With Southern Software Solutions?
             </h2>
 
@@ -341,7 +341,7 @@ const QuoteLandingPage = () => {
               <div className="flex items-start">
                 <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Local Taranaki Expertise</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-2">Local Taranaki Expertise</h3>
                   <p className="text-gray-600">
                     Based in New Plymouth, we understand the Taranaki market and local business needs.
                   </p>
@@ -351,7 +351,7 @@ const QuoteLandingPage = () => {
               <div className="flex items-start">
                 <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Transparent Pricing</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-2">Transparent Pricing</h3>
                   <p className="text-gray-600">
                     Clear quotes with no hidden fees. Web design from $1,499, email signatures from $49.
                   </p>
@@ -361,7 +361,7 @@ const QuoteLandingPage = () => {
               <div className="flex items-start">
                 <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Fast Response Times</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-2">Fast Response Times</h3>
                   <p className="text-gray-600">
                     We respond to all inquiries within 24 hours, usually much sooner.
                   </p>
@@ -371,7 +371,7 @@ const QuoteLandingPage = () => {
               <div className="flex items-start">
                 <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Proven Track Record</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-2">Proven Track Record</h3>
                   <p className="text-gray-600">
                     Successfully delivered projects for businesses across New Zealand.
                   </p>
@@ -381,7 +381,7 @@ const QuoteLandingPage = () => {
               <div className="flex items-start">
                 <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Modern Technology</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-2">Modern Technology</h3>
                   <p className="text-gray-600">
                     Hand-coded websites with the latest tech stack for optimal performance.
                   </p>
@@ -391,7 +391,7 @@ const QuoteLandingPage = () => {
               <div className="flex items-start">
                 <Check className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Ongoing Support</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-2">Ongoing Support</h3>
                   <p className="text-gray-600">
                     We're here for the long haul with maintenance and support packages.
                   </p>

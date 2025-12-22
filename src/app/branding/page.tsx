@@ -34,7 +34,7 @@ const Branding = () => {
                 <span className="text-sm font-medium text-gray-500">/05.</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+              <h1 className="font-heading text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
                 Branding & Visual Identity
               </h1>
 
@@ -54,7 +54,7 @@ const Branding = () => {
             {/* Right Column - Features List */}
             <div className="space-y-8 pt-16">
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Logo Design & Brand Guidelines</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">1. Logo Design & Brand Guidelines</h3>
                 <p className="text-gray-600 leading-relaxed">
                   We design <span className="text-cyan-600 font-semibold">timeless, memorable logos</span> that capture the essence of your business. Along with your logo,
                   we create comprehensive brand guidelines covering typography, colour palettes, and usage rules —
@@ -63,7 +63,7 @@ const Branding = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Professional Email Signatures</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">2. Professional Email Signatures</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Turn every email into a branding opportunity. We design professional HTML email signatures that
                   include your logo, contact details, social links, and brand colours — giving your team a <span className="text-cyan-600 font-semibold">polished,
@@ -75,7 +75,7 @@ const Branding = () => {
               </div>
 
               <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Business Photography</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">3. Business Photography</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Authentic photos of your team, workspace, products, and services make your brand feel real.
                   We shoot <span className="text-cyan-600 font-semibold">high-quality images</span> using the Nikon Z7 II — creating visual content that adds
@@ -84,7 +84,7 @@ const Branding = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">4. Marketing Collateral Design</h3>
+                <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3">4. Marketing Collateral Design</h3>
                 <p className="text-gray-600 leading-relaxed">
                   From business cards and brochures to social media graphics and presentation templates, we design
                   all the materials your business needs. Every piece is crafted to align with your brand identity,
@@ -100,7 +100,7 @@ const Branding = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-8">
               Why consistent branding matters
             </h2>
 
