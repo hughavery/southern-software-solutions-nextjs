@@ -29,7 +29,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-black backdrop-blur-md shadow-lg">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-3 cursor-pointer">
+          <Link href="/" className="flex items-center space-x-3 cursor-pointer group">
             <Image
               src="/logo.png"
               alt="Southern Software Solutions Logo"
@@ -37,7 +37,15 @@ const Header = () => {
               height={40}
               className="w-10 h-10"
             />
-            <span className="text-xl font-bold text-white">Southern Software Solutions</span>
+            {/* Brand Name */}
+            <div className="flex flex-col">
+              <span className="font-heading text-lg font-bold text-white leading-tight">
+                Southern Software
+              </span>
+              <span className="font-heading text-sm font-semibold text-cyan-400 leading-tight -mt-0.5">
+                SOLUTIONS
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

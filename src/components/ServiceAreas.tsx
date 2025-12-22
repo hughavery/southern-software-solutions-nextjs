@@ -28,10 +28,10 @@ const ServiceAreas = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.1, ease: 'easeOut' }}
-              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+              className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6"
               style={{ willChange: 'transform, opacity' }}
             >
-              We service the whole of New Zealand!
+              We Service the Whole of New Zealand!
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, x: -50 }}

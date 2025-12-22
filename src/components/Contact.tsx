@@ -64,9 +64,16 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-20 bg-white relative overflow-hidden">
+      {/* Subtle background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white pointer-events-none" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-24">
+          <div className="flex items-center gap-4 mb-6 justify-center">
+            <div className="h-1 w-16 bg-cyan-500"></div>
+            <span className="text-cyan-600 uppercase tracking-widest text-sm font-semibold">Get In Touch</span>
+          </div>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Ready to Transform Your Digital Presence?
           </h2>
@@ -75,15 +82,7 @@ const Contact = () => {
             Book your free consultation or request a{' '}
             <a
               href="/quote"
-              className="text-gray-900 font-semibold transition-colors relative inline-block"
-              style={{
-                textDecoration: 'none',
-                backgroundImage: 'linear-gradient(to right, #06B6D4, #06B6D4)',
-                backgroundSize: '100% 3px',
-                backgroundPosition: '0 100%',
-                backgroundRepeat: 'no-repeat',
-                paddingBottom: '2px'
-              }}
+              className="text-cyan-600 font-semibold hover:text-cyan-700 transition-colors relative inline-block underline underline-offset-4 decoration-2"
             >
               personalized quote
             </a>
@@ -111,9 +110,9 @@ const Contact = () => {
             </div>
             
             <div className="space-y-6 mb-8">
-              <div className="flex items-start">
-                <div className="bg-blue-50 p-3 rounded-xl mr-4">
-                  <MapPin className="h-6 w-6 text-blue-600" />
+              <div className="flex items-start group">
+                <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 p-3 rounded-xl mr-4 shadow-md group-hover:shadow-lg transition-shadow">
+                  <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-heading font-bold text-gray-900 mb-1">Location</h4>
@@ -122,68 +121,65 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start">
-                <div className="bg-blue-50 p-3 rounded-xl mr-4">
-                  <Mail className="h-6 w-6 text-blue-600" />
+              <div className="flex items-start group">
+                <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 p-3 rounded-xl mr-4 shadow-md group-hover:shadow-lg transition-shadow">
+                  <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-heading font-bold text-gray-900 mb-1">Email</h4>
-                  <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-sm md:text-base text-gray-600 hover:text-blue-600 transition-colors break-all">
+                  <a href="mailto:contact@southernsoftwaresolutions.tech" className="text-sm md:text-base text-gray-600 hover:text-cyan-600 transition-colors break-all">
                     contact@southernsoftwaresolutions.tech
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start">
-                <div className="bg-blue-50 p-3 rounded-xl mr-4">
-                  <Phone className="h-6 w-6 text-blue-600" />
+              <div className="flex items-start group">
+                <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 p-3 rounded-xl mr-4 shadow-md group-hover:shadow-lg transition-shadow">
+                  <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-heading font-bold text-gray-900 mb-1">Phone</h4>
                   <p className="text-gray-600">
-                    <a href="tel:+61430126624" className="hover:text-blue-600 transition-colors">AU: +61 430 126 624</a>
+                    <a href="tel:+61430126624" className="hover:text-cyan-600 transition-colors">AU: +61 430 126 624</a>
                   </p>
                   <p className="text-gray-600">
-                    <a href="tel:+64224993402" className="hover:text-blue-600 transition-colors">NZ: +64 22 499 3402</a>
+                    <a href="tel:+64224993402" className="hover:text-cyan-600 transition-colors">NZ: +64 22 499 3402</a>
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
-              <div className="flex items-center mb-4">
-                <Calendar className="h-6 w-6 text-blue-600 mr-3" />
-                <h4 className="font-heading font-bold text-gray-900">Book a Free Consultation</h4>
+            <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 p-8 rounded-2xl shadow-xl text-white relative overflow-hidden">
+              {/* Decorative element */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16" />
+
+              <div className="relative z-10">
+                <div className="flex items-center mb-4">
+                  <Calendar className="h-6 w-6 text-white mr-3" />
+                  <h4 className="font-heading font-bold text-white">Book a Free Consultation</h4>
+                </div>
+                <p className="text-cyan-50 mb-6">
+                  Schedule a 30-minute discovery call to discuss your project requirements and goals.
+                </p>
+                <button
+                  onClick={() => setShowCalendly(true)}
+                  className="bg-white text-cyan-600 px-6 py-3 rounded-full hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 font-semibold cursor-pointer shadow-lg"
+                >
+                  Schedule Call
+                </button>
               </div>
-              <p className="text-gray-600 mb-6">
-                Schedule a 30-minute discovery call to discuss your project requirements and goals.
-              </p>
-              <button
-                onClick={() => setShowCalendly(true)}
-                className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold cursor-pointer"
-              >
-                Schedule Call
-              </button>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div>
+          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
             <div className="mb-8">
               <h2 className="font-heading text-3xl font-bold text-gray-900 mb-4">Send Us a Message</h2>
               <p className="text-gray-600">
                 Have questions about our services? We'll get back to you within 24 hours. You can also check our{' '}
                 <a
                   href="/faq"
-                  className="text-gray-900 font-semibold transition-colors relative inline-block"
-                  style={{
-                    textDecoration: 'none',
-                    backgroundImage: 'linear-gradient(to right, #F97316, #F97316)',
-                    backgroundSize: '100% 3px',
-                    backgroundPosition: '0 100%',
-                    backgroundRepeat: 'no-repeat',
-                    paddingBottom: '2px'
-                  }}
+                  className="text-cyan-600 font-semibold hover:text-cyan-700 transition-colors relative inline-block underline underline-offset-4 decoration-2"
                 >
                   FAQ page
                 </a>
@@ -193,7 +189,7 @@ const Contact = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                   Your Name
                 </label>
                 <input
@@ -203,13 +199,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                   placeholder="Enter your full name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
                   Email Address
                 </label>
                 <input
@@ -219,13 +215,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
                   Project Details
                 </label>
                 <textarea
@@ -235,19 +231,25 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white resize-none"
                   placeholder="Tell us about your project, goals, and requirements..."
                 />
               </div>
 
               {submitStatus === 'success' && (
-                <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-xl text-green-800">
+                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 flex items-center gap-2">
+                  <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                  </svg>
                   Thank you for your message! We'll get back to you soon.
                 </div>
               )}
 
               {submitStatus === 'error' && (
-                <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-xl text-red-800">
+                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 flex items-center gap-2">
+                  <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd"/>
+                  </svg>
                   Something went wrong. Please try again or email us directly.
                 </div>
               )}
@@ -255,7 +257,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition-all duration-300 transform hover:scale-[1.02] font-semibold flex items-center justify-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-8 py-4 rounded-lg hover:from-cyan-600 hover:to-cyan-700 transition-all duration-300 transform hover:scale-[1.02] font-semibold flex items-center justify-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
                 <Send className="ml-2 h-5 w-5" />

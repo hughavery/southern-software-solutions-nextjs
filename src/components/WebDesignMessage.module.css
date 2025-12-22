@@ -1,7 +1,7 @@
 /* WebDesignMessage.module.css */
 .messageSection {
   background: #ffffff;
-  padding: 120px 20px;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -103,6 +103,7 @@
 }
 
 .hookHeadline {
+  font-family: var(--font-heading);
   font-size: 4rem;
   color: #1a202c;
   margin-bottom: 50px;
@@ -133,6 +134,7 @@
 }
 
 .hookMessage {
+  font-family: var(--font-body);
   font-size: 1.5rem;
   color: #4a5568;
   line-height: 1.9;
